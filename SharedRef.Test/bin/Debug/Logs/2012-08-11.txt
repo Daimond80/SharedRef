@@ -1,0 +1,26 @@
+2012-08-11 23-37-41 Чтение конфигурации 
+2012-08-11 23-37-51 Bind session with factory 
+2012-08-11 23-37-51 Rollback transaction 
+2012-08-11 23-37-51 Unbind session and dispose 
+2012-08-11 23-40-45 Чтение конфигурации 
+2012-08-11 23-40-49 Bind session with factory 
+2012-08-11 23-40-49 SELECT 
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentRef 
+			FROM [oplan3_b].[dbo].[genre] 
+2012-08-11 23-40-49 Rollback transaction 
+2012-08-11 23-40-49 Unbind session and dispose 
+2012-08-11 23-41-07 Чтение конфигурации 
+2012-08-11 23-41-07 Bind session with factory 
+2012-08-11 23-41-07 Rollback transaction 
+2012-08-11 23-41-07 Unbind session and dispose 
+2012-08-11 23-44-28 Чтение конфигурации 
+2012-08-11 23-44-31 Bind session with factory 
+2012-08-11 23-44-31 SELECT 
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentRef 
+			FROM [oplan3_b].[dbo].[genre] 
+2012-08-11 23-44-32 Rollback transaction 
+2012-08-11 23-44-32 Unbind session and dispose 

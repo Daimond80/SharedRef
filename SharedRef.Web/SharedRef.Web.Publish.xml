@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="localhost" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="Default Web Site/SharedRef" msdeploySiteID="" msdeployRemoteSitePhysicalPath="C:\Sources\SharedRef\Publish\" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/web.nlog" publishTime="08/26/2012 12:44:08" />
+    <file relUrl="bin/Spring.Aop.pdb" publishTime="08/14/2012 09:11:26" />
+    <file relUrl="Web.config" publishTime="08/30/2012 10:14:35" />
+    <file relUrl="bin/Spring.Core.dll" publishTime="08/11/2012 18:39:43" />
+    <file relUrl="bin/Spring.Core.pdb" publishTime="08/11/2012 18:39:43" />
+    <file relUrl="bin/Spring.Aop.xml" publishTime="08/14/2012 09:11:26" />
+    <file relUrl="bin/Iesi.Collections.dll" publishTime="08/11/2012 18:39:05" />
+    <file relUrl="bin/Common.Logging.dll" publishTime="08/11/2012 18:39:40" />
+    <file relUrl="bin/SharedRef.dll" publishTime="08/30/2012 10:14:29" />
+    <file relUrl="bin/Newtonsoft.Json.xml" publishTime="08/12/2012 10:51:02" />
+    <file relUrl="bin/Spring.Web.dll" publishTime="08/16/2012 17:55:45" />
+    <file relUrl="packages.config" publishTime="08/16/2012 17:58:41" />
+    <file relUrl="bin/Spring.Core.xml" publishTime="08/11/2012 18:39:43" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="08/12/2012 10:51:02" />
+    <file relUrl="bin/NLog.config" publishTime="08/26/2012 12:38:20" />
+    <file relUrl="bin/NHibernate.Caches.SysCache.dll" publishTime="08/11/2012 23:13:31" />
+    <file relUrl="bin/Iesi.Collections.xml" publishTime="08/11/2012 18:39:05" />
+    <file relUrl="bin/NLog.xml" publishTime="07/17/2011 23:26:56" />
+    <file relUrl="bin/SharedRef.pdb" publishTime="08/30/2012 10:14:29" />
+    <file relUrl="bin/Spring.Web.pdb" publishTime="08/16/2012 17:55:45" />
+    <file relUrl="Xml.asmx" publishTime="08/12/2012 12:29:53" />
+    <file relUrl="bin/SharedRef.Web.dll" publishTime="08/30/2012 10:14:30" />
+    <file relUrl="bin/NLog.dll" publishTime="07/17/2011 23:26:56" />
+    <file relUrl="bin/NHibernate.xml" publishTime="08/11/2012 18:39:06" />
+    <file relUrl="Json.asmx" publishTime="08/12/2012 12:30:03" />
+    <file relUrl="bin/Spring.Web.xml" publishTime="08/16/2012 17:55:45" />
+    <file relUrl="bin/Spring.Aop.dll" publishTime="08/14/2012 09:11:25" />
+    <file relUrl="bin/NHibernate.dll" publishTime="08/11/2012 18:39:06" />
+    <file relUrl="bin/SharedRef.Web.pdb" publishTime="08/30/2012 10:14:30" />
+  </publishProfile>
+</publishData>

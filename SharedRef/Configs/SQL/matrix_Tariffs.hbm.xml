@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="SharedRef.Domain" assembly="SharedRef">
+	
+	<sql-query name='tariffs'>
+		<return class='SimpleItem' alias='SimpleItem'/>
+		<![CDATA[
+			select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId
+		]]>
+	</sql-query>
+
+</hibernate-mapping>
+

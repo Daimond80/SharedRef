@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='_ConversionReport_Files/ConversionReport.xslt'?>
+<UpgradeLog>
+  <Properties>
+    <Property Name="Project" Value="InvokeWebService" />
+    <Property Name="Project File" Value="C:\Sources\SharedRef\InvokeWebService\InvokeWebService.csproj" />
+    <Property Name="Date" Value="12 февраля 2014 г." />
+    <Property Name="Time" Value="8:58" />
+  </Properties>
+  <Event ErrorLevel="0" Project="C:\Sources\SharedRef\InvokeWebService\InvokeWebService.csproj" Source="..\InvokeWebService.csproj" Description="Project was successfully converted: 'C:\Sources\SharedRef\InvokeWebService\InvokeWebService.csproj' to 'C:\Sources\SharedRef\InvokeWebService\InvokeWebService.sqlproj'" />
+  <Event ErrorLevel="3" Project="C:\Sources\SharedRef\InvokeWebService\InvokeWebService.csproj" Source="..\InvokeWebService.csproj" Description="Converted" />
+</UpgradeLog>

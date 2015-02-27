@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C30453A0-B9BA-4D5C-8E28-866DBB9C21BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharedRef</RootNamespace>
+    <AssemblyName>SharedRef</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\packages\Common.Logging.1.2.0\lib\1.0\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.8\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.3.3.1.4000\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.SysCache">
+      <HintPath>..\packages\NHibernate.Caches.SysCache.3.2.0.4000\lib\Net35\NHibernate.Caches.SysCache.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.2.0.0.2000\lib\net40\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop">
+      <HintPath>..\packages\Spring.Aop.1.3.2\lib\net40\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\packages\Spring.Core.1.3.2\lib\net40\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core.Configuration">
+      <HintPath>..\packages\Spring.CodeConfig.1.0.4\lib\net40\Spring.Core.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Web">
+      <HintPath>..\packages\Spring.Web.1.3.2\lib\net40\Spring.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AOP\WatchInterceptor.cs" />
+    <Compile Include="AOP\ExceptionInterceptor.cs" />
+    <Compile Include="Data\DictionaryResultTransformer.cs" />
+    <Compile Include="Domain\IoC\Matrix.cs" />
+    <Compile Include="Extensions\ListOfSimpleItems.cs" />
+    <Compile Include="Extensions\StringParser.cs" />
+    <Compile Include="Helper\SimpleItemComparer.cs" />
+    <Compile Include="Helper\SimpleItemDistinct.cs" />
+    <Compile Include="IManager.cs" />
+    <Compile Include="Data\DataObject.cs" />
+    <Compile Include="Domain\IoC\IInitializing.cs" />
+    <Compile Include="Domain\IoC\INamed.cs" />
+    <Compile Include="Domain\SimpleItem.cs" />
+    <Compile Include="Domain\IoC\Database.cs" />
+    <Compile Include="Domain\IoC\Reference.cs" />
+    <Compile Include="DependencyConteiner.cs" />
+    <Compile Include="Data\DataHelper.cs" />
+    <Compile Include="Data\DataUnitOfWork.cs" />
+    <Compile Include="Data\UnitOfWork.cs" />
+    <Compile Include="Data\UnitOfWorkFactory.cs" />
+    <Compile Include="Extensions\ObjectHelperExtension.cs" />
+    <Compile Include="Helper\AppSettings.cs" />
+    <Compile Include="Helper\Assert.cs" />
+    <Compile Include="Manager.cs" />
+    <Compile Include="NLog-NHibernate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Configs\Matrixes.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configs\References.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configs\Databases.xml" />
+    <Content Include="Configs\SQL\fias_AddTerritory.hbm.xml" />
+    <Content Include="Configs\SQL\fias_Area.hbm.xml" />
+    <Content Include="Configs\SQL\fias_ChildAddTerritory.hbm.xml" />
+    <Content Include="Configs\SQL\fias_CityArea.hbm.xml" />
+    <Content Include="Configs\SQL\matrix_Tariffs.hbm.xml" />
+    <Content Include="Configs\SQL\fias_HouseInt.hbm.xml" />
+    <Content Include="Configs\SQL\fias_House.hbm.xml" />
+    <Content Include="Configs\SQL\fias_AddrObjectType.hbm.xml" />
+    <Content Include="Configs\SQL\fias_SettelmentType.hbm.xml" />
+    <Content Include="Configs\SQL\fias_StreetType.hbm.xml" />
+    <Content Include="Configs\SQL\fias_Street.hbm.xml" />
+    <Content Include="Configs\SQL\fias_Settelment.hbm.xml" />
+    <Content Include="Configs\SQL\fias_City.hbm.xml" />
+    <Content Include="Configs\SQL\fias_District.hbm.xml" />
+    <Content Include="Configs\SQL\fias_Region.hbm.xml" />
+    <Content Include="Configs\_Technical\Aliaces.xml" />
+    <Content Include="Configs\_Technical\SimpleItem.hbm.xml" />
+    <Content Include="Configs\_Technical\database.mssql.cfg.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configs\_Technical\AOP.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

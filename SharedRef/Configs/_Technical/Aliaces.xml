@@ -1,0 +1,13 @@
+﻿<objects xmlns="http://www.springframework.net"	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/xsd/spring-objects.xsd">
+
+	<object id="myTypeAlias" type="Spring.Objects.Factory.Config.TypeAliasConfigurer, Spring.Core">
+		<property name="TypeAliases">
+			<dictionary>
+				<entry key="Matrix" value="SharedRef.Domain.IoC.Matrix, SharedRef"/>
+				<entry key="Reference" value="SharedRef.Domain.IoC.Reference, SharedRef"/>
+				<entry key="Database" value="SharedRef.Domain.IoC.Database, SharedRef"/>
+			</dictionary>
+		</property>
+	</object>
+
+</objects>

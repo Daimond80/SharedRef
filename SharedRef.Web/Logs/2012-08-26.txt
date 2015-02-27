@@ -1,0 +1,83 @@
+12-50-09 GetValuesXml(fias.City |  | Москва | 24 | False) Длит.: 0.00:00:00 
+12-50-18 GetValuesXml(fias.City |  | МО Москва | 24 | False) Длит.: 0.00:00:00 
+12-50-49 GetValuesXml(fias.City |  | М | 24 | False) Длит.: 0.00:00:00 
+12-52-06 Чтение контекста 
+12-52-07 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+12-52-09 Загрузка данных: fias.City 
+12-52-10 GetValuesXml(fias.City |  | М | 24 | False) Длит.: 0.00:00:02 
+12-52-29 GetValuesXml(fias.City |  | М | 24 | False) Длит.: 0.00:00:00 
+12-52-39 Загрузка данных: fias.City 
+12-52-39 GetValuesXml(fias.City |  | М | 25 | False) Длит.: 0.00:00:00 
+12-53-06 GetValuesXml(fias.City |  | М | 24 | False) Длит.: 0.00:00:00 
+12-53-31 GetValuesXml(11fias.City |  | М | 24 | False) Длит.: 0.00:00:00 
+12-56-34 Чтение контекста 
+12-56-35 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+12-56-35 GetValuesXml System.ApplicationException: Справочник 11fias.City не поддерживается
+   в SharedRef.Helper.Assert.IsNotEqual(Object o1, Object o2, String message, Object[] args) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\Helper\Assert.cs:строка 18
+   в SharedRef.Helper.Assert.IsNotNull(Object o1, String message, Object[] args) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\Helper\Assert.cs:строка 28
+   в SharedRef.Manager.GetValues(String name, String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 52
+   в SharedRef.Manager.GetValuesXml(String name, String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 60
+   в _dynamic_SharedRef.Manager.GetValuesXml(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+12-56-35 GetValuesXml(11fias.City |  | М | 24 | False) Длит.: 0.00:00:00 
+12-59-27 Чтение контекста 
+12-59-28 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+12-59-30 Загрузка данных: fias.City 
+12-59-31 GetValuesXml(fias.City |  | М | 24 | False) Длит.: 0.00:00:02 
+12-59-44 GetValuesXml(fias.City |  | М | 24 | False) Длит.: 0.00:00:00 
+12-59-51 Загрузка данных: fias.City 
+12-59-51 GetValuesXml(fias.City |  | М | 25 | False) Длит.: 0.00:00:00 
+13-00-21 Загрузка данных: tariffs 
+13-00-21 GetMatrixXml(tariffs | tId=2 | cName) Длит.: 0.00:00:00 
+13-00-26 GetMatrixXml System.ApplicationException: Справочник tariffss отсутствует
+   в SharedRef.Helper.Assert.IsNotEqual(Object o1, Object o2, String message, Object[] args) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\Helper\Assert.cs:строка 18
+   в SharedRef.Helper.Assert.IsNotNull(Object o1, String message, Object[] args) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\Helper\Assert.cs:строка 28
+   в SharedRef.Manager.GetMatrix(String name, String conditionals, String returns) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 112
+   в SharedRef.Manager.GetMatrixXml(String name, String conditionals, String returns) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 120
+   в _dynamic_SharedRef.Manager.GetMatrixXml(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+13-00-26 GetMatrixXml(tariffss | tId=2 | cName) Длит.: 0.00:00:00 
+13-00-54 GetMatrixXml System.ApplicationException: Справочник не содержит параметра  tId
+   в SharedRef.Helper.Assert.True(Boolean p, String message, Object[] args) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\Helper\Assert.cs:строка 46
+   в SharedRef.Domain.SimpleItem.IsTrue(Dictionary`2 conditional) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\Domain\SimpleItem.cs:строка 39
+   в SharedRef.Domain.IoC.Matrix.<>c__DisplayClass5.<Get>b__0(SimpleItem s) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 34
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в SharedRef.Domain.IoC.Matrix.Get(String conditions, String returns) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 33
+   в SharedRef.Manager.GetMatrix(String name, String conditionals, String returns) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 114
+   в SharedRef.Manager.GetMatrixXml(String name, String conditionals, String returns) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 120
+   в _dynamic_SharedRef.Manager.GetMatrixXml(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+13-00-54 GetMatrixXml(tariffs | cId=IN(3, 4); tId=2 | cName, tName) Длит.: 0.00:00:00 
+13-01-50 Чтение контекста 
+13-01-51 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+13-01-51 Загрузка данных: tariffs 
+13-01-54 GetMatrixXml(tariffs | cId=IN(3, 4); tId=2 | cName, tName) Длит.: 0.00:00:02 
+13-31-05 Чтение контекста 
+13-31-06 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+13-31-06 Загрузка данных: tariffs 
+13-31-10 GetMatrixXml(tariffs | cId=IN(3, 4); tId=2 | cName, tName) Длит.: 0.00:00:03 
+13-31-17 GetMatrixXml(tariffs | tId=2 | cName) Длит.: 0.00:00:00 
+13-31-21 GetMatrixXml(tariffs | tId=2 | cName) Длит.: 0.00:00:00 
+13-31-28 GetMatrixXml(tariffs | tId=3 | cName) Длит.: 0.00:00:00 
+13-31-44 GetMatrixXml(tariffs | tId=3 | cName,Rate) Длит.: 0.00:00:00 
+13-31-54 GetMatrixXml(tariffs | tId=3 | tName,cName,Rate) Длит.: 0.00:00:00 
+13-32-22 GetMatrixXml(tariffs | tId=1 | tName,cName,Rate) Длит.: 0.00:00:00 
+13-34-23 GetMatrixXml(tariffs | tId=1 | tName,cName) Длит.: 0.00:00:00 
+13-34-42 GetMatrixXml(tariffs | tId=1 | tName,cName,Rate) Длит.: 0.00:00:00 
+13-36-59 GetMatrixXml(tariffs | tId=1 | tName,cName,oName) Длит.: 0.00:00:00 
+13-37-26 GetMatrixXml(tariffs | tId=1 | tName,cName,Rate) Длит.: 0.00:00:00 
+13-38-08 GetMatrixXml(tariffs | tId=1 | tName,cName,oName, Rate) Длит.: 0.00:00:00 
+13-38-14 GetMatrixXml(tariffs | tId=1 | tName,cName,oName,Rate) Длит.: 0.00:00:00 
+13-40-30 GetMatrixXml(tariffs | tId=1;oId=1 | tName,cName,oName,Rate) Длит.: 0.00:00:00 
+13-40-58 GetMatrixXml(tariffs | tId=1;cId=3;oId=1 | tName,cName,oName,Rate) Длит.: 0.00:00:00 
+13-41-30 GetMatrixXml(tariffs | tId=1;cId=4;oId=1 | tName,cName,oName,Rate) Длит.: 0.00:00:00 
+13-42-12 GetMatrixXml(tariffs | tId=1;cId=4;oId=2 | tName,cName,oName,Rate) Длит.: 0.00:00:00 
+14-01-04 GetMatrixXml(tariffs | tId=1;cId=4;oId=2 | tName,cName,oName,Rate) Длит.: 0.00:00:00 

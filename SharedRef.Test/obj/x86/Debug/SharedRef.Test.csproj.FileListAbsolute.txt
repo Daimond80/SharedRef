@@ -1,0 +1,77 @@
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\SharedRef.Test.exe.config
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\NLog.config
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\SharedRef.Test.exe
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\SharedRef.Test.pdb
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\SharedRef.dll
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\NHibernate.dll
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\NLog.dll
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\Spring.Core.dll
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\Iesi.Collections.dll
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\Common.Logging.dll
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\SharedRef.pdb
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\NHibernate.xml
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\NLog.xml
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\Spring.Core.pdb
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\Spring.Core.xml
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\Iesi.Collections.xml
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\obj\x86\Debug\SharedRef.Test.exe
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\obj\x86\Debug\SharedRef.Test.pdb
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\Newtonsoft.Json.dll
+c:\users\daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\Spring.Aop.dll
+C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\Spring.Aop.pdb
+C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\Spring.Aop.xml
+C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\Spring.Web.dll
+C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\Spring.Web.pdb
+C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef.Test\bin\Debug\Spring.Web.xml
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\SharedRef.Test.exe.config
+C:\Sobin\SharedRef\SharedRef.Test\obj\x86\Debug\SharedRef.Test.exe
+C:\Sobin\SharedRef\SharedRef.Test\obj\x86\Debug\SharedRef.Test.pdb
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\NLog.config
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\SharedRef.Test.exe
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\SharedRef.Test.pdb
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\Common.Logging.dll
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\Newtonsoft.Json.dll
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\SharedRef.dll
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\Spring.Core.dll
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\Spring.Web.dll
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\NHibernate.dll
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\Spring.Aop.dll
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\NLog.dll
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\Iesi.Collections.dll
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\SharedRef.pdb
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\Newtonsoft.Json.xml
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\Spring.Core.pdb
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\Spring.Core.xml
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\Spring.Web.pdb
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\Spring.Web.xml
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\NHibernate.xml
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\Spring.Aop.pdb
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\Spring.Aop.xml
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\NLog.xml
+C:\Sobin\SharedRef\SharedRef.Test\bin\Debug\Iesi.Collections.xml
+C:\Sobin\SharedRef\SharedRef.Test\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\NLog.config
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\SharedRef.Test.exe.config
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\SharedRef.Test.exe
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\SharedRef.Test.pdb
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\Common.Logging.dll
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\Newtonsoft.Json.dll
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\SharedRef.dll
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\Spring.Core.dll
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\Spring.Web.dll
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\Spring.Aop.dll
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\NLog.dll
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\SharedRef.pdb
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\Newtonsoft.Json.xml
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\Spring.Core.pdb
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\Spring.Core.xml
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\Spring.Web.pdb
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\Spring.Web.xml
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\Spring.Aop.pdb
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\Spring.Aop.xml
+C:\Sources\SharedRef\SharedRef.Test\bin\Debug\NLog.xml
+C:\Sources\SharedRef\SharedRef.Test\obj\x86\Debug\SharedRef.Test.csprojResolveAssemblyReference.cache
+C:\Sources\SharedRef\SharedRef.Test\obj\x86\Debug\SharedRef.Test.exe
+C:\Sources\SharedRef\SharedRef.Test\obj\x86\Debug\SharedRef.Test.pdb

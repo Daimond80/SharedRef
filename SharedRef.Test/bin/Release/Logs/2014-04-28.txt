@@ -1,0 +1,29 @@
+10-21-52 Чтение контекста 
+10-21-58 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+10-21-58 Загрузка данных: tariffs 
+10-22-03 GetMatrixXml(tariffs | tId=2 | cName,tName) Длит.: 0.00:00:04 
+10-22-03 GetMatrixJson(tariffs | cId=IN(1, 2);tId=1 | cName,tName) Длит.: 0.00:00:00 
+10-22-03 GetMatrixJson(tariffs | cId=IN(1, 2, 3);tId=1 | cName,tName) Длит.: 0.00:00:00 
+10-22-03 GetMatrixJson(tariffs | cId=1;tId=1 | tName) Длит.: 0.00:00:00 
+10-22-03 Загрузка данных: fias.Street 
+10-22-03 GetValuesXml(fias.Street | 1B99DEE9-C980-414A-AA58-F153FED6A974 |  | 400 | sName asc, fName desc) Длит.: 0.00:00:00 
+10-22-03 Загрузка данных: fias.Street 
+10-22-03 GetValuesXml(fias.Street | 00000000-0000-0000-0000-000000000000 | В | 2 | ) Длит.: 0.00:00:00 
+10-22-03 Загрузка данных: fias.Street 
+10-22-03 GetValues(fias.Street | 1B99DEE9-C980-414A-AA58-F153FED6A974 |  | 2 | ) Длит.: 0.00:00:00 
+10-22-03 Загрузка данных: fias.Street 
+10-22-03 GetValues(fias.Street | 00000000-0000-0000-0000-000000000000 |  | 2 | ) Длит.: 0.00:00:00 
+10-22-03 Загрузка данных: fias.Street 
+10-22-03 GetValues(fias.Street | 00000000-0000-0000-0000-000000000000 |  | 10 | ) Длит.: 0.00:00:00 
+10-22-03 Загрузка данных: fias.Street 
+10-22-03 GetValues(fias.Street | 00000000-0000-0000-0000-000000000000 | В | 10 | ) Длит.: 0.00:00:00 
+10-22-03 Загрузка данных: fias.Street 
+10-22-03 GetValues(fias.Street | 00000000-0000-0000-0000-000000000000 | В | 10 | ) Длит.: 0.00:00:00 
+10-22-03 Загрузка данных: fias.Street 
+10-22-03 GetValuesJson(fias.Street | 00000000-0000-0000-0000-000000000000 | В | 10 | ) Длит.: 0.00:00:00 
+10-22-03 Загрузка данных: fias.Street 
+10-22-03 GetValuesXml(fias.Street | 00000000-0000-0000-0000-000000000000 | В | 10 | ) Длит.: 0.00:00:00 
+10-22-04 Загрузка данных: fias.Street 
+10-22-04 GetByIdXml(fias.Street | 12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d) Длит.: 0.00:00:00 
+10-22-04 Загрузка данных: fias.Street 
+10-22-04 GetByIdJson(fias.Street | 12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d) Длит.: 0.00:00:00 

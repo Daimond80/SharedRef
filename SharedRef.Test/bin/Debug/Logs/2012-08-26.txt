@@ -1,0 +1,243 @@
+2012-08-26 09-22-22 Чтение контекста 
+2012-08-26 09-22-29 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 09-22-29 Чтение контекста 
+2012-08-26 09-22-29 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 09-22-32 Matrix tariffs: Load() 
+2012-08-26 09-22-32 Создание ед. работы 
+2012-08-26 09-22-32 Создание фабрики 
+2012-08-26 09-22-32 Создание конфигурации 
+2012-08-26 09-22-38 Присоединение сессии 
+2012-08-26 09-22-38 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-26 09-22-39 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-26 09-22-39 0.00:00:10: GetMatrixXml(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-26 09-25-40 Чтение контекста 
+2012-08-26 09-25-42 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 09-25-42 Чтение контекста 
+2012-08-26 09-25-42 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 09-25-43 Matrix tariffs: Load() 
+2012-08-26 09-25-43 Создание ед. работы 
+2012-08-26 09-25-43 Создание фабрики 
+2012-08-26 09-25-43 Создание конфигурации 
+2012-08-26 09-25-45 Присоединение сессии 
+2012-08-26 09-25-45 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-26 09-25-45 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-26 09-25-45 0.00:00:02: GetMatrixXml(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-26 09-28-32 Чтение контекста 
+2012-08-26 09-28-35 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 09-28-35 Чтение контекста 
+2012-08-26 09-28-35 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 09-28-37 Matrix tariffs: Load() 
+2012-08-26 09-28-37 Создание ед. работы 
+2012-08-26 09-28-37 Создание фабрики 
+2012-08-26 09-28-37 Создание конфигурации 
+2012-08-26 09-28-39 Присоединение сессии 
+2012-08-26 09-28-39 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-26 09-28-39 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-26 09-28-39 0.00:00:04: GetMatrixXml(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-26 09-29-19 Чтение контекста 
+2012-08-26 09-29-22 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 09-29-22 Чтение контекста 
+2012-08-26 09-29-22 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 09-29-24 Matrix tariffs: Load() 
+2012-08-26 09-29-24 Создание ед. работы 
+2012-08-26 09-29-24 Создание фабрики 
+2012-08-26 09-29-24 Создание конфигурации 
+2012-08-26 09-29-25 Присоединение сессии 
+2012-08-26 09-29-25 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-26 09-29-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-26 09-29-25 0.00:00:03: GetMatrixXml(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-26 09-33-20 Чтение контекста 
+2012-08-26 09-33-22 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 09-33-22 Чтение контекста 
+2012-08-26 09-33-22 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 09-33-24 Matrix tariffs: Load() 
+2012-08-26 09-33-24 Создание ед. работы 
+2012-08-26 09-33-24 Создание фабрики 
+2012-08-26 09-33-24 Создание конфигурации 
+2012-08-26 09-33-26 Присоединение сессии 
+2012-08-26 09-33-26 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-26 09-33-26 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-26 09-33-26 0.00:00:03: GetMatrixXml(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-26 11-36-10 Чтение контекста 
+2012-08-26 11-36-14 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 11-36-14 Чтение контекста 
+2012-08-26 11-36-14 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 11-36-21 Matrix tariffs: Load() 
+2012-08-26 11-36-21 Создание ед. работы 
+2012-08-26 11-36-21 Создание фабрики 
+2012-08-26 11-36-21 Создание конфигурации 
+2012-08-26 11-36-25 Присоединение сессии 
+2012-08-26 11-36-25 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-26 11-36-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-26 11-36-25 0.00:00:11: GetMatrixXml(tariffs,cId=IN(1, 2);tId=2,cName,tName,) 
+2012-08-26 11-56-55 Чтение контекста 
+2012-08-26 11-56-58 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 11-56-58 Чтение контекста 
+2012-08-26 11-56-58 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 11-59-26 Чтение контекста 
+2012-08-26 11-59-28 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 11-59-28 Чтение контекста 
+2012-08-26 11-59-28 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 11-59-30 Matrix tariffs: Load() 
+2012-08-26 11-59-31 Создание ед. работы 
+2012-08-26 11-59-31 Создание фабрики 
+2012-08-26 11-59-31 Создание конфигурации 
+2012-08-26 11-59-33 Присоединение сессии 
+2012-08-26 11-59-33 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-26 11-59-33 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-26 11-59-33 GetMatrixXml System.OverflowException: Переполнение в результате выполнения арифметической операции.
+   в System.Linq.Enumerable.Sum(IEnumerable`1 source)
+   в System.Linq.Enumerable.Sum[TSource](IEnumerable`1 source, Func`2 selector)
+   в SharedRef.Helper.SimpleItemDistinct.GetHashCode(SimpleItem obj) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Helper\SimpleItemDistinct.cs:строка 25
+   в System.Linq.Set`1.InternalGetHashCode(TElement value)
+   в System.Linq.Set`1.Find(TElement value, Boolean add)
+   в System.Linq.Enumerable.<DistinctIterator>d__81`1.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в SharedRef.Domain.IoC.Matrix.Get(String conditions, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 47
+   в SharedRef.Manager.<>c__DisplayClassd.<GetMatrix>b__c(Matrix r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 104
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetMatrix(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 104
+   в SharedRef.Manager.GetMatrixXml(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 110
+   в _dynamic_SharedRef.Manager.GetMatrixXml(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 259
+   в Spring.Aspects.Cache.CacheResultAdvice.GetReturnValue(IMethodInvocation invocation, CacheResultAttribute resultInfo, IDictionary vars, Boolean& cacheHit) в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aspects\Cache\CacheResultAdvice.cs:строка 220
+   в Spring.Aspects.Cache.CacheResultAdvice.Invoke(IMethodInvocation invocation) в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aspects\Cache\CacheResultAdvice.cs:строка 143
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 284
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+2012-08-26 12-00-31 Чтение контекста 
+2012-08-26 12-00-34 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 12-00-34 Чтение контекста 
+2012-08-26 12-00-34 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 12-00-36 Matrix tariffs: Load() 
+2012-08-26 12-00-36 Создание ед. работы 
+2012-08-26 12-00-36 Создание фабрики 
+2012-08-26 12-00-36 Создание конфигурации 
+2012-08-26 12-00-38 Присоединение сессии 
+2012-08-26 12-00-38 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-26 12-00-38 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-26 12-05-52 Чтение контекста 
+2012-08-26 12-05-55 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 12-05-55 Чтение контекста 
+2012-08-26 12-05-55 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-26 12-05-57 Matrix tariffs: Load() 
+2012-08-26 12-05-57 Создание ед. работы 
+2012-08-26 12-05-57 Создание фабрики 
+2012-08-26 12-05-57 Создание конфигурации 
+2012-08-26 12-05-59 Присоединение сессии 
+2012-08-26 12-05-59 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-26 12-05-59 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-26 12-06-00 0.00:00:04: GetMatrixXml(tariffs,tId=2,cName,tName,) 
+12-36-37 Чтение контекста 
+12-36-42 Чтение контекста 
+12-38-25 Чтение контекста 

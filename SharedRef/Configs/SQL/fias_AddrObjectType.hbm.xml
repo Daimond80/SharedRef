@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="SharedRef.Domain" assembly="SharedRef">
+
+	<sql-query name='fias.AddrObjectType.id'>
+		<return class='SimpleItem' alias='SimpleItem'/>
+		<![CDATA[
+			SELECT [LEVEL] as lev
+				  ,[SCNAME] as Value
+				  ,[SOCRNAME] as Id
+			  FROM [fias_SOCRBASE]
+			  WHERE
+				[SOCRNAME] = :Id
+		]]>
+	</sql-query>
+
+</hibernate-mapping>
+

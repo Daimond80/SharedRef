@@ -1,0 +1,2454 @@
+2012-08-25 11-35-24 Чтение контекста 
+2012-08-25 11-35-30 Чтение контекста 
+2012-08-25 11-35-30 Matrix tariffs: Load() 
+2012-08-25 11-35-30 Создание ед. работы 
+2012-08-25 11-35-30 Создание фабрики 
+2012-08-25 11-35-30 Создание конфигурации 
+2012-08-25 11-35-36 GetMatrixJson NHibernate.InvalidProxyTypeException: The following types may not be used as proxies:
+SharedRef.Domain.SimpleItem: method IsTrue should be 'public/protected virtual' or 'protected internal virtual'
+   в NHibernate.Cfg.Configuration.ValidateEntities()
+   в NHibernate.Cfg.Configuration.Validate()
+   в NHibernate.Cfg.Configuration.BuildSessionFactory()
+   в SharedRef.Data.DataHelper.get_SessionFactory() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\DataHelper.cs:строка 33
+   в SharedRef.Data.UnitOfWorkFactory.Data(IsolationLevel isolationLevel) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 16
+   в SharedRef.Data.UnitOfWorkFactory.Data() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 21
+   в SharedRef.Domain.IoC.Matrix.Load() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 51
+   в SharedRef.Domain.IoC.Matrix.Get(String conditions) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 28
+   в SharedRef.Manager.<>c__DisplayClassd.<GetMatrix>b__c(Matrix r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetMatrix(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Manager.GetMatrixJson(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 119
+   в _dynamic_SharedRef.Manager.GetMatrixJson(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 259
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+2012-08-25 11-38-43 Чтение контекста 
+2012-08-25 11-38-46 Чтение контекста 
+2012-08-25 11-38-46 Matrix tariffs: Load() 
+2012-08-25 11-38-46 Создание ед. работы 
+2012-08-25 11-38-46 Создание фабрики 
+2012-08-25 11-38-46 Создание конфигурации 
+2012-08-25 11-38-50 Присоединение сессии 
+2012-08-25 11-38-51 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 11-38-51 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 11-39-24 Чтение контекста 
+2012-08-25 11-39-27 Чтение контекста 
+2012-08-25 11-39-27 Matrix tariffs: Load() 
+2012-08-25 11-39-27 Создание ед. работы 
+2012-08-25 11-39-27 Создание фабрики 
+2012-08-25 11-39-27 Создание конфигурации 
+2012-08-25 11-39-29 Присоединение сессии 
+2012-08-25 11-39-29 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 11-39-29 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 11-40-34 Чтение контекста 
+2012-08-25 11-40-37 Чтение контекста 
+2012-08-25 11-40-37 Matrix tariffs: Load() 
+2012-08-25 11-40-37 Создание ед. работы 
+2012-08-25 11-40-37 Создание фабрики 
+2012-08-25 11-40-37 Создание конфигурации 
+2012-08-25 11-40-39 Присоединение сессии 
+2012-08-25 11-40-39 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 11-40-39 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 12-23-49 Чтение контекста 
+2012-08-25 12-23-52 Чтение контекста 
+2012-08-25 12-23-52 Matrix tariffs: Load() 
+2012-08-25 12-23-52 Создание ед. работы 
+2012-08-25 12-23-52 Создание фабрики 
+2012-08-25 12-23-52 Создание конфигурации 
+2012-08-25 12-23-54 Присоединение сессии 
+2012-08-25 12-23-54 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 12-23-54 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 12-24-50 Чтение контекста 
+2012-08-25 12-24-53 Чтение контекста 
+2012-08-25 12-24-53 Matrix tariffs: Load() 
+2012-08-25 12-24-53 Создание ед. работы 
+2012-08-25 12-24-53 Создание фабрики 
+2012-08-25 12-24-53 Создание конфигурации 
+2012-08-25 12-24-55 Присоединение сессии 
+2012-08-25 12-24-55 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 12-24-55 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 12-26-04 Чтение контекста 
+2012-08-25 12-26-07 Чтение контекста 
+2012-08-25 12-26-07 Matrix tariffs: Load() 
+2012-08-25 12-26-07 Создание ед. работы 
+2012-08-25 12-26-07 Создание фабрики 
+2012-08-25 12-26-07 Создание конфигурации 
+2012-08-25 12-26-09 Присоединение сессии 
+2012-08-25 12-26-09 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 12-26-09 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 12-26-43 Чтение контекста 
+2012-08-25 12-26-46 Чтение контекста 
+2012-08-25 12-26-46 Matrix tariffs: Load() 
+2012-08-25 12-26-46 Создание ед. работы 
+2012-08-25 12-26-46 Создание фабрики 
+2012-08-25 12-26-46 Создание конфигурации 
+2012-08-25 12-26-48 Присоединение сессии 
+2012-08-25 12-26-48 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 12-26-48 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-23-11 Чтение контекста 
+2012-08-25 13-23-14 Чтение контекста 
+2012-08-25 13-23-14 Matrix tariffs: Load() 
+2012-08-25 13-23-14 Создание ед. работы 
+2012-08-25 13-23-14 Создание фабрики 
+2012-08-25 13-23-14 Создание конфигурации 
+2012-08-25 13-23-16 Присоединение сессии 
+2012-08-25 13-23-17 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-23-17 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-24-05 Чтение контекста 
+2012-08-25 13-24-08 Чтение контекста 
+2012-08-25 13-24-08 Matrix tariffs: Load() 
+2012-08-25 13-24-08 Создание ед. работы 
+2012-08-25 13-24-08 Создание фабрики 
+2012-08-25 13-24-08 Создание конфигурации 
+2012-08-25 13-24-10 Присоединение сессии 
+2012-08-25 13-24-10 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-24-10 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-26-10 Чтение контекста 
+2012-08-25 13-26-13 Чтение контекста 
+2012-08-25 13-26-13 Matrix tariffs: Load() 
+2012-08-25 13-26-13 Создание ед. работы 
+2012-08-25 13-26-13 Создание фабрики 
+2012-08-25 13-26-13 Создание конфигурации 
+2012-08-25 13-26-15 Присоединение сессии 
+2012-08-25 13-26-15 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-26-15 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-27-05 Чтение контекста 
+2012-08-25 13-27-08 Чтение контекста 
+2012-08-25 13-27-08 Matrix tariffs: Load() 
+2012-08-25 13-27-08 Создание ед. работы 
+2012-08-25 13-27-08 Создание фабрики 
+2012-08-25 13-27-08 Создание конфигурации 
+2012-08-25 13-27-09 Присоединение сессии 
+2012-08-25 13-27-10 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-27-10 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-28-01 Чтение контекста 
+2012-08-25 13-28-04 Чтение контекста 
+2012-08-25 13-28-04 Matrix tariffs: Load() 
+2012-08-25 13-28-04 Создание ед. работы 
+2012-08-25 13-28-04 Создание фабрики 
+2012-08-25 13-28-04 Создание конфигурации 
+2012-08-25 13-28-06 Присоединение сессии 
+2012-08-25 13-28-06 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-28-06 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-29-20 Чтение контекста 
+2012-08-25 13-29-23 Чтение контекста 
+2012-08-25 13-29-23 Matrix tariffs: Load() 
+2012-08-25 13-29-23 Создание ед. работы 
+2012-08-25 13-29-23 Создание фабрики 
+2012-08-25 13-29-23 Создание конфигурации 
+2012-08-25 13-29-25 Присоединение сессии 
+2012-08-25 13-29-25 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-29-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-31-24 Чтение контекста 
+2012-08-25 13-31-27 Чтение контекста 
+2012-08-25 13-31-27 Matrix tariffs: Load() 
+2012-08-25 13-31-27 Создание ед. работы 
+2012-08-25 13-31-27 Создание фабрики 
+2012-08-25 13-31-27 Создание конфигурации 
+2012-08-25 13-31-29 Присоединение сессии 
+2012-08-25 13-31-29 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-31-29 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-34-27 Чтение контекста 
+2012-08-25 13-34-30 Чтение контекста 
+2012-08-25 13-34-30 Matrix tariffs: Load() 
+2012-08-25 13-34-30 Создание ед. работы 
+2012-08-25 13-34-30 Создание фабрики 
+2012-08-25 13-34-30 Создание конфигурации 
+2012-08-25 13-34-32 Присоединение сессии 
+2012-08-25 13-34-32 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-34-32 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-36-20 Чтение контекста 
+2012-08-25 13-36-23 Чтение контекста 
+2012-08-25 13-36-23 Matrix tariffs: Load() 
+2012-08-25 13-36-23 Создание ед. работы 
+2012-08-25 13-36-23 Создание фабрики 
+2012-08-25 13-36-23 Создание конфигурации 
+2012-08-25 13-36-25 Присоединение сессии 
+2012-08-25 13-36-25 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-36-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-37-10 Чтение контекста 
+2012-08-25 13-37-13 Чтение контекста 
+2012-08-25 13-37-13 Matrix tariffs: Load() 
+2012-08-25 13-37-13 Создание ед. работы 
+2012-08-25 13-37-13 Создание фабрики 
+2012-08-25 13-37-13 Создание конфигурации 
+2012-08-25 13-37-15 Присоединение сессии 
+2012-08-25 13-37-15 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-37-15 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-38-32 Чтение контекста 
+2012-08-25 13-38-35 Чтение контекста 
+2012-08-25 13-38-35 Matrix tariffs: Load() 
+2012-08-25 13-38-35 Создание ед. работы 
+2012-08-25 13-38-35 Создание фабрики 
+2012-08-25 13-38-35 Создание конфигурации 
+2012-08-25 13-38-36 Присоединение сессии 
+2012-08-25 13-38-37 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-38-37 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-39-32 Чтение контекста 
+2012-08-25 13-39-35 Чтение контекста 
+2012-08-25 13-39-35 Matrix tariffs: Load() 
+2012-08-25 13-39-35 Создание ед. работы 
+2012-08-25 13-39-35 Создание фабрики 
+2012-08-25 13-39-35 Создание конфигурации 
+2012-08-25 13-39-37 Присоединение сессии 
+2012-08-25 13-39-37 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-39-37 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-40-55 Чтение контекста 
+2012-08-25 13-40-57 Чтение контекста 
+2012-08-25 13-40-58 Matrix tariffs: Load() 
+2012-08-25 13-40-58 Создание ед. работы 
+2012-08-25 13-40-58 Создание фабрики 
+2012-08-25 13-40-58 Создание конфигурации 
+2012-08-25 13-40-59 Присоединение сессии 
+2012-08-25 13-40-59 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-40-59 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-42-17 Чтение контекста 
+2012-08-25 13-42-20 Чтение контекста 
+2012-08-25 13-42-20 Matrix tariffs: Load() 
+2012-08-25 13-42-20 Создание ед. работы 
+2012-08-25 13-42-20 Создание фабрики 
+2012-08-25 13-42-20 Создание конфигурации 
+2012-08-25 13-42-22 Присоединение сессии 
+2012-08-25 13-42-22 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-42-22 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-50-42 Чтение контекста 
+2012-08-25 13-50-45 Чтение контекста 
+2012-08-25 13-50-45 Matrix tariffs: Load() 
+2012-08-25 13-50-45 Создание ед. работы 
+2012-08-25 13-50-45 Создание фабрики 
+2012-08-25 13-50-45 Создание конфигурации 
+2012-08-25 13-50-47 Присоединение сессии 
+2012-08-25 13-50-47 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-50-47 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-59-10 Чтение контекста 
+2012-08-25 13-59-13 Чтение контекста 
+2012-08-25 13-59-13 Matrix tariffs: Load() 
+2012-08-25 13-59-13 Создание ед. работы 
+2012-08-25 13-59-13 Создание фабрики 
+2012-08-25 13-59-13 Создание конфигурации 
+2012-08-25 13-59-15 Присоединение сессии 
+2012-08-25 13-59-15 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 13-59-15 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 13-59-18 Чтение контекста 
+2012-08-25 13-59-18 Чтение контекста 
+2012-08-25 13-59-19 GetMatrixJson System.ApplicationException: Справочник не содержит параметра cId
+   в SharedRef.Helper.Assert.True(Boolean p, String message, Object[] args) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Helper\Assert.cs:строка 45
+   в SharedRef.Domain.SimpleItem.IsTrue(Dictionary`2 conditional) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\SimpleItem.cs:строка 37
+   в SharedRef.Domain.IoC.Matrix.<>c__DisplayClass3.<Get>b__0(SimpleItem s) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 33
+   в System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в SharedRef.Domain.IoC.Matrix.Get(String conditions, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 33
+   в SharedRef.Manager.<>c__DisplayClassd.<GetMatrix>b__c(Matrix r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetMatrix(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Manager.GetMatrixJson(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 119
+   в _dynamic_SharedRef.Manager.GetMatrixJson(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 259
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+2012-08-25 14-00-20 Чтение контекста 
+2012-08-25 14-00-22 Чтение контекста 
+2012-08-25 14-00-22 Matrix tariffs: Load() 
+2012-08-25 14-00-22 Создание ед. работы 
+2012-08-25 14-00-22 Создание фабрики 
+2012-08-25 14-00-22 Создание конфигурации 
+2012-08-25 14-00-24 Присоединение сессии 
+2012-08-25 14-00-24 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-00-24 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-04-30 Чтение контекста 
+2012-08-25 14-04-30 Чтение контекста 
+2012-08-25 14-04-48 Чтение контекста 
+2012-08-25 14-04-51 Чтение контекста 
+2012-08-25 14-04-51 Matrix tariffs: Load() 
+2012-08-25 14-04-51 Создание ед. работы 
+2012-08-25 14-04-51 Создание фабрики 
+2012-08-25 14-04-51 Создание конфигурации 
+2012-08-25 14-04-53 Присоединение сессии 
+2012-08-25 14-04-53 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-04-53 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-05-57 Чтение контекста 
+2012-08-25 14-06-00 Чтение контекста 
+2012-08-25 14-06-00 Matrix tariffs: Load() 
+2012-08-25 14-06-00 Создание ед. работы 
+2012-08-25 14-06-00 Создание фабрики 
+2012-08-25 14-06-00 Создание конфигурации 
+2012-08-25 14-06-02 Присоединение сессии 
+2012-08-25 14-06-02 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-06-02 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-06-51 Чтение контекста 
+2012-08-25 14-06-53 Чтение контекста 
+2012-08-25 14-06-54 Matrix tariffs: Load() 
+2012-08-25 14-06-54 Создание ед. работы 
+2012-08-25 14-06-54 Создание фабрики 
+2012-08-25 14-06-54 Создание конфигурации 
+2012-08-25 14-06-56 Присоединение сессии 
+2012-08-25 14-06-56 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-06-56 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-07-38 Чтение контекста 
+2012-08-25 14-07-38 Чтение контекста 
+2012-08-25 14-08-41 Чтение контекста 
+2012-08-25 14-08-44 Чтение контекста 
+2012-08-25 14-08-44 Matrix tariffs: Load() 
+2012-08-25 14-08-44 Создание ед. работы 
+2012-08-25 14-08-44 Создание фабрики 
+2012-08-25 14-08-44 Создание конфигурации 
+2012-08-25 14-08-46 Присоединение сессии 
+2012-08-25 14-08-46 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-08-46 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-08-58 Чтение контекста 
+2012-08-25 14-08-58 Чтение контекста 
+2012-08-25 14-16-54 Чтение контекста 
+2012-08-25 14-16-56 Чтение контекста 
+2012-08-25 14-16-57 Matrix tariffs: Load() 
+2012-08-25 14-16-57 Создание ед. работы 
+2012-08-25 14-16-57 Создание фабрики 
+2012-08-25 14-16-57 Создание конфигурации 
+2012-08-25 14-16-58 GetMatrixJson NHibernate.InvalidProxyTypeException: The following types may not be used as proxies:
+SharedRef.Domain.SimpleItem: method Clone should be 'public/protected virtual' or 'protected internal virtual'
+   в NHibernate.Cfg.Configuration.ValidateEntities()
+   в NHibernate.Cfg.Configuration.Validate()
+   в NHibernate.Cfg.Configuration.BuildSessionFactory()
+   в SharedRef.Data.DataHelper.get_SessionFactory() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\DataHelper.cs:строка 33
+   в SharedRef.Data.UnitOfWorkFactory.Data(IsolationLevel isolationLevel) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 16
+   в SharedRef.Data.UnitOfWorkFactory.Data() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 21
+   в SharedRef.Domain.IoC.Matrix.Load() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 57
+   в SharedRef.Domain.IoC.Matrix.Get(String conditions, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 29
+   в SharedRef.Manager.<>c__DisplayClassd.<GetMatrix>b__c(Matrix r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetMatrix(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Manager.GetMatrixJson(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 119
+   в _dynamic_SharedRef.Manager.GetMatrixJson(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 259
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+2012-08-25 14-17-23 Чтение контекста 
+2012-08-25 14-17-26 Чтение контекста 
+2012-08-25 14-17-26 Matrix tariffs: Load() 
+2012-08-25 14-17-26 Создание ед. работы 
+2012-08-25 14-17-26 Создание фабрики 
+2012-08-25 14-17-26 Создание конфигурации 
+2012-08-25 14-17-28 Присоединение сессии 
+2012-08-25 14-17-28 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-17-28 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-17-32 Чтение контекста 
+2012-08-25 14-17-32 Чтение контекста 
+2012-08-25 14-17-33 GetMatrixJson System.ApplicationException: Справочник не содержит параметра cId
+   в SharedRef.Helper.Assert.True(Boolean p, String message, Object[] args) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Helper\Assert.cs:строка 45
+   в SharedRef.Domain.SimpleItem.IsTrue(Dictionary`2 conditional) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\SimpleItem.cs:строка 39
+   в SharedRef.Domain.IoC.Matrix.<>c__DisplayClass3.<Get>b__0(SimpleItem s) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 33
+   в System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в SharedRef.Domain.IoC.Matrix.Get(String conditions, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 33
+   в SharedRef.Manager.<>c__DisplayClassd.<GetMatrix>b__c(Matrix r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetMatrix(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Manager.GetMatrixJson(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 119
+   в _dynamic_SharedRef.Manager.GetMatrixJson(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 259
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+2012-08-25 14-19-27 Чтение контекста 
+2012-08-25 14-19-29 Чтение контекста 
+2012-08-25 14-19-29 Matrix tariffs: Load() 
+2012-08-25 14-19-29 Создание ед. работы 
+2012-08-25 14-19-29 Создание фабрики 
+2012-08-25 14-19-29 Создание конфигурации 
+2012-08-25 14-19-31 Присоединение сессии 
+2012-08-25 14-19-31 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-19-32 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-19-39 GetMatrixJson System.Runtime.Serialization.SerializationException: Тип "SharedRef.Data.DataObject" в сборке "SharedRef, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" не помечен как сериализуемый.
+   в System.Runtime.Serialization.FormatterServices.InternalGetSerializableMembers(RuntimeType type)
+   в System.Runtime.Serialization.FormatterServices.GetSerializableMembers(Type type, StreamingContext context)
+   в System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo.InitMemberInfo()
+   в System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo.InitSerialize(Object obj, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, ObjectWriter objectWriter, SerializationBinder binder)
+   в System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo.Serialize(Object obj, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, ObjectWriter objectWriter, SerializationBinder binder)
+   в System.Runtime.Serialization.Formatters.Binary.ObjectWriter.Serialize(Object graph, Header[] inHeaders, __BinaryWriter serWriter, Boolean fCheck)
+   в System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(Stream serializationStream, Object graph, Header[] headers, Boolean fCheck)
+   в System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(Stream serializationStream, Object graph)
+   в SharedRef.Domain.SimpleItem.Clone() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\SimpleItem.cs:строка 65
+   в SharedRef.Domain.IoC.Matrix.<Get>b__1(SimpleItem v) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 35
+   в System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   в System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   в System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   в SharedRef.Domain.IoC.Matrix.Get(String conditions, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 33
+   в SharedRef.Manager.<>c__DisplayClassd.<GetMatrix>b__c(Matrix r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetMatrix(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Manager.GetMatrixJson(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 119
+   в _dynamic_SharedRef.Manager.GetMatrixJson(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 259
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+2012-08-25 14-20-53 Чтение контекста 
+2012-08-25 14-20-56 Чтение контекста 
+2012-08-25 14-20-56 Matrix tariffs: Load() 
+2012-08-25 14-20-56 Создание ед. работы 
+2012-08-25 14-20-56 Создание фабрики 
+2012-08-25 14-20-56 Создание конфигурации 
+2012-08-25 14-20-58 Присоединение сессии 
+2012-08-25 14-20-58 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-20-58 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-22-10 Чтение контекста 
+2012-08-25 14-22-12 Чтение контекста 
+2012-08-25 14-22-12 Matrix tariffs: Load() 
+2012-08-25 14-22-13 Создание ед. работы 
+2012-08-25 14-22-13 Создание фабрики 
+2012-08-25 14-22-13 Создание конфигурации 
+2012-08-25 14-22-15 Присоединение сессии 
+2012-08-25 14-22-15 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-22-15 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-22-42 Чтение контекста 
+2012-08-25 14-22-44 Чтение контекста 
+2012-08-25 14-22-45 Matrix tariffs: Load() 
+2012-08-25 14-22-45 Создание ед. работы 
+2012-08-25 14-22-45 Создание фабрики 
+2012-08-25 14-22-45 Создание конфигурации 
+2012-08-25 14-22-47 Присоединение сессии 
+2012-08-25 14-22-47 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-22-47 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-26-41 Чтение контекста 
+2012-08-25 14-26-44 Чтение контекста 
+2012-08-25 14-26-44 Matrix tariffs: Load() 
+2012-08-25 14-26-44 Создание ед. работы 
+2012-08-25 14-26-44 Создание фабрики 
+2012-08-25 14-26-44 Создание конфигурации 
+2012-08-25 14-26-46 Присоединение сессии 
+2012-08-25 14-26-46 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-26-46 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-26-53 Чтение контекста 
+2012-08-25 14-26-53 Чтение контекста 
+2012-08-25 14-28-43 Чтение контекста 
+2012-08-25 14-28-46 Чтение контекста 
+2012-08-25 14-28-48 Matrix tariffs: Load() 
+2012-08-25 14-28-48 Создание ед. работы 
+2012-08-25 14-28-48 Создание фабрики 
+2012-08-25 14-28-48 Создание конфигурации 
+2012-08-25 14-28-50 Присоединение сессии 
+2012-08-25 14-28-50 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-28-50 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-29-01 Чтение контекста 
+2012-08-25 14-29-01 Чтение контекста 
+2012-08-25 14-30-28 Чтение контекста 
+2012-08-25 14-30-31 Чтение контекста 
+2012-08-25 14-30-36 Matrix tariffs: Load() 
+2012-08-25 14-30-36 Создание ед. работы 
+2012-08-25 14-30-36 Создание фабрики 
+2012-08-25 14-30-36 Создание конфигурации 
+2012-08-25 14-30-38 Присоединение сессии 
+2012-08-25 14-30-38 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-30-38 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-30-51 Чтение контекста 
+2012-08-25 14-30-51 Чтение контекста 
+2012-08-25 14-31-04 Чтение контекста 
+2012-08-25 14-38-35 Чтение контекста 
+2012-08-25 14-39-47 Чтение контекста 
+2012-08-25 14-39-50 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-39-50 Чтение контекста 
+2012-08-25 14-39-56 Matrix tariffs: Load() 
+2012-08-25 14-39-56 Создание ед. работы 
+2012-08-25 14-39-56 Создание фабрики 
+2012-08-25 14-39-56 Создание конфигурации 
+2012-08-25 14-39-58 Присоединение сессии 
+2012-08-25 14-39-58 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-39-58 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-39-58 0.00:00:08: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-39-58 Чтение контекста 
+2012-08-25 14-39-58 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-39-58 Чтение контекста 
+2012-08-25 14-39-58 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2, 3);tId=1,cName,tName,) 
+2012-08-25 14-39-58 Чтение контекста 
+2012-08-25 14-39-58 0.00:00:00: GetMatrixJson(tariffs,cId=1;tId=1,tName,) 
+2012-08-25 14-41-02 Refrence fias.Street: GetItems(, В, 2, True) 
+2012-08-25 14-41-02 Создание ед. работы 
+2012-08-25 14-41-02 Присоединение сессии 
+2012-08-25 14-41-02 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-41-03 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-41-03 0.00:00:01: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 14-42-24 Чтение контекста 
+2012-08-25 14-42-49 Чтение контекста 
+2012-08-25 14-48-03 Чтение контекста 
+2012-08-25 14-48-10 0.00:00:04: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-48-10 Чтение контекста 
+2012-08-25 14-48-10 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-48-28 Matrix tariffs: Load() 
+2012-08-25 14-48-28 Создание ед. работы 
+2012-08-25 14-48-28 Создание фабрики 
+2012-08-25 14-48-28 Создание конфигурации 
+2012-08-25 14-48-31 Присоединение сессии 
+2012-08-25 14-48-31 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-48-31 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-48-31 0.00:00:20: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-48-31 Чтение контекста 
+2012-08-25 14-48-31 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-48-31 Matrix tariffs: Load() 
+2012-08-25 14-48-31 Создание ед. работы 
+2012-08-25 14-48-31 Присоединение сессии 
+2012-08-25 14-48-31 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-48-31 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-48-31 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-48-31 Чтение контекста 
+2012-08-25 14-48-31 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-48-31 Matrix tariffs: Load() 
+2012-08-25 14-48-31 Создание ед. работы 
+2012-08-25 14-48-31 Присоединение сессии 
+2012-08-25 14-48-31 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-48-31 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-48-31 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2, 3);tId=1,cName,tName,) 
+2012-08-25 14-48-31 Чтение контекста 
+2012-08-25 14-48-31 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-48-31 Matrix tariffs: Load() 
+2012-08-25 14-48-31 Создание ед. работы 
+2012-08-25 14-48-31 Присоединение сессии 
+2012-08-25 14-48-31 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-48-31 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-48-31 0.00:00:00: GetMatrixJson(tariffs,cId=1;tId=1,tName,) 
+2012-08-25 14-48-55 Refrence fias.Street: GetItems(, В, 2, True) 
+2012-08-25 14-48-55 Создание ед. работы 
+2012-08-25 14-48-55 Присоединение сессии 
+2012-08-25 14-48-55 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-48-55 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-48-55 0.00:00:00: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 14-49-00 0.00:00:00: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 14-49-04 Чтение контекста 
+2012-08-25 14-49-04 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-49-04 Refrence fias.Street: GetItems(, , 2, True) 
+2012-08-25 14-49-04 Создание ед. работы 
+2012-08-25 14-49-04 Присоединение сессии 
+2012-08-25 14-49-04 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-25 14-49-04 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-49-04 0.00:00:00: GetValues(fias.Street,,,2,True,) 
+2012-08-25 14-49-04 Чтение контекста 
+2012-08-25 14-49-04 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-49-04 Refrence fias.Street: GetItems(, , 2, True) 
+2012-08-25 14-49-04 Создание ед. работы 
+2012-08-25 14-49-04 Присоединение сессии 
+2012-08-25 14-49-04 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-25 14-49-04 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-49-04 0.00:00:00: GetValues(fias.Street,,,2,True,) 
+2012-08-25 14-49-04 Чтение контекста 
+2012-08-25 14-49-04 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-49-04 Refrence fias.Street: GetItems(, , 10, True) 
+2012-08-25 14-49-04 Создание ед. работы 
+2012-08-25 14-49-04 Присоединение сессии 
+2012-08-25 14-49-04 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 10 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-25 14-49-04 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-49-04 0.00:00:00: GetValues(fias.Street,,,10,True,) 
+2012-08-25 14-49-04 Чтение контекста 
+2012-08-25 14-49-04 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-49-04 Refrence fias.Street: GetItems(, В, 10, True) 
+2012-08-25 14-49-04 Создание ед. работы 
+2012-08-25 14-49-04 Присоединение сессии 
+2012-08-25 14-49-04 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 10 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-49-04 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-49-04 0.00:00:00: GetValues(fias.Street,,В,10,True,) 
+2012-08-25 14-49-04 Чтение контекста 
+2012-08-25 14-49-04 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-49-04 Refrence fias.Street: GetItems(, В, 10, True) 
+2012-08-25 14-49-04 Создание ед. работы 
+2012-08-25 14-49-04 Присоединение сессии 
+2012-08-25 14-49-04 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 10 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-49-04 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-49-04 0.00:00:00: GetValues(fias.Street,,В,10,True,) 
+2012-08-25 14-49-04 Чтение контекста 
+2012-08-25 14-49-04 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-49-04 Refrence fias.Street: GetItems(, В, 10, True) 
+2012-08-25 14-49-04 Создание ед. работы 
+2012-08-25 14-49-04 Присоединение сессии 
+2012-08-25 14-49-04 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 10 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-49-04 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-49-04 0.00:00:00: GetValuesJson(fias.Street,,В,10,True,) 
+2012-08-25 14-49-04 Чтение контекста 
+2012-08-25 14-49-04 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-49-04 Refrence fias.Street: GetItems(, В, 10, True) 
+2012-08-25 14-49-04 Создание ед. работы 
+2012-08-25 14-49-04 Присоединение сессии 
+2012-08-25 14-49-04 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 10 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-49-04 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-49-04 0.00:00:00: GetValuesXml(fias.Street,,В,10,True,) 
+2012-08-25 14-49-04 Чтение контекста 
+2012-08-25 14-49-04 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-49-04 Refrence fias.Street: GetById(12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d) 
+2012-08-25 14-49-04 Создание ед. работы 
+2012-08-25 14-49-04 Присоединение сессии 
+2012-08-25 14-49-04 SELECT [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d' [Type: String (4000)] 
+2012-08-25 14-49-05 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-49-05 0.00:00:00: GetByIdXml(fias.Street,12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d,) 
+2012-08-25 14-49-05 Чтение контекста 
+2012-08-25 14-49-05 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-49-05 Refrence fias.Street: GetById(12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d) 
+2012-08-25 14-49-05 Создание ед. работы 
+2012-08-25 14-49-05 Присоединение сессии 
+2012-08-25 14-49-05 SELECT [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d' [Type: String (4000)] 
+2012-08-25 14-49-05 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-49-05 0.00:00:00: GetByIdJson(fias.Street,12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d,) 
+2012-08-25 14-49-40 Чтение контекста 
+2012-08-25 14-50-03 Чтение контекста 
+2012-08-25 14-50-06 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-06 Чтение контекста 
+2012-08-25 14-50-06 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-07 Matrix tariffs: Load() 
+2012-08-25 14-50-07 Создание ед. работы 
+2012-08-25 14-50-07 Создание фабрики 
+2012-08-25 14-50-07 Создание конфигурации 
+2012-08-25 14-50-08 Присоединение сессии 
+2012-08-25 14-50-08 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-50-08 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-09 0.00:00:02: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-50-09 Чтение контекста 
+2012-08-25 14-50-09 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-09 Matrix tariffs: Load() 
+2012-08-25 14-50-09 Создание ед. работы 
+2012-08-25 14-50-09 Присоединение сессии 
+2012-08-25 14-50-09 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-50-09 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-09 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-50-09 Чтение контекста 
+2012-08-25 14-50-09 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-09 Matrix tariffs: Load() 
+2012-08-25 14-50-09 Создание ед. работы 
+2012-08-25 14-50-09 Присоединение сессии 
+2012-08-25 14-50-09 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-50-09 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-09 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2, 3);tId=1,cName,tName,) 
+2012-08-25 14-50-09 Чтение контекста 
+2012-08-25 14-50-09 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-09 Matrix tariffs: Load() 
+2012-08-25 14-50-09 Создание ед. работы 
+2012-08-25 14-50-09 Присоединение сессии 
+2012-08-25 14-50-09 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-50-09 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-09 0.00:00:00: GetMatrixJson(tariffs,cId=1;tId=1,tName,) 
+2012-08-25 14-50-15 Refrence fias.Street: GetItems(, В, 2, True) 
+2012-08-25 14-50-15 Создание ед. работы 
+2012-08-25 14-50-15 Присоединение сессии 
+2012-08-25 14-50-15 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-50-15 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-15 0.00:00:03: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 14-50-15 0.00:00:00: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 14-50-15 Чтение контекста 
+2012-08-25 14-50-15 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-15 Refrence fias.Street: GetItems(, , 2, True) 
+2012-08-25 14-50-15 Создание ед. работы 
+2012-08-25 14-50-15 Присоединение сессии 
+2012-08-25 14-50-15 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-25 14-50-15 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-15 0.00:00:00: GetValues(fias.Street,,,2,True,) 
+2012-08-25 14-50-15 Чтение контекста 
+2012-08-25 14-50-15 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-15 Refrence fias.Street: GetItems(, , 2, True) 
+2012-08-25 14-50-15 Создание ед. работы 
+2012-08-25 14-50-15 Присоединение сессии 
+2012-08-25 14-50-15 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-25 14-50-15 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-15 0.00:00:00: GetValues(fias.Street,,,2,True,) 
+2012-08-25 14-50-15 Чтение контекста 
+2012-08-25 14-50-15 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-15 Refrence fias.Street: GetItems(, , 10, True) 
+2012-08-25 14-50-15 Создание ед. работы 
+2012-08-25 14-50-15 Присоединение сессии 
+2012-08-25 14-50-15 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 10 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-25 14-50-15 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-15 0.00:00:00: GetValues(fias.Street,,,10,True,) 
+2012-08-25 14-50-15 Чтение контекста 
+2012-08-25 14-50-15 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-15 Refrence fias.Street: GetItems(, В, 10, True) 
+2012-08-25 14-50-15 Создание ед. работы 
+2012-08-25 14-50-15 Присоединение сессии 
+2012-08-25 14-50-15 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 10 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-50-15 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-15 0.00:00:00: GetValues(fias.Street,,В,10,True,) 
+2012-08-25 14-50-15 Чтение контекста 
+2012-08-25 14-50-15 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-15 Refrence fias.Street: GetItems(, В, 10, True) 
+2012-08-25 14-50-15 Создание ед. работы 
+2012-08-25 14-50-15 Присоединение сессии 
+2012-08-25 14-50-15 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 10 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-50-16 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-16 0.00:00:00: GetValues(fias.Street,,В,10,True,) 
+2012-08-25 14-50-16 Чтение контекста 
+2012-08-25 14-50-16 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-16 Refrence fias.Street: GetItems(, В, 10, True) 
+2012-08-25 14-50-16 Создание ед. работы 
+2012-08-25 14-50-16 Присоединение сессии 
+2012-08-25 14-50-16 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 10 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-50-16 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-16 0.00:00:00: GetValuesJson(fias.Street,,В,10,True,) 
+2012-08-25 14-50-16 Чтение контекста 
+2012-08-25 14-50-16 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-20 Refrence fias.Street: GetItems(, В, 10, True) 
+2012-08-25 14-50-20 Создание ед. работы 
+2012-08-25 14-50-20 Присоединение сессии 
+2012-08-25 14-50-20 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 10 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-50-20 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-20 0.00:00:04: GetValuesXml(fias.Street,,В,10,True,) 
+2012-08-25 14-50-20 Чтение контекста 
+2012-08-25 14-50-20 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-20 Refrence fias.Street: GetById(12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d) 
+2012-08-25 14-50-20 Создание ед. работы 
+2012-08-25 14-50-20 Присоединение сессии 
+2012-08-25 14-50-20 SELECT [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d' [Type: String (4000)] 
+2012-08-25 14-50-20 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-20 0.00:00:00: GetByIdXml(fias.Street,12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d,) 
+2012-08-25 14-50-20 Чтение контекста 
+2012-08-25 14-50-20 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-20 Refrence fias.Street: GetById(12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d) 
+2012-08-25 14-50-20 Создание ед. работы 
+2012-08-25 14-50-20 Присоединение сессии 
+2012-08-25 14-50-20 SELECT [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d' [Type: String (4000)] 
+2012-08-25 14-50-20 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-20 0.00:00:00: GetByIdJson(fias.Street,12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d,) 
+2012-08-25 14-50-34 Чтение контекста 
+2012-08-25 14-50-37 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-37 Чтение контекста 
+2012-08-25 14-50-37 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-37 Matrix tariffs: Load() 
+2012-08-25 14-50-37 Создание ед. работы 
+2012-08-25 14-50-37 Создание фабрики 
+2012-08-25 14-50-37 Создание конфигурации 
+2012-08-25 14-50-39 Присоединение сессии 
+2012-08-25 14-50-39 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-50-39 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-39 0.00:00:02: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-50-39 Чтение контекста 
+2012-08-25 14-50-39 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-39 Matrix tariffs: Load() 
+2012-08-25 14-50-39 Создание ед. работы 
+2012-08-25 14-50-39 Присоединение сессии 
+2012-08-25 14-50-39 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-50-39 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-39 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-50-39 Чтение контекста 
+2012-08-25 14-50-39 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-39 Matrix tariffs: Load() 
+2012-08-25 14-50-39 Создание ед. работы 
+2012-08-25 14-50-39 Присоединение сессии 
+2012-08-25 14-50-39 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-50-39 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-39 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2, 3);tId=1,cName,tName,) 
+2012-08-25 14-50-39 Чтение контекста 
+2012-08-25 14-50-39 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-50-39 Matrix tariffs: Load() 
+2012-08-25 14-50-39 Создание ед. работы 
+2012-08-25 14-50-39 Присоединение сессии 
+2012-08-25 14-50-39 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-50-39 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-39 0.00:00:00: GetMatrixJson(tariffs,cId=1;tId=1,tName,) 
+2012-08-25 14-50-41 Refrence fias.Street: GetItems(, В, 2, True) 
+2012-08-25 14-50-41 Создание ед. работы 
+2012-08-25 14-50-41 Присоединение сессии 
+2012-08-25 14-50-41 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-50-41 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-50-41 0.00:00:01: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 14-50-45 0.00:00:00: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 14-56-08 Чтение контекста 
+2012-08-25 14-56-11 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-56-11 Чтение контекста 
+2012-08-25 14-56-11 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-56-11 Matrix tariffs: Load() 
+2012-08-25 14-56-11 Создание ед. работы 
+2012-08-25 14-56-11 Создание фабрики 
+2012-08-25 14-56-11 Создание конфигурации 
+2012-08-25 14-56-16 Присоединение сессии 
+2012-08-25 14-56-16 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-56-16 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-56-16 0.00:00:05: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-56-16 Чтение контекста 
+2012-08-25 14-56-16 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-56-16 Matrix tariffs: Load() 
+2012-08-25 14-56-16 Создание ед. работы 
+2012-08-25 14-56-16 Присоединение сессии 
+2012-08-25 14-56-16 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-56-16 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-56-16 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-56-16 Чтение контекста 
+2012-08-25 14-56-17 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-56-17 Matrix tariffs: Load() 
+2012-08-25 14-56-17 Создание ед. работы 
+2012-08-25 14-56-17 Присоединение сессии 
+2012-08-25 14-56-17 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-56-17 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-56-17 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2, 3);tId=1,cName,tName,) 
+2012-08-25 14-56-17 Чтение контекста 
+2012-08-25 14-56-17 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-56-17 Matrix tariffs: Load() 
+2012-08-25 14-56-17 Создание ед. работы 
+2012-08-25 14-56-17 Присоединение сессии 
+2012-08-25 14-56-17 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-56-17 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-56-17 0.00:00:00: GetMatrixJson(tariffs,cId=1;tId=1,tName,) 
+2012-08-25 14-56-22 Refrence fias.Street: GetItems(, В, 2, True) 
+2012-08-25 14-56-22 Создание ед. работы 
+2012-08-25 14-56-22 Присоединение сессии 
+2012-08-25 14-56-22 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-56-22 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-56-23 0.00:00:03: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 14-56-23 Создание ед. работы 
+2012-08-25 14-56-23 Присоединение сессии 
+2012-08-25 14-56-23 Очистка кеша 
+2012-08-25 14-56-23 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-19 Чтение контекста 
+2012-08-25 14-58-22 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-22 Чтение контекста 
+2012-08-25 14-58-22 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-22 Matrix tariffs: Load() 
+2012-08-25 14-58-22 Создание ед. работы 
+2012-08-25 14-58-22 Создание фабрики 
+2012-08-25 14-58-22 Создание конфигурации 
+2012-08-25 14-58-24 Присоединение сессии 
+2012-08-25 14-58-24 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-58-24 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-24 0.00:00:02: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-58-24 Чтение контекста 
+2012-08-25 14-58-24 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-24 Matrix tariffs: Load() 
+2012-08-25 14-58-24 Создание ед. работы 
+2012-08-25 14-58-24 Присоединение сессии 
+2012-08-25 14-58-24 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-58-24 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-24 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-58-24 Чтение контекста 
+2012-08-25 14-58-24 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-24 Matrix tariffs: Load() 
+2012-08-25 14-58-24 Создание ед. работы 
+2012-08-25 14-58-24 Присоединение сессии 
+2012-08-25 14-58-24 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-58-24 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-24 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2, 3);tId=1,cName,tName,) 
+2012-08-25 14-58-24 Чтение контекста 
+2012-08-25 14-58-24 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-24 Matrix tariffs: Load() 
+2012-08-25 14-58-24 Создание ед. работы 
+2012-08-25 14-58-24 Присоединение сессии 
+2012-08-25 14-58-24 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-58-24 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-24 0.00:00:00: GetMatrixJson(tariffs,cId=1;tId=1,tName,) 
+2012-08-25 14-58-28 Refrence fias.Street: GetItems(, В, 2, True) 
+2012-08-25 14-58-28 Создание ед. работы 
+2012-08-25 14-58-28 Присоединение сессии 
+2012-08-25 14-58-28 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-58-28 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-28 0.00:00:01: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 14-58-28 Создание ед. работы 
+2012-08-25 14-58-28 Присоединение сессии 
+2012-08-25 14-58-28 Очистка кеша 
+2012-08-25 14-58-28 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-28 0.00:00:00: Clear() 
+2012-08-25 14-58-30 0.00:00:00: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 14-58-30 Чтение контекста 
+2012-08-25 14-58-30 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-30 Refrence fias.Street: GetItems(, , 2, True) 
+2012-08-25 14-58-30 Создание ед. работы 
+2012-08-25 14-58-30 Присоединение сессии 
+2012-08-25 14-58-30 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-25 14-58-30 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-30 0.00:00:00: GetValues(fias.Street,,,2,True,) 
+2012-08-25 14-58-30 Чтение контекста 
+2012-08-25 14-58-30 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-30 Refrence fias.Street: GetItems(, , 2, True) 
+2012-08-25 14-58-30 Создание ед. работы 
+2012-08-25 14-58-30 Присоединение сессии 
+2012-08-25 14-58-30 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-25 14-58-30 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-30 0.00:00:00: GetValues(fias.Street,,,2,True,) 
+2012-08-25 14-58-30 Чтение контекста 
+2012-08-25 14-58-30 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-30 Refrence fias.Street: GetItems(, , 10, True) 
+2012-08-25 14-58-30 Создание ед. работы 
+2012-08-25 14-58-30 Присоединение сессии 
+2012-08-25 14-58-30 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 10 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-25 14-58-30 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-30 0.00:00:00: GetValues(fias.Street,,,10,True,) 
+2012-08-25 14-58-30 Чтение контекста 
+2012-08-25 14-58-30 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-30 Refrence fias.Street: GetItems(, В, 10, True) 
+2012-08-25 14-58-30 Создание ед. работы 
+2012-08-25 14-58-30 Присоединение сессии 
+2012-08-25 14-58-30 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 10 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-58-30 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-30 0.00:00:00: GetValues(fias.Street,,В,10,True,) 
+2012-08-25 14-58-30 Чтение контекста 
+2012-08-25 14-58-30 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-30 Refrence fias.Street: GetItems(, В, 10, True) 
+2012-08-25 14-58-30 Создание ед. работы 
+2012-08-25 14-58-30 Присоединение сессии 
+2012-08-25 14-58-30 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 10 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-58-30 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-30 0.00:00:00: GetValues(fias.Street,,В,10,True,) 
+2012-08-25 14-58-30 Чтение контекста 
+2012-08-25 14-58-30 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-30 Refrence fias.Street: GetItems(, В, 10, True) 
+2012-08-25 14-58-30 Создание ед. работы 
+2012-08-25 14-58-30 Присоединение сессии 
+2012-08-25 14-58-30 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 10 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-58-30 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-30 0.00:00:00: GetValuesJson(fias.Street,,В,10,True,) 
+2012-08-25 14-58-30 Чтение контекста 
+2012-08-25 14-58-30 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-38 Чтение контекста 
+2012-08-25 14-58-40 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-40 Чтение контекста 
+2012-08-25 14-58-40 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-40 Matrix tariffs: Load() 
+2012-08-25 14-58-40 Создание ед. работы 
+2012-08-25 14-58-40 Создание фабрики 
+2012-08-25 14-58-40 Создание конфигурации 
+2012-08-25 14-58-42 Присоединение сессии 
+2012-08-25 14-58-42 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-58-42 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-42 0.00:00:02: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-58-42 Чтение контекста 
+2012-08-25 14-58-42 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-42 Matrix tariffs: Load() 
+2012-08-25 14-58-42 Создание ед. работы 
+2012-08-25 14-58-42 Присоединение сессии 
+2012-08-25 14-58-42 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-58-42 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-42 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-58-42 Чтение контекста 
+2012-08-25 14-58-42 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-42 Matrix tariffs: Load() 
+2012-08-25 14-58-42 Создание ед. работы 
+2012-08-25 14-58-42 Присоединение сессии 
+2012-08-25 14-58-42 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-58-42 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-42 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2, 3);tId=1,cName,tName,) 
+2012-08-25 14-58-42 Чтение контекста 
+2012-08-25 14-58-43 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-58-43 Matrix tariffs: Load() 
+2012-08-25 14-58-43 Создание ед. работы 
+2012-08-25 14-58-43 Присоединение сессии 
+2012-08-25 14-58-43 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-58-43 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-43 0.00:00:00: GetMatrixJson(tariffs,cId=1;tId=1,tName,) 
+2012-08-25 14-58-44 Refrence fias.Street: GetItems(, В, 2, True) 
+2012-08-25 14-58-44 Создание ед. работы 
+2012-08-25 14-58-44 Присоединение сессии 
+2012-08-25 14-58-45 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-58-45 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-45 0.00:00:00: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 14-58-45 Создание ед. работы 
+2012-08-25 14-58-45 Присоединение сессии 
+2012-08-25 14-58-45 Очистка кеша 
+2012-08-25 14-58-45 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-58-45 0.00:00:00: Clear() 
+2012-08-25 14-58-46 0.00:00:00: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 14-59-11 Чтение контекста 
+2012-08-25 14-59-14 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-59-14 Чтение контекста 
+2012-08-25 14-59-14 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-59-14 Matrix tariffs: Load() 
+2012-08-25 14-59-14 Создание ед. работы 
+2012-08-25 14-59-14 Создание фабрики 
+2012-08-25 14-59-14 Создание конфигурации 
+2012-08-25 14-59-16 Присоединение сессии 
+2012-08-25 14-59-16 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-59-16 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-59-16 0.00:00:02: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-59-16 Чтение контекста 
+2012-08-25 14-59-16 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-59-16 Matrix tariffs: Load() 
+2012-08-25 14-59-16 Создание ед. работы 
+2012-08-25 14-59-16 Присоединение сессии 
+2012-08-25 14-59-16 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-59-16 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-59-16 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 14-59-16 Чтение контекста 
+2012-08-25 14-59-16 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-59-16 Matrix tariffs: Load() 
+2012-08-25 14-59-16 Создание ед. работы 
+2012-08-25 14-59-16 Присоединение сессии 
+2012-08-25 14-59-16 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-59-16 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-59-16 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2, 3);tId=1,cName,tName,) 
+2012-08-25 14-59-16 Чтение контекста 
+2012-08-25 14-59-16 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 14-59-16 Matrix tariffs: Load() 
+2012-08-25 14-59-16 Создание ед. работы 
+2012-08-25 14-59-16 Присоединение сессии 
+2012-08-25 14-59-16 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 14-59-16 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-59-16 0.00:00:00: GetMatrixJson(tariffs,cId=1;tId=1,tName,) 
+2012-08-25 14-59-19 Refrence fias.Street: GetItems(, В, 2, True) 
+2012-08-25 14-59-19 Создание ед. работы 
+2012-08-25 14-59-19 Присоединение сессии 
+2012-08-25 14-59-19 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 14-59-19 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-59-21 0.00:00:03: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 14-59-21 Создание ед. работы 
+2012-08-25 14-59-21 Присоединение сессии 
+2012-08-25 14-59-21 Очистка кеша 
+2012-08-25 14-59-21 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 14-59-21 0.00:00:00: Clear() 
+2012-08-25 14-59-23 0.00:00:00: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 15-00-06 Чтение контекста 
+2012-08-25 15-00-09 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 15-00-09 Чтение контекста 
+2012-08-25 15-00-09 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 15-00-09 Matrix tariffs: Load() 
+2012-08-25 15-00-09 Создание ед. работы 
+2012-08-25 15-00-09 Создание фабрики 
+2012-08-25 15-00-09 Создание конфигурации 
+2012-08-25 15-00-12 Присоединение сессии 
+2012-08-25 15-00-12 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 15-00-12 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-00-12 0.00:00:02: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 15-00-12 Чтение контекста 
+2012-08-25 15-00-12 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 15-00-12 Matrix tariffs: Load() 
+2012-08-25 15-00-12 Создание ед. работы 
+2012-08-25 15-00-12 Присоединение сессии 
+2012-08-25 15-00-12 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 15-00-12 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-00-12 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 15-00-12 Чтение контекста 
+2012-08-25 15-00-12 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 15-00-12 Matrix tariffs: Load() 
+2012-08-25 15-00-12 Создание ед. работы 
+2012-08-25 15-00-12 Присоединение сессии 
+2012-08-25 15-00-12 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 15-00-12 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-00-12 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2, 3);tId=1,cName,tName,) 
+2012-08-25 15-00-12 Чтение контекста 
+2012-08-25 15-00-12 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 15-00-12 Matrix tariffs: Load() 
+2012-08-25 15-00-12 Создание ед. работы 
+2012-08-25 15-00-12 Присоединение сессии 
+2012-08-25 15-00-12 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 15-00-12 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-00-12 0.00:00:00: GetMatrixJson(tariffs,cId=1;tId=1,tName,) 
+2012-08-25 15-00-18 Refrence fias.Street: GetItems(, В, 2, True) 
+2012-08-25 15-00-18 Создание ед. работы 
+2012-08-25 15-00-18 Присоединение сессии 
+2012-08-25 15-00-18 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 15-00-18 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-00-18 0.00:00:01: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 15-00-18 Создание ед. работы 
+2012-08-25 15-00-18 Присоединение сессии 
+2012-08-25 15-00-18 Очистка кеша 
+2012-08-25 15-00-18 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-00-18 0.00:00:00: Clear() 
+2012-08-25 15-00-20 0.00:00:00: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 15-01-31 Чтение контекста 
+2012-08-25 15-01-34 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 15-01-34 Чтение контекста 
+2012-08-25 15-01-34 Matrix tariffs: Load() 
+2012-08-25 15-01-34 Создание ед. работы 
+2012-08-25 15-01-34 Создание фабрики 
+2012-08-25 15-01-34 Создание конфигурации 
+2012-08-25 15-01-36 Присоединение сессии 
+2012-08-25 15-01-37 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 15-01-37 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-01-37 0.00:00:02: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 15-01-37 Чтение контекста 
+2012-08-25 15-01-37 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 15-01-37 Чтение контекста 
+2012-08-25 15-01-37 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2, 3);tId=1,cName,tName,) 
+2012-08-25 15-01-37 Чтение контекста 
+2012-08-25 15-01-37 0.00:00:00: GetMatrixJson(tariffs,cId=1;tId=1,tName,) 
+2012-08-25 15-01-40 Refrence fias.Street: GetItems(, В, 2, True) 
+2012-08-25 15-01-40 Создание ед. работы 
+2012-08-25 15-01-40 Присоединение сессии 
+2012-08-25 15-01-40 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 15-01-40 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-01-40 0.00:00:01: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 15-01-40 Создание ед. работы 
+2012-08-25 15-01-40 Присоединение сессии 
+2012-08-25 15-01-40 Очистка кеша 
+2012-08-25 15-01-41 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-01-41 0.00:00:00: Clear() 
+2012-08-25 15-01-42 0.00:00:00: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 15-02-36 Чтение контекста 
+2012-08-25 15-02-39 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 15-02-39 Чтение контекста 
+2012-08-25 15-02-39 Matrix tariffs: Load() 
+2012-08-25 15-02-39 Создание ед. работы 
+2012-08-25 15-02-39 Создание фабрики 
+2012-08-25 15-02-39 Создание конфигурации 
+2012-08-25 15-02-40 Присоединение сессии 
+2012-08-25 15-02-41 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 15-02-41 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-02-41 0.00:00:02: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 15-02-41 Чтение контекста 
+2012-08-25 15-02-41 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 15-02-41 Чтение контекста 
+2012-08-25 15-02-41 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2, 3);tId=1,cName,tName,) 
+2012-08-25 15-02-41 Чтение контекста 
+2012-08-25 15-02-41 0.00:00:00: GetMatrixJson(tariffs,cId=1;tId=1,tName,) 
+2012-08-25 15-02-43 Чтение контекста 
+2012-08-25 15-02-44 Refrence fias.Street: GetItems(, В, 2, True) 
+2012-08-25 15-02-44 Создание ед. работы 
+2012-08-25 15-02-44 Присоединение сессии 
+2012-08-25 15-02-44 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 15-02-44 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-02-44 0.00:00:01: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 15-02-44 Создание ед. работы 
+2012-08-25 15-02-44 Присоединение сессии 
+2012-08-25 15-02-44 Очистка кеша 
+2012-08-25 15-02-44 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-02-44 0.00:00:00: Clear() 
+2012-08-25 15-02-46 Чтение контекста 
+2012-08-25 15-02-46 0.00:00:00: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 15-06-44 Чтение контекста 
+2012-08-25 15-06-46 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 15-06-46 Чтение контекста 
+2012-08-25 15-06-47 Matrix tariffs: Load() 
+2012-08-25 15-06-47 Создание ед. работы 
+2012-08-25 15-06-47 Создание фабрики 
+2012-08-25 15-06-47 Создание конфигурации 
+2012-08-25 15-06-48 Присоединение сессии 
+2012-08-25 15-06-49 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 15-06-49 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-06-49 0.00:00:02: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 15-06-49 Чтение контекста 
+2012-08-25 15-06-49 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 15-06-49 Чтение контекста 
+2012-08-25 15-06-49 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2, 3);tId=1,cName,tName,) 
+2012-08-25 15-06-49 Чтение контекста 
+2012-08-25 15-06-49 0.00:00:00: GetMatrixJson(tariffs,cId=1;tId=1,tName,) 
+2012-08-25 15-06-51 Чтение контекста 
+2012-08-25 15-06-52 Refrence fias.Street: GetItems(, В, 2, True) 
+2012-08-25 15-06-52 Создание ед. работы 
+2012-08-25 15-06-52 Присоединение сессии 
+2012-08-25 15-06-52 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 15-06-52 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-06-52 0.00:00:01: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 15-06-52 Создание ед. работы 
+2012-08-25 15-06-52 Присоединение сессии 
+2012-08-25 15-06-52 Очистка кеша 
+2012-08-25 15-06-52 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 15-06-52 0.00:00:00: Clear() 
+2012-08-25 15-06-54 Чтение контекста 
+2012-08-25 15-06-54 0.00:00:00: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 16-11-26 Чтение контекста 
+2012-08-25 16-11-31 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 16-11-31 Чтение контекста 
+2012-08-25 16-11-31 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 16-11-31 Matrix tariffs: Load() 
+2012-08-25 16-11-31 Создание ед. работы 
+2012-08-25 16-11-31 Создание фабрики 
+2012-08-25 16-11-31 Создание конфигурации 
+2012-08-25 16-11-35 Присоединение сессии 
+2012-08-25 16-11-35 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 16-11-36 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 16-11-36 0.00:00:05: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 16-11-36 Чтение контекста 
+2012-08-25 16-11-36 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 16-11-36 Matrix tariffs: Load() 
+2012-08-25 16-11-36 Создание ед. работы 
+2012-08-25 16-11-36 Присоединение сессии 
+2012-08-25 16-11-36 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 16-11-36 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 16-11-36 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 16-11-36 Чтение контекста 
+2012-08-25 16-11-36 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 16-11-36 Matrix tariffs: Load() 
+2012-08-25 16-11-36 Создание ед. работы 
+2012-08-25 16-11-36 Присоединение сессии 
+2012-08-25 16-11-36 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 16-11-36 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 16-11-36 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2, 3);tId=1,cName,tName,) 
+2012-08-25 16-11-36 Чтение контекста 
+2012-08-25 16-11-36 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 16-11-36 Matrix tariffs: Load() 
+2012-08-25 16-11-36 Создание ед. работы 
+2012-08-25 16-11-36 Присоединение сессии 
+2012-08-25 16-11-36 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 16-11-36 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 16-11-36 0.00:00:00: GetMatrixJson(tariffs,cId=1;tId=1,tName,) 
+2012-08-25 16-11-39 Чтение контекста 
+2012-08-25 16-11-39 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 16-11-40 Refrence fias.Street: GetItems(, В, 2, True) 
+2012-08-25 16-11-40 Создание ед. работы 
+2012-08-25 16-11-40 Присоединение сессии 
+2012-08-25 16-11-40 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 16-11-41 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 16-11-41 0.00:00:02: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 16-11-41 Чтение контекста 
+2012-08-25 16-11-41 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 16-11-41 Создание ед. работы 
+2012-08-25 16-11-41 Присоединение сессии 
+2012-08-25 16-11-41 Очистка кеша 
+2012-08-25 16-11-41 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 16-11-41 0.00:00:00: Clear() 
+2012-08-25 16-11-41 Чтение контекста 
+2012-08-25 16-11-42 Чтение контекста 
+2012-08-25 16-11-42 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 16-11-53 Чтение контекста 
+2012-08-25 16-11-56 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 16-11-56 Чтение контекста 
+2012-08-25 16-11-56 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 16-11-56 Matrix tariffs: Load() 
+2012-08-25 16-11-56 Создание ед. работы 
+2012-08-25 16-11-56 Создание фабрики 
+2012-08-25 16-11-56 Создание конфигурации 
+2012-08-25 16-11-58 Присоединение сессии 
+2012-08-25 16-11-58 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 16-11-58 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 16-11-58 0.00:00:02: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 16-11-58 Чтение контекста 
+2012-08-25 16-11-58 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 16-11-58 Matrix tariffs: Load() 
+2012-08-25 16-11-58 Создание ед. работы 
+2012-08-25 16-11-58 Присоединение сессии 
+2012-08-25 16-11-58 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 16-11-58 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 16-11-58 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2);tId=1,cName,tName,) 
+2012-08-25 16-11-58 Чтение контекста 
+2012-08-25 16-11-58 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 16-11-59 Matrix tariffs: Load() 
+2012-08-25 16-11-59 Создание ед. работы 
+2012-08-25 16-11-59 Присоединение сессии 
+2012-08-25 16-11-59 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 16-11-59 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 16-11-59 0.00:00:00: GetMatrixJson(tariffs,cId=IN(1, 2, 3);tId=1,cName,tName,) 
+2012-08-25 16-11-59 Чтение контекста 
+2012-08-25 16-11-59 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 16-11-59 Matrix tariffs: Load() 
+2012-08-25 16-11-59 Создание ед. работы 
+2012-08-25 16-11-59 Присоединение сессии 
+2012-08-25 16-11-59 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-25 16-11-59 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 16-11-59 0.00:00:00: GetMatrixJson(tariffs,cId=1;tId=1,tName,) 
+2012-08-25 16-12-01 Чтение контекста 
+2012-08-25 16-12-01 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 
+2012-08-25 16-12-03 Refrence fias.Street: GetItems(, В, 2, True) 
+2012-08-25 16-12-03 Создание ед. работы 
+2012-08-25 16-12-03 Присоединение сессии 
+2012-08-25 16-12-03 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = 'В%' [Type: String (4000)] 
+2012-08-25 16-12-03 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-25 16-12-03 0.00:00:01: GetValuesXml(fias.Street,,В,2,True,) 
+2012-08-25 16-12-05 Чтение контекста 
+2012-08-25 16-12-05 0.00:00:00: set_Conteiner(SharedRef.DependencyConteiner,) 

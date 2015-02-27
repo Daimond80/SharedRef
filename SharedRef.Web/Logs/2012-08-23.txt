@@ -1,0 +1,85 @@
+18-31-19 Чтение контекста 
+18-31-25 Refrence fias.Street: GetItems(, А, 1, False) 
+18-31-25 Создание ед. работы 
+18-31-25 Создание фабрики 
+18-31-25 Создание конфигурации 
+18-31-30 Присоединение сессии 
+18-31-30 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 1 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+18-31-33 Завершение единицы работы. Время выполнения: 0.00:00:03 
+18-32-09 Чтение контекста 
+18-32-09 Refrence fias.Street: GetItems(, Б, 1, False) 
+18-32-09 Создание ед. работы 
+18-32-09 Присоединение сессии 
+18-32-09 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 1 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+18-32-09 Завершение единицы работы. Время выполнения: 0.00:00:00 
+18-32-43 Чтение контекста 
+18-32-48 Чтение контекста 
+18-32-48 Refrence fias.Street: GetItems(, Б, 12, False) 
+18-32-48 Создание ед. работы 
+18-32-48 Присоединение сессии 
+18-33-03 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 12 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+18-33-03 Завершение единицы работы. Время выполнения: 0.00:00:15 
+18-34-42 Чтение контекста 
+18-34-46 Refrence fias.Street: GetItems(, Б, 12, False) 
+18-34-46 Создание ед. работы 
+18-34-46 Создание фабрики 
+18-34-46 Создание конфигурации 
+18-34-48 Присоединение сессии 
+18-34-49 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 12 [Type: Int32 (0)], @p1 = '%Б' [Type: String (4000)] 
+18-34-49 Завершение единицы работы. Время выполнения: 0.00:00:00 
+18-34-56 Чтение контекста 
+18-34-56 Refrence fias.Street: GetItems(, С, 12, False) 
+18-34-56 Создание ед. работы 
+18-34-56 Присоединение сессии 
+18-34-56 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 12 [Type: Int32 (0)], @p1 = '%С' [Type: String (4000)] 
+18-34-56 Завершение единицы работы. Время выполнения: 0.00:00:00 
+18-36-26 Чтение контекста 
+18-36-29 Refrence fias.Street: GetItems(, С, 12, False) 
+18-36-29 Создание ед. работы 
+18-36-29 Создание фабрики 
+18-36-29 Создание конфигурации 
+18-36-31 Присоединение сессии 
+18-36-31 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as ParentId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 12 [Type: Int32 (0)], @p1 = 'С%' [Type: String (4000)] 
+18-36-32 Завершение единицы работы. Время выполнения: 0.00:00:00 

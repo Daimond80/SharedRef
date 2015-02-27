@@ -1,0 +1,33 @@
+﻿<objects xmlns="http://www.springframework.net"	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/xsd/spring-objects.xsd">
+
+	<object id="Manager" type="SharedRef.Manager, SharedRef"/>
+	
+	<object id="CacheAspect" type="Spring.Aspects.Cache.CacheAspect, Spring.Aop"/>
+
+	<object id="ExceptionInterceptor" type="SharedRef.AOP.ExceptionInterceptor, SharedRef"/>
+	<object id="WatchInterceptor" type="SharedRef.AOP.WatchInterceptor, SharedRef"/>
+
+	<object id="NonExpiringCache" type="Spring.Caching.NonExpiringCache, Spring.Core"/>
+
+	<object id="AspNetCache" type="Spring.Caching.AspNetCache, Spring.Web">
+		<property name="SlidingExpiration" value="true"/>
+		<property name="Priority" value="Normal"/>
+		<property name="TimeToLive" value="24:00:00"/>
+	</object>
+
+	<object type="Spring.Aop.Framework.AutoProxy.ObjectNameAutoProxyCreator, Spring.Aop">
+		<property name="ObjectNames">
+			<list>
+				<value>Manager</value>
+			</list>
+		</property>
+		<property name="InterceptorNames">
+			<list>
+				<value>WatchInterceptor</value>
+				<value>CacheAspect</value>
+				<value>ExceptionInterceptor</value>
+			</list>
+		</property>
+	</object>
+
+</objects>

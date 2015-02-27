@@ -1,0 +1,103 @@
+﻿<objects xmlns="http://www.springframework.net"	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/xsd/spring-objects.xsd">
+
+
+	<object id="fias.Region" type="Reference">
+		<description>Регион</description>
+		<property name="QueryNameForList" value="fias.Region.list"/>
+		<property name="QueryNameForId" value="fias.Region.id"/>
+		<property name="Database" ref="ActiveDatabase"/>
+	</object>
+	
+	<object id="fias.District" type="Reference">
+		<description>Округ</description>
+		<property name="QueryNameForList" value="fias.District.list"/>
+		<property name="QueryNameForId" value="fias.District.id"/>
+		<property name="Database" ref="ActiveDatabase"/>
+	</object>
+
+	<object id="fias.Area" type="Reference">
+		<description>Район</description>
+		<property name="QueryNameForList" value="fias.Area.list"/>
+		<property name="QueryNameForId" value="fias.Area.id"/>
+		<property name="Database" ref="ActiveDatabase"/>
+	</object>
+
+	<object id="fias.City" type="Reference">
+		<description>Город</description>
+		<property name="QueryNameForList" value="fias.City.list"/>
+		<property name="QueryNameForId" value="fias.City.id"/>
+		<property name="Database" ref="ActiveDatabase"/>
+	</object>
+	
+	<object id="fias.CityArea" type="Reference">
+		<description>Город</description>
+		<property name="QueryNameForList" value="fias.CityArea.list"/>
+		<property name="QueryNameForId" value="fias.CityArea.id"/>
+		<property name="Database" ref="ActiveDatabase"/>
+	</object>
+
+	<object id="fias.Settelment" type="Reference">
+		<description>Нас. пункт</description>
+		<property name="QueryNameForList" value="fias.Settelment.list"/>
+		<property name="QueryNameForId" value="fias.Settelment.id"/>
+		<property name="Database" ref="ActiveDatabase"/>
+	</object>
+
+	<object id="fias.SettelmentType" type="Reference">
+		<description>Тип нас. пункта</description>
+		<property name="QueryNameForList" value="fias.SettelmentType.list"/>
+		<property name="QueryNameForId" value="fias.SettelmentType.id"/>
+		<property name="Database" ref="ActiveDatabase"/>
+	</object>
+
+	<object id="fias.Street" type="Reference">
+		<description>Улица</description>
+		<property name="QueryNameForList" value="fias.Street.list"/>
+		<property name="QueryNameForId" value="fias.Street.id"/>
+		<property name="Database" ref="ActiveDatabase"/>
+	</object>
+
+	<object id="fias.StreetType" type="Reference">
+		<description>Тип улицы</description>
+		<property name="QueryNameForList" value="fias.StreetType.list"/>
+		<property name="QueryNameForId" value="fias.StreetType.id"/>
+		<property name="Database" ref="ActiveDatabase"/>
+	</object>
+	
+	<object id="fias.AddTerritory" type="Reference">
+		<description>Доп. территория</description>
+		<property name="QueryNameForList" value="fias.AddTerritory.list"/>
+		<property name="QueryNameForId" value="fias.AddTerritory.id"/>
+		<property name="Database" ref="ActiveDatabase"/>
+	</object>
+	
+	<object id="fias.ChildAddTerritory" type="Reference">
+		<description>Подчиненная доп. территория</description>
+		<property name="QueryNameForList" value="fias.ChildAddTerritory.list"/>
+		<property name="QueryNameForId" value="fias.ChildAddTerritory.id"/>
+		<property name="Database" ref="ActiveDatabase"/>
+	</object>
+
+	<object id="fias.AddrObjectType" type="Reference">
+		<description>Тип адресного объекта</description>
+		<property name="QueryNameForList" value=""/>
+		<property name="QueryNameForId" value="fias.AddrObjectType.id"/>
+		<property name="Database" ref="ActiveDatabase"/>
+	</object>
+
+	<object id="fias.House" type="Reference">
+		<description>Дом</description>
+		<property name="QueryNameForList" value="fias.House.list"/>
+		<property name="QueryNameForId" value="fias.House.id"/>
+		<property name="Database" ref="ActiveDatabase"/>
+	</object>
+
+	<object id="fias.HouseInt" type="Reference">
+		<description>Интервал домов</description>
+		<property name="QueryNameForList" value="fias.HouseInt.list"/>
+		<property name="QueryNameForId" value="fias.HouseInt.id"/>
+		<property name="Database" ref="ActiveDatabase"/>
+	</object>
+
+
+</objects>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="SharedRef.Domain" assembly="SharedRef">
+	
+	<class name="SimpleItem" table="none1">
+
+		<cache usage="read-only"/>
+
+		<id name="Id"/>
+
+		<!--<property name="Id01"/>
+
+		<property name="Id02"/>
+
+		<property name="Value"/>
+
+		<property name="Value01"/>
+
+		<property name="Value02"/>
+
+		<property name="Value03"/>
+
+		<property name="Value04"/>
+
+		<property name="Value05"/>
+
+		<property name="ParentId"/>-->
+
+		
+	</class>
+
+</hibernate-mapping>
+

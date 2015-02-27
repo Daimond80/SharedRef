@@ -1,0 +1,15 @@
+15-41-51 Чтение контекста 
+15-41-56 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+15-41-56 Загрузка данных: tariffs 
+15-42-11 GetMatrixXml(tariffs | cId=IN(3, 4); tId=2 | cName, tName) Длит.: 0.00:00:15 
+15-44-51 GetMatrixXml(tariffs | cId=IN(3, 4); tId=2 | cName, tName) Длит.: 0.00:00:00 
+15-45-06 GetMatrixXml(tariffs | tId=2 | cName) Длит.: 0.00:00:00 
+15-54-16 Чтение контекста 
+15-54-17 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+15-54-17 Загрузка данных: tariffs 
+15-54-24 GetMatrixXml(tariffs | cId=IN(3, 4); tId=2 | cName, tName) Длит.: 0.00:00:06 
+15-54-42 GetMatrixXml(tariffs | tId=2 | cName) Длит.: 0.00:00:00 
+16-28-15 Чтение контекста 
+16-28-19 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+16-28-20 Загрузка данных: tariffs 
+16-28-30 GetMatrixXml(tariffs | tId=2 | cName) Длит.: 0.00:00:10 

@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Xml.asmx.cs" Class="SharedRef.Web.Xml" %>

@@ -1,0 +1,3178 @@
+2012-08-13 09-37-52 Чтение конфигурации 
+2012-08-13 09-37-55 Refrence Genre: GetItems(, , 2, True) 
+2012-08-13 09-37-55 Создание ед. работы 
+2012-08-13 09-37-55 Создание ед. работы 
+2012-08-13 09-37-55 Создание фабрики 
+2012-08-13 09-37-55 Создание конфмгурации 
+2012-08-13 09-37-58 GetValues NHibernate.MappingException: Could not compile the mapping document: C:\Users\Daimond\Documents\visual studio 2010\Projects\SharedRef\SharedRef\Configs\_Technical\SimpleItem.hbm.xml ---> NHibernate.MappingException: Problem trying to set property type by reflection ---> NHibernate.MappingException: class SharedRef.Domain.SimpleItem, SharedRef, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null not found while looking for property: AdditionalValue1 ---> NHibernate.PropertyNotFoundException: Could not find a getter for property 'AdditionalValue1' in class 'SharedRef.Domain.SimpleItem'
+   в NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   в NHibernate.Util.ReflectHelper.GetGetter(Type theClass, String propertyName, String propertyAccessorName)
+   в NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   в NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   в NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.CreateProperty(IEntityPropertyMapping propertyMapping, String propertyOwnerClassName, IValue value, IDictionary`2 inheritedMetas)
+   в NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, Table table, IDictionary`2 inheritedMetas, Action`1 modifier, Action`1 addToModelAction)
+   в NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas, Action`1 modifier)
+   в NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas)
+   в NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   в NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddRootClasses(HbmClass rootClass, IDictionary`2 inheritedMetas)
+   в NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   в NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   в NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   в NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   в NHibernate.Cfg.Configuration.AddValidatedDocument(NamedXmlDocument doc)
+   в NHibernate.Cfg.Configuration.ProcessMappingsQueue()
+   в NHibernate.Cfg.Configuration.AddDocumentThroughQueue(NamedXmlDocument document)
+   в NHibernate.Cfg.Configuration.AddXmlReader(XmlReader hbmReader, String name)
+   в NHibernate.Cfg.Configuration.AddXmlFile(String xmlFile)
+   в NHibernate.Cfg.Configuration.AddFile(String xmlFile)
+   в SharedRef.Data.DataHelper.get_Configuration() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\DataHelper.cs:строка 55
+   в SharedRef.Data.DataHelper.get_SessionFactory() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\DataHelper.cs:строка 33
+   в SharedRef.Data.UnitOfWorkFactory.Data(IsolationLevel isolationLevel) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 16
+   в SharedRef.Data.UnitOfWorkFactory.Data() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 22
+   в SharedRef.Domain.IoC.Reference.GetItems(String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 52
+   в SharedRef.Manager.<>c__DisplayClass4.<GetValues>b__2(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 55
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetValues(String name, String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 55|NHibernate.MappingException: Problem trying to set property type by reflection ---> NHibernate.MappingException: class SharedRef.Domain.SimpleItem, SharedRef, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null not found while looking for property: AdditionalValue1 ---> NHibernate.PropertyNotFoundException: Could not find a getter for property 'AdditionalValue1' in class 'SharedRef.Domain.SimpleItem'
+   в NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   в NHibernate.Util.ReflectHelper.GetGetter(Type theClass, String propertyName, String propertyAccessorName)
+   в NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   в NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   в NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.CreateProperty(IEntityPropertyMapping propertyMapping, String propertyOwnerClassName, IValue value, IDictionary`2 inheritedMetas)
+   в NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, Table table, IDictionary`2 inheritedMetas, Action`1 modifier, Action`1 addToModelAction)
+   в NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas, Action`1 modifier)
+   в NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas)
+   в NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   в NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddRootClasses(HbmClass rootClass, IDictionary`2 inheritedMetas)
+   в NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   в NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   в NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)|NHibernate.MappingException: class SharedRef.Domain.SimpleItem, SharedRef, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null not found while looking for property: AdditionalValue1 ---> NHibernate.PropertyNotFoundException: Could not find a getter for property 'AdditionalValue1' in class 'SharedRef.Domain.SimpleItem'
+   в NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   в NHibernate.Util.ReflectHelper.GetGetter(Type theClass, String propertyName, String propertyAccessorName)
+   в NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   в NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)|NHibernate.PropertyNotFoundException: Could not find a getter for property 'AdditionalValue1' in class 'SharedRef.Domain.SimpleItem'
+   в NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   в NHibernate.Util.ReflectHelper.GetGetter(Type theClass, String propertyName, String propertyAccessorName)
+   в NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+2012-08-13 09-39-08 Чтение конфигурации 
+2012-08-13 09-39-10 Refrence Genre: GetItems(, , 2, True) 
+2012-08-13 09-39-10 Создание ед. работы 
+2012-08-13 09-39-10 Создание ед. работы 
+2012-08-13 09-39-10 Создание фабрики 
+2012-08-13 09-39-10 Создание конфмгурации 
+2012-08-13 09-39-15 Присоединение сессии 
+2012-08-13 09-39-15 SELECT TOP (@p0)  
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentId 
+			FROM [oplan3_b].[dbo].[genre]
+			WHERE 
+				[genre_name] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 09-39-15 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 09-39-15 GetValues NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT TOP (@p0)  
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentId 
+			FROM [oplan3_b].[dbo].[genre]
+			WHERE 
+				[genre_name] like @p1 ]
+  Name:StartWith - Value:%
+[SQL: SELECT TOP (@p0)  
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentId 
+			FROM [oplan3_b].[dbo].[genre]
+			WHERE 
+				[genre_name] like @p1] ---> System.IndexOutOfRangeException: AdditionalValue1
+   в System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   в System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   в NHibernate.Driver.NHybridDataReader.GetOrdinal(String name)
+   в NHibernate.Type.NullableType.NullSafeGet(IDataReader rs, String name)
+   в NHibernate.Type.NullableType.NullSafeGet(IDataReader rs, String[] names, ISessionImplementor session, Object owner)
+   в NHibernate.Type.AbstractType.Hydrate(IDataReader rs, String[] names, ISessionImplementor session, Object owner)
+   в NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(IDataReader rs, Object id, Object obj, ILoadable rootLoadable, String[][] suffixedPropertyColumns, Boolean allProperties, ISessionImplementor session)
+   в NHibernate.Loader.Loader.LoadFromResultSet(IDataReader rs, Int32 i, Object obj, String instanceClass, EntityKey key, String rowIdAlias, LockMode lockMode, ILoadable rootPersister, ISessionImplementor session)
+   в NHibernate.Loader.Loader.InstanceNotYetLoaded(IDataReader dr, Int32 i, ILoadable persister, EntityKey key, LockMode lockMode, String rowIdAlias, EntityKey optionalObjectKey, Object optionalObject, IList hydratedObjects, ISessionImplementor session)
+   в NHibernate.Loader.Loader.GetRow(IDataReader rs, ILoadable[] persisters, EntityKey[] keys, Object optionalObject, EntityKey optionalObjectKey, LockMode[] lockModes, IList hydratedObjects, ISessionImplementor session)
+   в NHibernate.Loader.Loader.GetRowFromResultSet(IDataReader resultSet, ISessionImplementor session, QueryParameters queryParameters, LockMode[] lockModeArray, EntityKey optionalObjectKey, IList hydratedObjects, EntityKey[] keys, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Loader.Loader.ListUsingQueryCache(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Custom.CustomLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Impl.SessionImpl.ListCustomQuery(ICustomQuery customQuery, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List[T](NativeSQLQuerySpecification spec, QueryParameters queryParameters)
+   в NHibernate.Impl.SqlQueryImpl.List[T]()
+   в SharedRef.Domain.IoC.Reference.GetItems(String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 79
+   в SharedRef.Manager.<>c__DisplayClass4.<GetValues>b__2(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 55
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetValues(String name, String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 55|System.IndexOutOfRangeException: AdditionalValue1
+   в System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   в System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   в NHibernate.Driver.NHybridDataReader.GetOrdinal(String name)
+   в NHibernate.Type.NullableType.NullSafeGet(IDataReader rs, String name)
+   в NHibernate.Type.NullableType.NullSafeGet(IDataReader rs, String[] names, ISessionImplementor session, Object owner)
+   в NHibernate.Type.AbstractType.Hydrate(IDataReader rs, String[] names, ISessionImplementor session, Object owner)
+   в NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(IDataReader rs, Object id, Object obj, ILoadable rootLoadable, String[][] suffixedPropertyColumns, Boolean allProperties, ISessionImplementor session)
+   в NHibernate.Loader.Loader.LoadFromResultSet(IDataReader rs, Int32 i, Object obj, String instanceClass, EntityKey key, String rowIdAlias, LockMode lockMode, ILoadable rootPersister, ISessionImplementor session)
+   в NHibernate.Loader.Loader.InstanceNotYetLoaded(IDataReader dr, Int32 i, ILoadable persister, EntityKey key, LockMode lockMode, String rowIdAlias, EntityKey optionalObjectKey, Object optionalObject, IList hydratedObjects, ISessionImplementor session)
+   в NHibernate.Loader.Loader.GetRow(IDataReader rs, ILoadable[] persisters, EntityKey[] keys, Object optionalObject, EntityKey optionalObjectKey, LockMode[] lockModes, IList hydratedObjects, ISessionImplementor session)
+   в NHibernate.Loader.Loader.GetRowFromResultSet(IDataReader resultSet, ISessionImplementor session, QueryParameters queryParameters, LockMode[] lockModeArray, EntityKey optionalObjectKey, IList hydratedObjects, EntityKey[] keys, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-08-13 09-57-24 Чтение конфигурации 
+2012-08-13 09-57-27 Refrence Genre: GetItems(, , 2, True) 
+2012-08-13 09-57-27 Создание ед. работы 
+2012-08-13 09-57-27 Создание ед. работы 
+2012-08-13 09-57-27 Создание фабрики 
+2012-08-13 09-57-27 Создание конфмгурации 
+2012-08-13 09-57-31 Присоединение сессии 
+2012-08-13 09-57-31 SELECT TOP (@p0)  
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentId 
+			FROM [oplan3_b].[dbo].[genre]
+			WHERE 
+				[genre_name] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 09-57-32 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 09-57-32 GetValues System.ArgumentException: Типом значения "System.Object[]" не является "SharedRef.Domain.SimpleItem", поэтому оно не может быть использовано в данной базовой коллекции.
+Имя параметра: value
+   в System.ThrowHelper.ThrowWrongValueTypeArgumentException(Object value, Type targetType)
+   в System.Collections.Generic.List`1.System.Collections.IList.Add(Object item)
+   в NHibernate.Util.ArrayHelper.AddAll(IList to, IList from)
+   в NHibernate.Impl.SessionImpl.ListCustomQuery(ICustomQuery customQuery, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List[T](NativeSQLQuerySpecification spec, QueryParameters queryParameters)
+   в NHibernate.Impl.SqlQueryImpl.List[T]()
+   в SharedRef.Domain.IoC.Reference.GetItems(String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 90
+   в SharedRef.Manager.<>c__DisplayClass4.<GetValues>b__2(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 55
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetValues(String name, String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 55
+2012-08-13 09-59-33 Чтение конфигурации 
+2012-08-13 09-59-35 Refrence Genre: GetItems(, , 2, True) 
+2012-08-13 09-59-35 Создание ед. работы 
+2012-08-13 09-59-35 Создание ед. работы 
+2012-08-13 09-59-35 Создание фабрики 
+2012-08-13 09-59-35 Создание конфмгурации 
+2012-08-13 09-59-38 Присоединение сессии 
+2012-08-13 10-00-30 Чтение конфигурации 
+2012-08-13 10-00-31 Refrence Genre: GetItems(, , 2, True) 
+2012-08-13 10-00-32 Создание ед. работы 
+2012-08-13 10-00-32 Создание ед. работы 
+2012-08-13 10-00-32 Создание фабрики 
+2012-08-13 10-00-32 Создание конфмгурации 
+2012-08-13 10-00-34 Присоединение сессии 
+2012-08-13 10-00-38 SELECT TOP (@p0)  
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentId 
+			FROM [oplan3_b].[dbo].[genre]
+			WHERE 
+				[genre_name] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 10-00-38 Завершение единицы работы. Время выполнения: 0.00:00:03 
+2012-08-13 10-00-38 Чтение конфигурации 
+2012-08-13 10-00-38 Refrence Genre: GetItems(, , 0, True) 
+2012-08-13 10-00-38 Создание ед. работы 
+2012-08-13 10-00-38 Создание ед. работы 
+2012-08-13 10-00-38 Присоединение сессии 
+2012-08-13 10-00-40 SELECT 
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentId 
+			FROM [oplan3_b].[dbo].[genre]
+			WHERE 
+				[genre_name] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 10-00-40 Завершение единицы работы. Время выполнения: 0.00:00:02 
+2012-08-13 10-00-40 Чтение конфигурации 
+2012-08-13 10-00-40 Refrence Genre: GetItems(, С, 0, True) 
+2012-08-13 10-00-40 Создание ед. работы 
+2012-08-13 10-00-40 Создание ед. работы 
+2012-08-13 10-00-40 Присоединение сессии 
+2012-08-13 10-00-40 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-00-40 Чтение конфигурации 
+2012-08-13 10-00-40 Refrence Genre: GetItems(, С, 0, True) 
+2012-08-13 10-00-40 Создание ед. работы 
+2012-08-13 10-00-40 Создание ед. работы 
+2012-08-13 10-00-40 Присоединение сессии 
+2012-08-13 10-00-40 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-00-41 Чтение конфигурации 
+2012-08-13 10-00-41 Refrence Genre: GetItems(, С, 0, True) 
+2012-08-13 10-00-41 Создание ед. работы 
+2012-08-13 10-00-41 Создание ед. работы 
+2012-08-13 10-00-41 Присоединение сессии 
+2012-08-13 10-00-41 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-00-41 Чтение конфигурации 
+2012-08-13 10-00-41 Чтение конфигурации 
+2012-08-13 10-00-41 Refrence Genre: GetById(60) 
+2012-08-13 10-00-41 Создание ед. работы 
+2012-08-13 10-00-41 Создание ед. работы 
+2012-08-13 10-00-41 Присоединение сессии 
+2012-08-13 10-00-41 SELECT
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentId 
+			FROM [oplan3_b].[dbo].[genre]
+			WHERE 
+				[genre_id] = @p0;@p0 = '60' [Type: String (4000)] 
+2012-08-13 10-00-41 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-00-41 Чтение конфигурации 
+2012-08-13 10-00-41 Чтение конфигурации 
+2012-08-13 10-00-41 Refrence Genre: GetById(60) 
+2012-08-13 10-00-41 Создание ед. работы 
+2012-08-13 10-00-41 Создание ед. работы 
+2012-08-13 10-00-41 Присоединение сессии 
+2012-08-13 10-00-41 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-02-11 Чтение конфигурации 
+2012-08-13 10-02-25 Чтение конфигурации 
+2012-08-13 10-02-27 Refrence Genre: GetItems(, , 2, True) 
+2012-08-13 10-02-27 Создание ед. работы 
+2012-08-13 10-02-27 Создание ед. работы 
+2012-08-13 10-02-27 Создание фабрики 
+2012-08-13 10-02-27 Создание конфигурации 
+2012-08-13 10-02-30 Присоединение сессии 
+2012-08-13 10-02-32 SELECT TOP (@p0)  
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentId 
+			FROM [oplan3_b].[dbo].[genre]
+			WHERE 
+				[genre_name] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 10-02-32 Завершение единицы работы. Время выполнения: 0.00:00:02 
+2012-08-13 10-02-33 Чтение конфигурации 
+2012-08-13 10-02-33 Refrence Genre: GetItems(, , 0, True) 
+2012-08-13 10-02-33 Создание ед. работы 
+2012-08-13 10-02-33 Создание ед. работы 
+2012-08-13 10-02-33 Присоединение сессии 
+2012-08-13 10-02-39 SELECT 
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentId 
+			FROM [oplan3_b].[dbo].[genre]
+			WHERE 
+				[genre_name] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 10-02-39 Завершение единицы работы. Время выполнения: 0.00:00:06 
+2012-08-13 10-02-39 Чтение конфигурации 
+2012-08-13 10-02-39 Refrence Genre: GetItems(, С, 0, True) 
+2012-08-13 10-02-39 Создание ед. работы 
+2012-08-13 10-02-39 Создание ед. работы 
+2012-08-13 10-02-39 Присоединение сессии 
+2012-08-13 10-02-39 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-02-39 Чтение конфигурации 
+2012-08-13 10-02-39 Refrence Genre: GetItems(, С, 0, True) 
+2012-08-13 10-02-39 Создание ед. работы 
+2012-08-13 10-02-39 Создание ед. работы 
+2012-08-13 10-02-39 Присоединение сессии 
+2012-08-13 10-02-39 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-02-39 Чтение конфигурации 
+2012-08-13 10-02-39 Refrence Genre: GetItems(, С, 0, True) 
+2012-08-13 10-02-39 Создание ед. работы 
+2012-08-13 10-02-39 Создание ед. работы 
+2012-08-13 10-02-39 Присоединение сессии 
+2012-08-13 10-02-39 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-02-39 Чтение конфигурации 
+2012-08-13 10-02-39 Чтение конфигурации 
+2012-08-13 10-02-39 Refrence Genre: GetById(60) 
+2012-08-13 10-02-39 Создание ед. работы 
+2012-08-13 10-02-39 Создание ед. работы 
+2012-08-13 10-02-39 Присоединение сессии 
+2012-08-13 10-02-39 SELECT
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentId 
+			FROM [oplan3_b].[dbo].[genre]
+			WHERE 
+				[genre_id] = @p0;@p0 = '60' [Type: String (4000)] 
+2012-08-13 10-02-39 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-02-40 Чтение конфигурации 
+2012-08-13 10-02-40 Чтение конфигурации 
+2012-08-13 10-02-40 Refrence Genre: GetById(60) 
+2012-08-13 10-02-40 Создание ед. работы 
+2012-08-13 10-02-40 Создание ед. работы 
+2012-08-13 10-02-40 Присоединение сессии 
+2012-08-13 10-02-40 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-35-58 Чтение конфигурации 
+2012-08-13 10-36-00 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 10-36-00 Создание ед. работы 
+2012-08-13 10-36-00 Создание ед. работы 
+2012-08-13 10-36-00 Создание фабрики 
+2012-08-13 10-36-00 Создание конфигурации 
+2012-08-13 10-36-03 Присоединение сессии 
+2012-08-13 10-36-04 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 10-36-04 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-36-04 Чтение конфигурации 
+2012-08-13 10-36-04 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 10-36-04 Создание ед. работы 
+2012-08-13 10-36-04 Создание ед. работы 
+2012-08-13 10-36-04 Присоединение сессии 
+2012-08-13 10-36-04 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 10-36-04 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-36-04 Чтение конфигурации 
+2012-08-13 10-36-04 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-36-04 Создание ед. работы 
+2012-08-13 10-36-04 Создание ед. работы 
+2012-08-13 10-36-04 Присоединение сессии 
+2012-08-13 10-36-04 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-36-04 Чтение конфигурации 
+2012-08-13 10-36-04 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-36-04 Создание ед. работы 
+2012-08-13 10-36-04 Создание ед. работы 
+2012-08-13 10-36-04 Присоединение сессии 
+2012-08-13 10-36-04 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-36-04 Чтение конфигурации 
+2012-08-13 10-36-04 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-36-04 Создание ед. работы 
+2012-08-13 10-36-04 Создание ед. работы 
+2012-08-13 10-36-04 Присоединение сессии 
+2012-08-13 10-36-05 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-36-05 Чтение конфигурации 
+2012-08-13 10-36-05 Чтение конфигурации 
+2012-08-13 10-36-05 Refrence fias_Region: GetById(60) 
+2012-08-13 10-36-05 Создание ед. работы 
+2012-08-13 10-36-05 Создание ед. работы 
+2012-08-13 10-36-05 Присоединение сессии 
+2012-08-13 10-36-05 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '60' [Type: String (4000)] 
+2012-08-13 10-36-05 GetById NHibernate.TransactionException: Transaction not connected, or was disconnected
+   в NHibernate.Transaction.AdoTransaction.CheckNotZombied()
+   в NHibernate.Transaction.AdoTransaction.Rollback()
+   в SharedRef.Data.UnitOfWork.Dispose() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWork.cs:строка 102
+   в SharedRef.Domain.IoC.Reference.GetById(String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 49
+   в SharedRef.Manager.<>c__DisplayClass8.<GetById>b__6(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.With[TInput,TResult](TInput o, Func`2 evaluator) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 18
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+2012-08-13 10-36-05 GetByIdXml System.ApplicationException: GetById ---> NHibernate.TransactionException: Transaction not connected, or was disconnected
+   в NHibernate.Transaction.AdoTransaction.CheckNotZombied()
+   в NHibernate.Transaction.AdoTransaction.Rollback()
+   в SharedRef.Data.UnitOfWork.Dispose() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWork.cs:строка 102
+   в SharedRef.Domain.IoC.Reference.GetById(String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 49
+   в SharedRef.Manager.<>c__DisplayClass8.<GetById>b__6(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.With[TInput,TResult](TInput o, Func`2 evaluator) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 18
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   --- Конец трассировки внутреннего стека исключений ---
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 108
+   в SharedRef.Manager.GetByIdXml(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 116|NHibernate.TransactionException: Transaction not connected, or was disconnected
+   в NHibernate.Transaction.AdoTransaction.CheckNotZombied()
+   в NHibernate.Transaction.AdoTransaction.Rollback()
+   в SharedRef.Data.UnitOfWork.Dispose() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWork.cs:строка 102
+   в SharedRef.Domain.IoC.Reference.GetById(String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 49
+   в SharedRef.Manager.<>c__DisplayClass8.<GetById>b__6(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.With[TInput,TResult](TInput o, Func`2 evaluator) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 18
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+2012-08-13 10-37-29 Чтение конфигурации 
+2012-08-13 10-37-31 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 10-37-31 Создание ед. работы 
+2012-08-13 10-37-31 Создание ед. работы 
+2012-08-13 10-37-31 Создание фабрики 
+2012-08-13 10-37-31 Создание конфигурации 
+2012-08-13 10-37-34 Присоединение сессии 
+2012-08-13 10-37-34 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 10-37-34 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-37-34 Чтение конфигурации 
+2012-08-13 10-37-34 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 10-37-34 Создание ед. работы 
+2012-08-13 10-37-34 Создание ед. работы 
+2012-08-13 10-37-34 Присоединение сессии 
+2012-08-13 10-37-34 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 10-37-34 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-37-34 Чтение конфигурации 
+2012-08-13 10-37-34 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-37-34 Создание ед. работы 
+2012-08-13 10-37-34 Создание ед. работы 
+2012-08-13 10-37-34 Присоединение сессии 
+2012-08-13 10-37-34 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-37-34 Чтение конфигурации 
+2012-08-13 10-37-34 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-37-34 Создание ед. работы 
+2012-08-13 10-37-34 Создание ед. работы 
+2012-08-13 10-37-34 Присоединение сессии 
+2012-08-13 10-37-34 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-37-35 Чтение конфигурации 
+2012-08-13 10-37-35 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-37-35 Создание ед. работы 
+2012-08-13 10-37-35 Создание ед. работы 
+2012-08-13 10-37-35 Присоединение сессии 
+2012-08-13 10-37-35 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-37-35 Чтение конфигурации 
+2012-08-13 10-37-35 Чтение конфигурации 
+2012-08-13 10-37-40 Refrence fias_Region: GetById(60) 
+2012-08-13 10-37-42 Создание ед. работы 
+2012-08-13 10-37-42 Создание ед. работы 
+2012-08-13 10-37-42 Присоединение сессии 
+2012-08-13 10-37-56 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '60' [Type: String (4000)] 
+2012-08-13 10-43-06 Чтение конфигурации 
+2012-08-13 10-43-10 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 10-43-10 Создание ед. работы 
+2012-08-13 10-43-10 Создание ед. работы 
+2012-08-13 10-43-10 Создание фабрики 
+2012-08-13 10-43-10 Создание конфигурации 
+2012-08-13 10-43-13 Присоединение сессии 
+2012-08-13 10-43-14 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 10-43-14 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-43-14 Чтение конфигурации 
+2012-08-13 10-43-14 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 10-43-14 Создание ед. работы 
+2012-08-13 10-43-14 Создание ед. работы 
+2012-08-13 10-43-14 Присоединение сессии 
+2012-08-13 10-43-14 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 10-43-14 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-43-15 Чтение конфигурации 
+2012-08-13 10-43-15 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-43-15 Создание ед. работы 
+2012-08-13 10-43-15 Создание ед. работы 
+2012-08-13 10-43-15 Присоединение сессии 
+2012-08-13 10-43-15 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-43-15 Чтение конфигурации 
+2012-08-13 10-43-15 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-43-15 Создание ед. работы 
+2012-08-13 10-43-15 Создание ед. работы 
+2012-08-13 10-43-15 Присоединение сессии 
+2012-08-13 10-43-15 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-43-15 Чтение конфигурации 
+2012-08-13 10-43-15 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-43-15 Создание ед. работы 
+2012-08-13 10-43-15 Создание ед. работы 
+2012-08-13 10-43-15 Присоединение сессии 
+2012-08-13 10-43-15 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-43-15 Чтение конфигурации 
+2012-08-13 10-43-15 Чтение конфигурации 
+2012-08-13 10-43-15 Refrence fias_Region: GetById(60) 
+2012-08-13 10-43-15 Создание ед. работы 
+2012-08-13 10-43-15 Создание ед. работы 
+2012-08-13 10-43-15 Присоединение сессии 
+2012-08-13 10-43-15 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '60' [Type: String (4000)] 
+2012-08-13 10-44-15 Чтение конфигурации 
+2012-08-13 10-44-17 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 10-44-17 Создание ед. работы 
+2012-08-13 10-44-17 Создание ед. работы 
+2012-08-13 10-44-17 Создание фабрики 
+2012-08-13 10-44-17 Создание конфигурации 
+2012-08-13 10-44-19 Присоединение сессии 
+2012-08-13 10-44-20 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 10-44-20 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-44-20 Чтение конфигурации 
+2012-08-13 10-44-20 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 10-44-20 Создание ед. работы 
+2012-08-13 10-44-20 Создание ед. работы 
+2012-08-13 10-44-20 Присоединение сессии 
+2012-08-13 10-44-20 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 10-44-20 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-44-20 Чтение конфигурации 
+2012-08-13 10-44-20 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-44-20 Создание ед. работы 
+2012-08-13 10-44-20 Создание ед. работы 
+2012-08-13 10-44-20 Присоединение сессии 
+2012-08-13 10-44-20 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-44-21 Чтение конфигурации 
+2012-08-13 10-44-21 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-44-21 Создание ед. работы 
+2012-08-13 10-44-21 Создание ед. работы 
+2012-08-13 10-44-21 Присоединение сессии 
+2012-08-13 10-44-21 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-44-21 Чтение конфигурации 
+2012-08-13 10-44-21 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-44-21 Создание ед. работы 
+2012-08-13 10-44-21 Создание ед. работы 
+2012-08-13 10-44-21 Присоединение сессии 
+2012-08-13 10-44-21 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-44-21 Чтение конфигурации 
+2012-08-13 10-44-21 Чтение конфигурации 
+2012-08-13 10-44-21 Refrence fias_Region: GetById(60) 
+2012-08-13 10-44-21 Создание ед. работы 
+2012-08-13 10-44-21 Создание ед. работы 
+2012-08-13 10-44-21 Присоединение сессии 
+2012-08-13 10-44-21 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '60' [Type: String (4000)] 
+2012-08-13 10-46-01 Чтение конфигурации 
+2012-08-13 10-46-03 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 10-46-03 Создание ед. работы 
+2012-08-13 10-46-03 Создание ед. работы 
+2012-08-13 10-46-03 Создание фабрики 
+2012-08-13 10-46-03 Создание конфигурации 
+2012-08-13 10-46-06 Присоединение сессии 
+2012-08-13 10-46-06 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 10-46-07 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-46-07 Чтение конфигурации 
+2012-08-13 10-46-07 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 10-46-07 Создание ед. работы 
+2012-08-13 10-46-07 Создание ед. работы 
+2012-08-13 10-46-07 Присоединение сессии 
+2012-08-13 10-46-07 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 10-46-07 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-46-07 Чтение конфигурации 
+2012-08-13 10-46-07 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-46-07 Создание ед. работы 
+2012-08-13 10-46-07 Создание ед. работы 
+2012-08-13 10-46-07 Присоединение сессии 
+2012-08-13 10-46-07 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-46-07 Чтение конфигурации 
+2012-08-13 10-46-07 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-46-07 Создание ед. работы 
+2012-08-13 10-46-07 Создание ед. работы 
+2012-08-13 10-46-07 Присоединение сессии 
+2012-08-13 10-46-07 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-46-07 Чтение конфигурации 
+2012-08-13 10-46-07 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-46-07 Создание ед. работы 
+2012-08-13 10-46-07 Создание ед. работы 
+2012-08-13 10-46-07 Присоединение сессии 
+2012-08-13 10-46-07 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-46-07 Чтение конфигурации 
+2012-08-13 10-46-07 Чтение конфигурации 
+2012-08-13 10-46-07 Refrence fias_Region: GetById(60) 
+2012-08-13 10-46-07 Создание ед. работы 
+2012-08-13 10-46-07 Создание ед. работы 
+2012-08-13 10-46-07 Присоединение сессии 
+2012-08-13 10-46-07 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '60' [Type: String (4000)] 
+2012-08-13 10-56-30 Чтение конфигурации 
+2012-08-13 10-56-32 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 10-56-33 Создание ед. работы 
+2012-08-13 10-56-33 Создание ед. работы 
+2012-08-13 10-56-33 Создание фабрики 
+2012-08-13 10-56-33 Создание конфигурации 
+2012-08-13 10-56-37 Присоединение сессии 
+2012-08-13 10-56-37 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 10-56-37 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-56-37 Чтение конфигурации 
+2012-08-13 10-56-37 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 10-56-37 Создание ед. работы 
+2012-08-13 10-56-37 Создание ед. работы 
+2012-08-13 10-56-37 Присоединение сессии 
+2012-08-13 10-56-37 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 10-56-38 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-56-38 Чтение конфигурации 
+2012-08-13 10-56-38 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-56-38 Создание ед. работы 
+2012-08-13 10-56-38 Создание ед. работы 
+2012-08-13 10-56-38 Присоединение сессии 
+2012-08-13 10-56-38 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-56-38 Чтение конфигурации 
+2012-08-13 10-56-38 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-56-38 Создание ед. работы 
+2012-08-13 10-56-38 Создание ед. работы 
+2012-08-13 10-56-38 Присоединение сессии 
+2012-08-13 10-56-39 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-56-39 Чтение конфигурации 
+2012-08-13 10-56-39 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-56-39 Создание ед. работы 
+2012-08-13 10-56-39 Создание ед. работы 
+2012-08-13 10-56-39 Присоединение сессии 
+2012-08-13 10-56-39 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-56-39 Чтение конфигурации 
+2012-08-13 10-56-39 Чтение конфигурации 
+2012-08-13 10-56-39 Refrence fias_Region: GetById(60) 
+2012-08-13 10-56-39 Создание ед. работы 
+2012-08-13 10-56-39 Создание ед. работы 
+2012-08-13 10-56-39 Присоединение сессии 
+2012-08-13 10-56-39 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '60' [Type: String (4000)] 
+2012-08-13 10-57-57 Чтение конфигурации 
+2012-08-13 10-57-59 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 10-57-59 Создание ед. работы 
+2012-08-13 10-57-59 Создание ед. работы 
+2012-08-13 10-57-59 Создание фабрики 
+2012-08-13 10-57-59 Создание конфигурации 
+2012-08-13 10-58-01 Присоединение сессии 
+2012-08-13 10-58-01 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 10-58-02 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-58-02 Чтение конфигурации 
+2012-08-13 10-58-02 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 10-58-02 Создание ед. работы 
+2012-08-13 10-58-02 Создание ед. работы 
+2012-08-13 10-58-02 Присоединение сессии 
+2012-08-13 10-58-02 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 10-58-02 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-58-02 Чтение конфигурации 
+2012-08-13 10-58-02 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-58-02 Создание ед. работы 
+2012-08-13 10-58-02 Создание ед. работы 
+2012-08-13 10-58-02 Присоединение сессии 
+2012-08-13 10-58-02 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-58-02 Чтение конфигурации 
+2012-08-13 10-58-02 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-58-02 Создание ед. работы 
+2012-08-13 10-58-02 Создание ед. работы 
+2012-08-13 10-58-02 Присоединение сессии 
+2012-08-13 10-58-02 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-58-02 Чтение конфигурации 
+2012-08-13 10-58-02 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-58-02 Создание ед. работы 
+2012-08-13 10-58-02 Создание ед. работы 
+2012-08-13 10-58-02 Присоединение сессии 
+2012-08-13 10-58-02 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-58-02 Чтение конфигурации 
+2012-08-13 10-58-02 Чтение конфигурации 
+2012-08-13 10-58-02 Refrence fias_Region: GetById(60) 
+2012-08-13 10-58-02 Создание ед. работы 
+2012-08-13 10-58-02 Создание ед. работы 
+2012-08-13 10-58-02 Присоединение сессии 
+2012-08-13 10-58-02 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '60' [Type: String (4000)] 
+2012-08-13 10-58-27 Чтение конфигурации 
+2012-08-13 10-58-28 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 10-58-28 Создание ед. работы 
+2012-08-13 10-58-28 Создание ед. работы 
+2012-08-13 10-58-28 Создание фабрики 
+2012-08-13 10-58-28 Создание конфигурации 
+2012-08-13 10-58-30 Присоединение сессии 
+2012-08-13 10-58-30 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 10-58-31 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-58-31 Чтение конфигурации 
+2012-08-13 10-58-31 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 10-58-31 Создание ед. работы 
+2012-08-13 10-58-31 Создание ед. работы 
+2012-08-13 10-58-31 Присоединение сессии 
+2012-08-13 10-58-31 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 10-58-31 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-58-31 Чтение конфигурации 
+2012-08-13 10-58-31 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-58-31 Создание ед. работы 
+2012-08-13 10-58-31 Создание ед. работы 
+2012-08-13 10-58-31 Присоединение сессии 
+2012-08-13 10-58-31 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-58-31 Чтение конфигурации 
+2012-08-13 10-58-31 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-58-31 Создание ед. работы 
+2012-08-13 10-58-31 Создание ед. работы 
+2012-08-13 10-58-31 Присоединение сессии 
+2012-08-13 10-58-31 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-58-31 Чтение конфигурации 
+2012-08-13 10-58-31 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 10-58-31 Создание ед. работы 
+2012-08-13 10-58-31 Создание ед. работы 
+2012-08-13 10-58-31 Присоединение сессии 
+2012-08-13 10-58-31 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-58-31 Чтение конфигурации 
+2012-08-13 10-58-31 Чтение конфигурации 
+2012-08-13 10-58-31 Refrence fias_Region: GetById(60) 
+2012-08-13 10-58-31 Создание ед. работы 
+2012-08-13 10-58-31 Создание ед. работы 
+2012-08-13 10-58-31 Присоединение сессии 
+2012-08-13 10-58-31 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '60' [Type: String (4000)] 
+2012-08-13 10-58-31 Ошибка NHibernate.TransactionException: Transaction not connected, or was disconnected
+   в NHibernate.Transaction.AdoTransaction.CheckNotZombied()
+   в NHibernate.Transaction.AdoTransaction.Rollback()
+   в SharedRef.Data.UnitOfWork.Dispose() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWork.cs:строка 105
+2012-08-13 10-58-31 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 10-58-31 GetById NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0 ]
+  Name:Id - Value:60
+[SQL: SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0] ---> System.Data.SqlClient.SqlException: Ошибка при преобразовании строки символов в тип uniqueidentifier.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   в System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   в System.Data.SqlClient.SqlDataReader.HasMoreRows()
+   в System.Data.SqlClient.SqlDataReader.ReadInternal(Boolean setTimeout)
+   в System.Data.SqlClient.SqlDataReader.Read()
+   в NHibernate.Driver.NHybridDataReader.Read()
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Loader.Loader.ListUsingQueryCache(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Custom.CustomLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Impl.SessionImpl.ListCustomQuery(ICustomQuery customQuery, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters)
+   в NHibernate.Impl.SqlQueryImpl.List()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult[T]()
+   в SharedRef.Domain.IoC.Reference.GetById(String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 50
+   в SharedRef.Manager.<>c__DisplayClass8.<GetById>b__6(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.With[TInput,TResult](TInput o, Func`2 evaluator) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 18
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103|System.Data.SqlClient.SqlException (0x80131904): Ошибка при преобразовании строки символов в тип uniqueidentifier.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   в System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   в System.Data.SqlClient.SqlDataReader.HasMoreRows()
+   в System.Data.SqlClient.SqlDataReader.ReadInternal(Boolean setTimeout)
+   в System.Data.SqlClient.SqlDataReader.Read()
+   в NHibernate.Driver.NHybridDataReader.Read()
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-08-13 10-58-31 GetByIdXml System.ApplicationException: GetById ---> NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0 ]
+  Name:Id - Value:60
+[SQL: SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0] ---> System.Data.SqlClient.SqlException: Ошибка при преобразовании строки символов в тип uniqueidentifier.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   в System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   в System.Data.SqlClient.SqlDataReader.HasMoreRows()
+   в System.Data.SqlClient.SqlDataReader.ReadInternal(Boolean setTimeout)
+   в System.Data.SqlClient.SqlDataReader.Read()
+   в NHibernate.Driver.NHybridDataReader.Read()
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Loader.Loader.ListUsingQueryCache(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Custom.CustomLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Impl.SessionImpl.ListCustomQuery(ICustomQuery customQuery, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters)
+   в NHibernate.Impl.SqlQueryImpl.List()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult[T]()
+   в SharedRef.Domain.IoC.Reference.GetById(String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 50
+   в SharedRef.Manager.<>c__DisplayClass8.<GetById>b__6(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.With[TInput,TResult](TInput o, Func`2 evaluator) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 18
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   --- Конец трассировки внутреннего стека исключений ---
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 108
+   в SharedRef.Manager.GetByIdXml(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 116|NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0 ]
+  Name:Id - Value:60
+[SQL: SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0] ---> System.Data.SqlClient.SqlException: Ошибка при преобразовании строки символов в тип uniqueidentifier.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   в System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   в System.Data.SqlClient.SqlDataReader.HasMoreRows()
+   в System.Data.SqlClient.SqlDataReader.ReadInternal(Boolean setTimeout)
+   в System.Data.SqlClient.SqlDataReader.Read()
+   в NHibernate.Driver.NHybridDataReader.Read()
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Loader.Loader.ListUsingQueryCache(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Custom.CustomLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Impl.SessionImpl.ListCustomQuery(ICustomQuery customQuery, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters)
+   в NHibernate.Impl.SqlQueryImpl.List()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult[T]()
+   в SharedRef.Domain.IoC.Reference.GetById(String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 50
+   в SharedRef.Manager.<>c__DisplayClass8.<GetById>b__6(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.With[TInput,TResult](TInput o, Func`2 evaluator) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 18
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103|System.Data.SqlClient.SqlException (0x80131904): Ошибка при преобразовании строки символов в тип uniqueidentifier.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   в System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   в System.Data.SqlClient.SqlDataReader.HasMoreRows()
+   в System.Data.SqlClient.SqlDataReader.ReadInternal(Boolean setTimeout)
+   в System.Data.SqlClient.SqlDataReader.Read()
+   в NHibernate.Driver.NHybridDataReader.Read()
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-08-13 11-01-16 Чтение конфигурации 
+2012-08-13 11-01-18 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-01-18 Создание ед. работы 
+2012-08-13 11-01-18 Создание ед. работы 
+2012-08-13 11-01-18 Создание фабрики 
+2012-08-13 11-01-18 Создание конфигурации 
+2012-08-13 11-01-20 Присоединение сессии 
+2012-08-13 11-01-20 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-01-20 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-01-20 Чтение конфигурации 
+2012-08-13 11-01-20 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 11-01-20 Создание ед. работы 
+2012-08-13 11-01-20 Создание ед. работы 
+2012-08-13 11-01-20 Присоединение сессии 
+2012-08-13 11-01-20 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 11-01-20 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-01-20 Чтение конфигурации 
+2012-08-13 11-01-20 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-01-20 Создание ед. работы 
+2012-08-13 11-01-20 Создание ед. работы 
+2012-08-13 11-01-20 Присоединение сессии 
+2012-08-13 11-01-20 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-01-20 Чтение конфигурации 
+2012-08-13 11-01-20 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-01-20 Создание ед. работы 
+2012-08-13 11-01-20 Создание ед. работы 
+2012-08-13 11-01-20 Присоединение сессии 
+2012-08-13 11-01-20 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-01-20 Чтение конфигурации 
+2012-08-13 11-01-20 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-01-20 Создание ед. работы 
+2012-08-13 11-01-20 Создание ед. работы 
+2012-08-13 11-01-20 Присоединение сессии 
+2012-08-13 11-01-20 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-01-21 Чтение конфигурации 
+2012-08-13 11-01-21 Чтение конфигурации 
+2012-08-13 11-01-21 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 11-01-21 Создание ед. работы 
+2012-08-13 11-01-21 Создание ед. работы 
+2012-08-13 11-01-21 Присоединение сессии 
+2012-08-13 11-01-21 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B41' [Type: String (4000)] 
+2012-08-13 11-01-21 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-01-21 GetById NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0 ]
+  Name:Id - Value:252AD96B-F238-429D-B9C3-0060C8079B41
+[SQL: SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0] ---> System.IndexOutOfRangeException: AdditionalValue02
+   в System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   в System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   в NHibernate.Driver.NHybridDataReader.GetOrdinal(String name)
+   в NHibernate.Type.NullableType.NullSafeGet(IDataReader rs, String name)
+   в NHibernate.Type.NullableType.NullSafeGet(IDataReader rs, String[] names, ISessionImplementor session, Object owner)
+   в NHibernate.Type.AbstractType.Hydrate(IDataReader rs, String[] names, ISessionImplementor session, Object owner)
+   в NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(IDataReader rs, Object id, Object obj, ILoadable rootLoadable, String[][] suffixedPropertyColumns, Boolean allProperties, ISessionImplementor session)
+   в NHibernate.Loader.Loader.LoadFromResultSet(IDataReader rs, Int32 i, Object obj, String instanceClass, EntityKey key, String rowIdAlias, LockMode lockMode, ILoadable rootPersister, ISessionImplementor session)
+   в NHibernate.Loader.Loader.InstanceNotYetLoaded(IDataReader dr, Int32 i, ILoadable persister, EntityKey key, LockMode lockMode, String rowIdAlias, EntityKey optionalObjectKey, Object optionalObject, IList hydratedObjects, ISessionImplementor session)
+   в NHibernate.Loader.Loader.GetRow(IDataReader rs, ILoadable[] persisters, EntityKey[] keys, Object optionalObject, EntityKey optionalObjectKey, LockMode[] lockModes, IList hydratedObjects, ISessionImplementor session)
+   в NHibernate.Loader.Loader.GetRowFromResultSet(IDataReader resultSet, ISessionImplementor session, QueryParameters queryParameters, LockMode[] lockModeArray, EntityKey optionalObjectKey, IList hydratedObjects, EntityKey[] keys, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Loader.Loader.ListUsingQueryCache(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Custom.CustomLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Impl.SessionImpl.ListCustomQuery(ICustomQuery customQuery, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters)
+   в NHibernate.Impl.SqlQueryImpl.List()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult[T]()
+   в SharedRef.Domain.IoC.Reference.GetById(String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 50
+   в SharedRef.Manager.<>c__DisplayClass8.<GetById>b__6(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.With[TInput,TResult](TInput o, Func`2 evaluator) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 18
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103|System.IndexOutOfRangeException: AdditionalValue02
+   в System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   в System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   в NHibernate.Driver.NHybridDataReader.GetOrdinal(String name)
+   в NHibernate.Type.NullableType.NullSafeGet(IDataReader rs, String name)
+   в NHibernate.Type.NullableType.NullSafeGet(IDataReader rs, String[] names, ISessionImplementor session, Object owner)
+   в NHibernate.Type.AbstractType.Hydrate(IDataReader rs, String[] names, ISessionImplementor session, Object owner)
+   в NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(IDataReader rs, Object id, Object obj, ILoadable rootLoadable, String[][] suffixedPropertyColumns, Boolean allProperties, ISessionImplementor session)
+   в NHibernate.Loader.Loader.LoadFromResultSet(IDataReader rs, Int32 i, Object obj, String instanceClass, EntityKey key, String rowIdAlias, LockMode lockMode, ILoadable rootPersister, ISessionImplementor session)
+   в NHibernate.Loader.Loader.InstanceNotYetLoaded(IDataReader dr, Int32 i, ILoadable persister, EntityKey key, LockMode lockMode, String rowIdAlias, EntityKey optionalObjectKey, Object optionalObject, IList hydratedObjects, ISessionImplementor session)
+   в NHibernate.Loader.Loader.GetRow(IDataReader rs, ILoadable[] persisters, EntityKey[] keys, Object optionalObject, EntityKey optionalObjectKey, LockMode[] lockModes, IList hydratedObjects, ISessionImplementor session)
+   в NHibernate.Loader.Loader.GetRowFromResultSet(IDataReader resultSet, ISessionImplementor session, QueryParameters queryParameters, LockMode[] lockModeArray, EntityKey optionalObjectKey, IList hydratedObjects, EntityKey[] keys, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-08-13 11-01-21 GetByIdXml System.ApplicationException: GetById ---> NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0 ]
+  Name:Id - Value:252AD96B-F238-429D-B9C3-0060C8079B41
+[SQL: SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0] ---> System.IndexOutOfRangeException: AdditionalValue02
+   в System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   в System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   в NHibernate.Driver.NHybridDataReader.GetOrdinal(String name)
+   в NHibernate.Type.NullableType.NullSafeGet(IDataReader rs, String name)
+   в NHibernate.Type.NullableType.NullSafeGet(IDataReader rs, String[] names, ISessionImplementor session, Object owner)
+   в NHibernate.Type.AbstractType.Hydrate(IDataReader rs, String[] names, ISessionImplementor session, Object owner)
+   в NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(IDataReader rs, Object id, Object obj, ILoadable rootLoadable, String[][] suffixedPropertyColumns, Boolean allProperties, ISessionImplementor session)
+   в NHibernate.Loader.Loader.LoadFromResultSet(IDataReader rs, Int32 i, Object obj, String instanceClass, EntityKey key, String rowIdAlias, LockMode lockMode, ILoadable rootPersister, ISessionImplementor session)
+   в NHibernate.Loader.Loader.InstanceNotYetLoaded(IDataReader dr, Int32 i, ILoadable persister, EntityKey key, LockMode lockMode, String rowIdAlias, EntityKey optionalObjectKey, Object optionalObject, IList hydratedObjects, ISessionImplementor session)
+   в NHibernate.Loader.Loader.GetRow(IDataReader rs, ILoadable[] persisters, EntityKey[] keys, Object optionalObject, EntityKey optionalObjectKey, LockMode[] lockModes, IList hydratedObjects, ISessionImplementor session)
+   в NHibernate.Loader.Loader.GetRowFromResultSet(IDataReader resultSet, ISessionImplementor session, QueryParameters queryParameters, LockMode[] lockModeArray, EntityKey optionalObjectKey, IList hydratedObjects, EntityKey[] keys, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Loader.Loader.ListUsingQueryCache(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Custom.CustomLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Impl.SessionImpl.ListCustomQuery(ICustomQuery customQuery, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters)
+   в NHibernate.Impl.SqlQueryImpl.List()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult[T]()
+   в SharedRef.Domain.IoC.Reference.GetById(String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 50
+   в SharedRef.Manager.<>c__DisplayClass8.<GetById>b__6(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.With[TInput,TResult](TInput o, Func`2 evaluator) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 18
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   --- Конец трассировки внутреннего стека исключений ---
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 108
+   в SharedRef.Manager.GetByIdXml(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 116|NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0 ]
+  Name:Id - Value:252AD96B-F238-429D-B9C3-0060C8079B41
+[SQL: SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0] ---> System.IndexOutOfRangeException: AdditionalValue02
+   в System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   в System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   в NHibernate.Driver.NHybridDataReader.GetOrdinal(String name)
+   в NHibernate.Type.NullableType.NullSafeGet(IDataReader rs, String name)
+   в NHibernate.Type.NullableType.NullSafeGet(IDataReader rs, String[] names, ISessionImplementor session, Object owner)
+   в NHibernate.Type.AbstractType.Hydrate(IDataReader rs, String[] names, ISessionImplementor session, Object owner)
+   в NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(IDataReader rs, Object id, Object obj, ILoadable rootLoadable, String[][] suffixedPropertyColumns, Boolean allProperties, ISessionImplementor session)
+   в NHibernate.Loader.Loader.LoadFromResultSet(IDataReader rs, Int32 i, Object obj, String instanceClass, EntityKey key, String rowIdAlias, LockMode lockMode, ILoadable rootPersister, ISessionImplementor session)
+   в NHibernate.Loader.Loader.InstanceNotYetLoaded(IDataReader dr, Int32 i, ILoadable persister, EntityKey key, LockMode lockMode, String rowIdAlias, EntityKey optionalObjectKey, Object optionalObject, IList hydratedObjects, ISessionImplementor session)
+   в NHibernate.Loader.Loader.GetRow(IDataReader rs, ILoadable[] persisters, EntityKey[] keys, Object optionalObject, EntityKey optionalObjectKey, LockMode[] lockModes, IList hydratedObjects, ISessionImplementor session)
+   в NHibernate.Loader.Loader.GetRowFromResultSet(IDataReader resultSet, ISessionImplementor session, QueryParameters queryParameters, LockMode[] lockModeArray, EntityKey optionalObjectKey, IList hydratedObjects, EntityKey[] keys, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Loader.Loader.ListUsingQueryCache(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Custom.CustomLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Impl.SessionImpl.ListCustomQuery(ICustomQuery customQuery, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters)
+   в NHibernate.Impl.SqlQueryImpl.List()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult[T]()
+   в SharedRef.Domain.IoC.Reference.GetById(String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 50
+   в SharedRef.Manager.<>c__DisplayClass8.<GetById>b__6(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.With[TInput,TResult](TInput o, Func`2 evaluator) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 18
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103|System.IndexOutOfRangeException: AdditionalValue02
+   в System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   в System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   в NHibernate.Driver.NHybridDataReader.GetOrdinal(String name)
+   в NHibernate.Type.NullableType.NullSafeGet(IDataReader rs, String name)
+   в NHibernate.Type.NullableType.NullSafeGet(IDataReader rs, String[] names, ISessionImplementor session, Object owner)
+   в NHibernate.Type.AbstractType.Hydrate(IDataReader rs, String[] names, ISessionImplementor session, Object owner)
+   в NHibernate.Persister.Entity.AbstractEntityPersister.Hydrate(IDataReader rs, Object id, Object obj, ILoadable rootLoadable, String[][] suffixedPropertyColumns, Boolean allProperties, ISessionImplementor session)
+   в NHibernate.Loader.Loader.LoadFromResultSet(IDataReader rs, Int32 i, Object obj, String instanceClass, EntityKey key, String rowIdAlias, LockMode lockMode, ILoadable rootPersister, ISessionImplementor session)
+   в NHibernate.Loader.Loader.InstanceNotYetLoaded(IDataReader dr, Int32 i, ILoadable persister, EntityKey key, LockMode lockMode, String rowIdAlias, EntityKey optionalObjectKey, Object optionalObject, IList hydratedObjects, ISessionImplementor session)
+   в NHibernate.Loader.Loader.GetRow(IDataReader rs, ILoadable[] persisters, EntityKey[] keys, Object optionalObject, EntityKey optionalObjectKey, LockMode[] lockModes, IList hydratedObjects, ISessionImplementor session)
+   в NHibernate.Loader.Loader.GetRowFromResultSet(IDataReader resultSet, ISessionImplementor session, QueryParameters queryParameters, LockMode[] lockModeArray, EntityKey optionalObjectKey, IList hydratedObjects, EntityKey[] keys, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-08-13 11-03-36 Чтение конфигурации 
+2012-08-13 11-03-38 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-03-38 Создание ед. работы 
+2012-08-13 11-03-38 Создание ед. работы 
+2012-08-13 11-03-38 Создание фабрики 
+2012-08-13 11-03-38 Создание конфигурации 
+2012-08-13 11-03-40 Присоединение сессии 
+2012-08-13 11-03-40 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-03-40 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-03-40 Чтение конфигурации 
+2012-08-13 11-03-40 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 11-03-40 Создание ед. работы 
+2012-08-13 11-03-40 Создание ед. работы 
+2012-08-13 11-03-40 Присоединение сессии 
+2012-08-13 11-03-40 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 11-03-40 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-03-40 Чтение конфигурации 
+2012-08-13 11-03-40 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-03-40 Создание ед. работы 
+2012-08-13 11-03-40 Создание ед. работы 
+2012-08-13 11-03-40 Присоединение сессии 
+2012-08-13 11-03-40 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-03-40 Чтение конфигурации 
+2012-08-13 11-03-40 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-03-40 Создание ед. работы 
+2012-08-13 11-03-40 Создание ед. работы 
+2012-08-13 11-03-40 Присоединение сессии 
+2012-08-13 11-03-40 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-03-40 Чтение конфигурации 
+2012-08-13 11-03-40 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-03-40 Создание ед. работы 
+2012-08-13 11-03-40 Создание ед. работы 
+2012-08-13 11-03-40 Присоединение сессии 
+2012-08-13 11-03-40 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-03-40 Чтение конфигурации 
+2012-08-13 11-03-40 Чтение конфигурации 
+2012-08-13 11-03-40 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 11-03-40 Создание ед. работы 
+2012-08-13 11-03-40 Создание ед. работы 
+2012-08-13 11-03-40 Присоединение сессии 
+2012-08-13 11-03-40 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-03-40 GetById NHibernate.QueryException: Not all named parameters have been set: ['Id'] [SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = :Id]
+   в NHibernate.Impl.AbstractQueryImpl.VerifyParameters(Boolean reserveFirstParameter)
+   в NHibernate.Impl.AbstractQueryImpl.VerifyParameters()
+   в NHibernate.Impl.SqlQueryImpl.VerifyParameters()
+   в NHibernate.Impl.SqlQueryImpl.List()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult[T]()
+   в SharedRef.Domain.IoC.Reference.GetById(String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 61
+   в SharedRef.Manager.<>c__DisplayClass8.<GetById>b__6(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.With[TInput,TResult](TInput o, Func`2 evaluator) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 18
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+2012-08-13 11-03-40 GetByIdXml System.ApplicationException: GetById ---> NHibernate.QueryException: Not all named parameters have been set: ['Id'] [SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = :Id]
+   в NHibernate.Impl.AbstractQueryImpl.VerifyParameters(Boolean reserveFirstParameter)
+   в NHibernate.Impl.AbstractQueryImpl.VerifyParameters()
+   в NHibernate.Impl.SqlQueryImpl.VerifyParameters()
+   в NHibernate.Impl.SqlQueryImpl.List()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult[T]()
+   в SharedRef.Domain.IoC.Reference.GetById(String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 61
+   в SharedRef.Manager.<>c__DisplayClass8.<GetById>b__6(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.With[TInput,TResult](TInput o, Func`2 evaluator) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 18
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   --- Конец трассировки внутреннего стека исключений ---
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 108
+   в SharedRef.Manager.GetByIdXml(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 116|NHibernate.QueryException: Not all named parameters have been set: ['Id'] [SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = :Id]
+   в NHibernate.Impl.AbstractQueryImpl.VerifyParameters(Boolean reserveFirstParameter)
+   в NHibernate.Impl.AbstractQueryImpl.VerifyParameters()
+   в NHibernate.Impl.SqlQueryImpl.VerifyParameters()
+   в NHibernate.Impl.SqlQueryImpl.List()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult()
+   в NHibernate.Impl.AbstractQueryImpl.UniqueResult[T]()
+   в SharedRef.Domain.IoC.Reference.GetById(String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 61
+   в SharedRef.Manager.<>c__DisplayClass8.<GetById>b__6(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.With[TInput,TResult](TInput o, Func`2 evaluator) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 18
+   в SharedRef.Manager.GetById(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 103
+2012-08-13 11-19-52 Чтение конфигурации 
+2012-08-13 11-19-54 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-19-54 Создание ед. работы 
+2012-08-13 11-19-54 Создание ед. работы 
+2012-08-13 11-19-54 Создание фабрики 
+2012-08-13 11-19-54 Создание конфигурации 
+2012-08-13 11-19-57 Присоединение сессии 
+2012-08-13 11-19-57 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-19-57 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-19-57 Чтение конфигурации 
+2012-08-13 11-19-57 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 11-19-57 Создание ед. работы 
+2012-08-13 11-19-57 Создание ед. работы 
+2012-08-13 11-19-57 Присоединение сессии 
+2012-08-13 11-19-57 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 11-19-57 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-19-57 Чтение конфигурации 
+2012-08-13 11-19-57 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-19-57 Создание ед. работы 
+2012-08-13 11-19-57 Создание ед. работы 
+2012-08-13 11-19-57 Присоединение сессии 
+2012-08-13 11-19-57 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-19-57 Чтение конфигурации 
+2012-08-13 11-19-57 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-19-57 Создание ед. работы 
+2012-08-13 11-19-57 Создание ед. работы 
+2012-08-13 11-19-57 Присоединение сессии 
+2012-08-13 11-19-57 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-19-57 Чтение конфигурации 
+2012-08-13 11-19-57 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-19-57 Создание ед. работы 
+2012-08-13 11-19-57 Создание ед. работы 
+2012-08-13 11-19-57 Присоединение сессии 
+2012-08-13 11-19-57 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-19-57 Чтение конфигурации 
+2012-08-13 11-19-57 Чтение конфигурации 
+2012-08-13 11-19-57 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 11-19-57 Создание ед. работы 
+2012-08-13 11-19-57 Создание ед. работы 
+2012-08-13 11-19-57 Присоединение сессии 
+2012-08-13 11-19-57 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B41' [Type: String (4000)] 
+2012-08-13 11-19-58 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-19-58 GetByIdXml System.ArgumentNullException: Значение не может быть неопределенным.
+Имя параметра: value
+   в System.Xml.Linq.XAttribute..ctor(XName name, Object value)
+   в SharedRef.Manager.ToXml(String name, List`1 list) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 156
+   в SharedRef.Manager.GetByIdXml(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 118
+2012-08-13 11-21-14 Чтение конфигурации 
+2012-08-13 11-21-15 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-21-15 Создание ед. работы 
+2012-08-13 11-21-15 Создание ед. работы 
+2012-08-13 11-21-15 Создание фабрики 
+2012-08-13 11-21-15 Создание конфигурации 
+2012-08-13 11-21-17 Присоединение сессии 
+2012-08-13 11-21-17 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-21-17 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-21-18 Чтение конфигурации 
+2012-08-13 11-21-18 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 11-21-18 Создание ед. работы 
+2012-08-13 11-21-18 Создание ед. работы 
+2012-08-13 11-21-18 Присоединение сессии 
+2012-08-13 11-21-18 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 11-21-18 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-21-18 Чтение конфигурации 
+2012-08-13 11-21-18 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-21-18 Создание ед. работы 
+2012-08-13 11-21-18 Создание ед. работы 
+2012-08-13 11-21-18 Присоединение сессии 
+2012-08-13 11-21-18 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-21-18 Чтение конфигурации 
+2012-08-13 11-21-18 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-21-18 Создание ед. работы 
+2012-08-13 11-21-18 Создание ед. работы 
+2012-08-13 11-21-18 Присоединение сессии 
+2012-08-13 11-21-18 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-21-18 Чтение конфигурации 
+2012-08-13 11-21-18 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-21-18 Создание ед. работы 
+2012-08-13 11-21-18 Создание ед. работы 
+2012-08-13 11-21-18 Присоединение сессии 
+2012-08-13 11-21-18 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-21-18 Чтение конфигурации 
+2012-08-13 11-21-18 Чтение конфигурации 
+2012-08-13 11-21-18 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 11-21-18 Создание ед. работы 
+2012-08-13 11-21-18 Создание ед. работы 
+2012-08-13 11-21-18 Присоединение сессии 
+2012-08-13 11-21-18 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B41' [Type: String (4000)] 
+2012-08-13 11-21-18 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-22-06 Чтение конфигурации 
+2012-08-13 11-22-07 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-22-07 Создание ед. работы 
+2012-08-13 11-22-07 Создание ед. работы 
+2012-08-13 11-22-07 Создание фабрики 
+2012-08-13 11-22-07 Создание конфигурации 
+2012-08-13 11-22-09 Присоединение сессии 
+2012-08-13 11-22-10 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-22-10 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-22-10 Чтение конфигурации 
+2012-08-13 11-22-10 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 11-22-10 Создание ед. работы 
+2012-08-13 11-22-10 Создание ед. работы 
+2012-08-13 11-22-10 Присоединение сессии 
+2012-08-13 11-22-10 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 11-22-10 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-22-10 Чтение конфигурации 
+2012-08-13 11-22-10 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-22-10 Создание ед. работы 
+2012-08-13 11-22-10 Создание ед. работы 
+2012-08-13 11-22-10 Присоединение сессии 
+2012-08-13 11-22-10 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-22-10 Чтение конфигурации 
+2012-08-13 11-22-10 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-22-10 Создание ед. работы 
+2012-08-13 11-22-10 Создание ед. работы 
+2012-08-13 11-22-10 Присоединение сессии 
+2012-08-13 11-22-10 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-22-10 Чтение конфигурации 
+2012-08-13 11-22-10 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-22-10 Создание ед. работы 
+2012-08-13 11-22-10 Создание ед. работы 
+2012-08-13 11-22-10 Присоединение сессии 
+2012-08-13 11-22-10 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-22-10 Чтение конфигурации 
+2012-08-13 11-22-10 Чтение конфигурации 
+2012-08-13 11-22-10 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 11-22-10 Создание ед. работы 
+2012-08-13 11-22-10 Создание ед. работы 
+2012-08-13 11-22-10 Присоединение сессии 
+2012-08-13 11-22-10 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B41' [Type: String (4000)] 
+2012-08-13 11-22-10 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-22-20 GetByIdXml System.ArgumentNullException: Значение не может быть неопределенным.
+Имя параметра: value
+   в System.Xml.Linq.XAttribute..ctor(XName name, Object value)
+   в SharedRef.Manager.ToXml(String name, List`1 list) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 156
+   в SharedRef.Manager.GetByIdXml(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 118
+2012-08-13 11-22-36 Чтение конфигурации 
+2012-08-13 11-22-38 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-22-38 Создание ед. работы 
+2012-08-13 11-22-38 Создание ед. работы 
+2012-08-13 11-22-38 Создание фабрики 
+2012-08-13 11-22-38 Создание конфигурации 
+2012-08-13 11-22-40 Присоединение сессии 
+2012-08-13 11-22-40 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-22-40 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-22-40 Чтение конфигурации 
+2012-08-13 11-22-40 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 11-22-40 Создание ед. работы 
+2012-08-13 11-22-40 Создание ед. работы 
+2012-08-13 11-22-40 Присоединение сессии 
+2012-08-13 11-22-40 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 11-22-40 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-22-40 Чтение конфигурации 
+2012-08-13 11-22-40 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-22-40 Создание ед. работы 
+2012-08-13 11-22-40 Создание ед. работы 
+2012-08-13 11-22-40 Присоединение сессии 
+2012-08-13 11-22-40 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-22-40 Чтение конфигурации 
+2012-08-13 11-22-40 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-22-40 Создание ед. работы 
+2012-08-13 11-22-40 Создание ед. работы 
+2012-08-13 11-22-40 Присоединение сессии 
+2012-08-13 11-22-40 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-22-41 Чтение конфигурации 
+2012-08-13 11-22-41 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-22-41 Создание ед. работы 
+2012-08-13 11-22-41 Создание ед. работы 
+2012-08-13 11-22-41 Присоединение сессии 
+2012-08-13 11-22-41 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-22-41 Чтение конфигурации 
+2012-08-13 11-22-41 Чтение конфигурации 
+2012-08-13 11-22-41 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 11-22-41 Создание ед. работы 
+2012-08-13 11-22-41 Создание ед. работы 
+2012-08-13 11-22-41 Присоединение сессии 
+2012-08-13 11-22-41 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B41' [Type: String (4000)] 
+2012-08-13 11-22-41 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-22-41 GetByIdXml System.ArgumentNullException: Значение не может быть неопределенным.
+Имя параметра: value
+   в System.Xml.Linq.XAttribute..ctor(XName name, Object value)
+   в SharedRef.Manager.ToXml(String name, List`1 list) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 156
+   в SharedRef.Manager.GetByIdXml(String name, String id) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 118
+2012-08-13 11-23-27 Чтение конфигурации 
+2012-08-13 11-23-29 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-23-29 Создание ед. работы 
+2012-08-13 11-23-29 Создание ед. работы 
+2012-08-13 11-23-29 Создание фабрики 
+2012-08-13 11-23-29 Создание конфигурации 
+2012-08-13 11-23-31 Присоединение сессии 
+2012-08-13 11-23-31 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-23-31 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-23-31 Чтение конфигурации 
+2012-08-13 11-23-31 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 11-23-31 Создание ед. работы 
+2012-08-13 11-23-31 Создание ед. работы 
+2012-08-13 11-23-31 Присоединение сессии 
+2012-08-13 11-23-31 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 11-23-31 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-23-32 Чтение конфигурации 
+2012-08-13 11-23-32 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-23-32 Создание ед. работы 
+2012-08-13 11-23-32 Создание ед. работы 
+2012-08-13 11-23-32 Присоединение сессии 
+2012-08-13 11-23-32 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-23-32 Чтение конфигурации 
+2012-08-13 11-23-32 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-23-32 Создание ед. работы 
+2012-08-13 11-23-32 Создание ед. работы 
+2012-08-13 11-23-32 Присоединение сессии 
+2012-08-13 11-23-32 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-23-32 Чтение конфигурации 
+2012-08-13 11-23-32 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-23-32 Создание ед. работы 
+2012-08-13 11-23-32 Создание ед. работы 
+2012-08-13 11-23-32 Присоединение сессии 
+2012-08-13 11-23-32 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-23-32 Чтение конфигурации 
+2012-08-13 11-23-32 Чтение конфигурации 
+2012-08-13 11-23-37 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 11-23-57 Чтение конфигурации 
+2012-08-13 11-24-02 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-25-21 Чтение конфигурации 
+2012-08-13 11-25-22 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-25-22 Создание ед. работы 
+2012-08-13 11-25-22 Создание фабрики 
+2012-08-13 11-25-22 Создание конфигурации 
+2012-08-13 11-25-24 Присоединение сессии 
+2012-08-13 11-25-25 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-25-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-25-25 Чтение конфигурации 
+2012-08-13 11-25-25 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 11-25-25 Создание ед. работы 
+2012-08-13 11-25-25 Присоединение сессии 
+2012-08-13 11-25-25 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 11-25-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-25-25 Чтение конфигурации 
+2012-08-13 11-25-25 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-25-25 Создание ед. работы 
+2012-08-13 11-25-25 Присоединение сессии 
+2012-08-13 11-25-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-25-25 Чтение конфигурации 
+2012-08-13 11-25-25 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-25-25 Создание ед. работы 
+2012-08-13 11-25-25 Присоединение сессии 
+2012-08-13 11-25-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-25-25 Чтение конфигурации 
+2012-08-13 11-25-25 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-25-25 Создание ед. работы 
+2012-08-13 11-25-25 Присоединение сессии 
+2012-08-13 11-25-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-25-25 Чтение конфигурации 
+2012-08-13 11-25-25 Чтение конфигурации 
+2012-08-13 11-25-25 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 11-25-25 Создание ед. работы 
+2012-08-13 11-25-25 Присоединение сессии 
+2012-08-13 11-25-25 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B41' [Type: String (4000)] 
+2012-08-13 11-25-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-26-41 Чтение конфигурации 
+2012-08-13 11-26-42 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-26-42 Создание ед. работы 
+2012-08-13 11-26-42 Создание фабрики 
+2012-08-13 11-26-42 Создание конфигурации 
+2012-08-13 11-26-44 Присоединение сессии 
+2012-08-13 11-26-44 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-26-45 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-26-45 Чтение конфигурации 
+2012-08-13 11-26-45 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 11-26-45 Создание ед. работы 
+2012-08-13 11-26-45 Присоединение сессии 
+2012-08-13 11-26-45 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 11-26-45 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-26-45 Чтение конфигурации 
+2012-08-13 11-26-45 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-26-45 Создание ед. работы 
+2012-08-13 11-26-45 Присоединение сессии 
+2012-08-13 11-26-45 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-26-45 Чтение конфигурации 
+2012-08-13 11-26-45 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-26-45 Создание ед. работы 
+2012-08-13 11-26-45 Присоединение сессии 
+2012-08-13 11-26-45 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-26-45 Чтение конфигурации 
+2012-08-13 11-26-45 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-26-45 Создание ед. работы 
+2012-08-13 11-26-45 Присоединение сессии 
+2012-08-13 11-26-45 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-26-45 Чтение конфигурации 
+2012-08-13 11-26-45 Чтение конфигурации 
+2012-08-13 11-26-45 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 11-26-45 Создание ед. работы 
+2012-08-13 11-26-45 Присоединение сессии 
+2012-08-13 11-26-45 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B41' [Type: String (4000)] 
+2012-08-13 11-26-45 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-27-04 Чтение конфигурации 
+2012-08-13 11-27-06 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-27-06 Создание ед. работы 
+2012-08-13 11-27-06 Создание фабрики 
+2012-08-13 11-27-06 Создание конфигурации 
+2012-08-13 11-27-08 Присоединение сессии 
+2012-08-13 11-27-08 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-27-08 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-27-08 Чтение конфигурации 
+2012-08-13 11-27-08 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 11-27-08 Создание ед. работы 
+2012-08-13 11-27-08 Присоединение сессии 
+2012-08-13 11-27-08 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 11-27-08 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-27-08 Чтение конфигурации 
+2012-08-13 11-27-08 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-27-08 Создание ед. работы 
+2012-08-13 11-27-08 Присоединение сессии 
+2012-08-13 11-27-08 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-27-08 Чтение конфигурации 
+2012-08-13 11-27-08 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-27-08 Создание ед. работы 
+2012-08-13 11-27-08 Присоединение сессии 
+2012-08-13 11-27-08 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-27-09 Чтение конфигурации 
+2012-08-13 11-27-09 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-27-09 Создание ед. работы 
+2012-08-13 11-27-09 Присоединение сессии 
+2012-08-13 11-27-09 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-27-09 Чтение конфигурации 
+2012-08-13 11-27-09 Чтение конфигурации 
+2012-08-13 11-27-09 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 11-27-09 Создание ед. работы 
+2012-08-13 11-27-09 Присоединение сессии 
+2012-08-13 11-27-09 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B41' [Type: String (4000)] 
+2012-08-13 11-27-09 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-27-09 Чтение конфигурации 
+2012-08-13 11-27-09 Чтение конфигурации 
+2012-08-13 11-27-09 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B40) 
+2012-08-13 11-27-09 Создание ед. работы 
+2012-08-13 11-27-09 Присоединение сессии 
+2012-08-13 11-27-09 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B40' [Type: String (4000)] 
+2012-08-13 11-27-09 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-29-46 Чтение конфигурации 
+2012-08-13 11-29-47 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-29-47 Создание ед. работы 
+2012-08-13 11-29-47 Создание фабрики 
+2012-08-13 11-29-47 Создание конфигурации 
+2012-08-13 11-29-49 Присоединение сессии 
+2012-08-13 11-29-49 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-29-49 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-29-49 Чтение конфигурации 
+2012-08-13 11-29-49 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 11-29-49 Создание ед. работы 
+2012-08-13 11-29-49 Присоединение сессии 
+2012-08-13 11-29-49 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 11-29-49 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-29-50 Чтение конфигурации 
+2012-08-13 11-29-50 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-29-50 Создание ед. работы 
+2012-08-13 11-29-50 Присоединение сессии 
+2012-08-13 11-29-50 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-29-50 Чтение конфигурации 
+2012-08-13 11-29-50 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-29-50 Создание ед. работы 
+2012-08-13 11-29-50 Присоединение сессии 
+2012-08-13 11-29-50 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-29-50 Чтение конфигурации 
+2012-08-13 11-29-50 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-29-50 Создание ед. работы 
+2012-08-13 11-29-50 Присоединение сессии 
+2012-08-13 11-29-50 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-29-50 Чтение конфигурации 
+2012-08-13 11-29-50 Чтение конфигурации 
+2012-08-13 11-29-50 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 11-29-50 Создание ед. работы 
+2012-08-13 11-29-50 Присоединение сессии 
+2012-08-13 11-29-50 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B41' [Type: String (4000)] 
+2012-08-13 11-29-50 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-29-50 Чтение конфигурации 
+2012-08-13 11-29-50 Чтение конфигурации 
+2012-08-13 11-29-50 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B40) 
+2012-08-13 11-29-50 Создание ед. работы 
+2012-08-13 11-29-50 Присоединение сессии 
+2012-08-13 11-29-50 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B40' [Type: String (4000)] 
+2012-08-13 11-29-50 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-54-36 Чтение конфигурации 
+2012-08-13 11-54-37 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-54-37 Создание ед. работы 
+2012-08-13 11-54-37 Создание фабрики 
+2012-08-13 11-54-37 Создание конфигурации 
+2012-08-13 11-54-39 GetValues NHibernate.DuplicateMappingException: Duplicate query / sql-query mapping fias_District_list
+   в NHibernate.Cfg.Mappings.CheckQueryExists(String name)
+   в NHibernate.Cfg.Mappings.AddSQLQuery(String name, NamedSQLQueryDefinition query)
+   в NHibernate.Cfg.XmlHbmBinding.NamedSQLQueryBinder.<>c__DisplayClass1.<AddSqlQuery>b__0(IDictionary`2 param0)
+   в NHibernate.Cfg.Configuration.SecondPassCompile()
+   в NHibernate.Cfg.Configuration.BuildSessionFactory()
+   в SharedRef.Data.DataHelper.get_SessionFactory() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\DataHelper.cs:строка 33
+   в SharedRef.Data.UnitOfWorkFactory.Data(IsolationLevel isolationLevel) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 16
+   в SharedRef.Data.UnitOfWorkFactory.Data() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 21
+   в SharedRef.Domain.IoC.Reference.GetItems(String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 80
+   в SharedRef.Manager.<>c__DisplayClass4.<GetValues>b__2(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 55
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetValues(String name, String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 55
+2012-08-13 11-55-25 Чтение конфигурации 
+2012-08-13 11-55-27 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-55-27 Создание ед. работы 
+2012-08-13 11-55-27 Создание фабрики 
+2012-08-13 11-55-27 Создание конфигурации 
+2012-08-13 11-55-29 Присоединение сессии 
+2012-08-13 11-55-29 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-55-29 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-55-29 Чтение конфигурации 
+2012-08-13 11-55-29 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 11-55-29 Создание ед. работы 
+2012-08-13 11-55-29 Присоединение сессии 
+2012-08-13 11-55-29 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 11-55-29 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-55-29 Чтение конфигурации 
+2012-08-13 11-55-29 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-55-29 Создание ед. работы 
+2012-08-13 11-55-29 Присоединение сессии 
+2012-08-13 11-55-29 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-55-29 Чтение конфигурации 
+2012-08-13 11-55-29 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-55-29 Создание ед. работы 
+2012-08-13 11-55-29 Присоединение сессии 
+2012-08-13 11-55-29 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-55-29 Чтение конфигурации 
+2012-08-13 11-55-29 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-55-29 Создание ед. работы 
+2012-08-13 11-55-29 Присоединение сессии 
+2012-08-13 11-55-29 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-55-29 Чтение конфигурации 
+2012-08-13 11-55-30 Чтение конфигурации 
+2012-08-13 11-55-30 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 11-55-30 Создание ед. работы 
+2012-08-13 11-55-30 Присоединение сессии 
+2012-08-13 11-55-30 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B41' [Type: String (4000)] 
+2012-08-13 11-55-30 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-55-30 Чтение конфигурации 
+2012-08-13 11-55-30 Чтение конфигурации 
+2012-08-13 11-55-30 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B40) 
+2012-08-13 11-55-30 Создание ед. работы 
+2012-08-13 11-55-30 Присоединение сессии 
+2012-08-13 11-55-30 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B40' [Type: String (4000)] 
+2012-08-13 11-55-30 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-55-50 Чтение конфигурации 
+2012-08-13 11-55-51 Refrence fias_Region: GetItems(, , 2, True) 
+2012-08-13 11-55-51 Создание ед. работы 
+2012-08-13 11-55-51 Создание фабрики 
+2012-08-13 11-55-51 Создание конфигурации 
+2012-08-13 11-55-53 Присоединение сессии 
+2012-08-13 11-55-53 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-55-53 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-55-53 Чтение конфигурации 
+2012-08-13 11-55-53 Refrence fias_Region: GetItems(, , 0, True) 
+2012-08-13 11-55-53 Создание ед. работы 
+2012-08-13 11-55-53 Присоединение сессии 
+2012-08-13 11-55-53 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 6 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 11-55-53 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-55-54 Чтение конфигурации 
+2012-08-13 11-55-54 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-55-54 Создание ед. работы 
+2012-08-13 11-55-54 Присоединение сессии 
+2012-08-13 11-55-54 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-55-54 Чтение конфигурации 
+2012-08-13 11-55-54 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-55-54 Создание ед. работы 
+2012-08-13 11-55-54 Присоединение сессии 
+2012-08-13 11-55-54 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-55-54 Чтение конфигурации 
+2012-08-13 11-55-54 Refrence fias_Region: GetItems(, С, 0, True) 
+2012-08-13 11-55-54 Создание ед. работы 
+2012-08-13 11-55-54 Присоединение сессии 
+2012-08-13 11-55-54 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-55-54 Чтение конфигурации 
+2012-08-13 11-55-54 Чтение конфигурации 
+2012-08-13 11-55-54 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 11-55-54 Создание ед. работы 
+2012-08-13 11-55-54 Присоединение сессии 
+2012-08-13 11-55-54 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B41' [Type: String (4000)] 
+2012-08-13 11-55-54 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-55-54 Чтение конфигурации 
+2012-08-13 11-55-54 Чтение конфигурации 
+2012-08-13 11-55-54 Refrence fias_Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B40) 
+2012-08-13 11-55-54 Создание ед. работы 
+2012-08-13 11-55-54 Присоединение сессии 
+2012-08-13 11-55-54 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B40' [Type: String (4000)] 
+2012-08-13 11-55-54 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-58-03 Чтение конфигурации 
+2012-08-13 11-58-04 Refrence fias.Region: GetItems(, , 2, True) 
+2012-08-13 11-58-04 Создание ед. работы 
+2012-08-13 11-58-04 Создание фабрики 
+2012-08-13 11-58-04 Создание конфигурации 
+2012-08-13 11-58-06 Присоединение сессии 
+2012-08-13 11-58-06 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias.ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-58-06 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-58-06 GetValues NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias.ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1 ]
+  Name:StartWith - Value:%
+[SQL: SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias.ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1] ---> System.Data.SqlClient.SqlException: Недопустимое имя объекта "fias.dbo.fias.ADDROBJ".
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   в System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   в System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   в System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   в NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   в NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Loader.Loader.ListUsingQueryCache(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Custom.CustomLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Impl.SessionImpl.ListCustomQuery(ICustomQuery customQuery, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List[T](NativeSQLQuerySpecification spec, QueryParameters queryParameters)
+   в NHibernate.Impl.SqlQueryImpl.List[T]()
+   в SharedRef.Domain.IoC.Reference.GetItems(String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 123
+   в SharedRef.Manager.<>c__DisplayClass4.<GetValues>b__2(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 55
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetValues(String name, String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 55|System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "fias.dbo.fias.ADDROBJ".
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   в System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   в System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   в System.Data.SqlClient.SqlDataReader.get_MetaData()
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   в System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   в System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   в NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   в NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-08-13 11-59-21 Чтение конфигурации 
+2012-08-13 11-59-23 Refrence fias.Region: GetItems(, , 2, True) 
+2012-08-13 11-59-23 Создание ед. работы 
+2012-08-13 11-59-23 Создание фабрики 
+2012-08-13 11-59-23 Создание конфигурации 
+2012-08-13 11-59-25 Присоединение сессии 
+2012-08-13 11-59-25 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 11-59-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-59-25 Чтение конфигурации 
+2012-08-13 11-59-25 Refrence fias.Region: GetItems(, , 0, True) 
+2012-08-13 11-59-25 Создание ед. работы 
+2012-08-13 11-59-25 Присоединение сессии 
+2012-08-13 11-59-25 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 11-59-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-59-25 Чтение конфигурации 
+2012-08-13 11-59-25 Refrence fias.Region: GetItems(, С, 0, True) 
+2012-08-13 11-59-25 Создание ед. работы 
+2012-08-13 11-59-25 Присоединение сессии 
+2012-08-13 11-59-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-59-25 Чтение конфигурации 
+2012-08-13 11-59-25 Refrence fias.Region: GetItems(, С, 0, True) 
+2012-08-13 11-59-25 Создание ед. работы 
+2012-08-13 11-59-25 Присоединение сессии 
+2012-08-13 11-59-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-59-25 Чтение конфигурации 
+2012-08-13 11-59-25 Refrence fias.Region: GetItems(, С, 0, True) 
+2012-08-13 11-59-25 Создание ед. работы 
+2012-08-13 11-59-25 Присоединение сессии 
+2012-08-13 11-59-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-59-25 Чтение конфигурации 
+2012-08-13 11-59-25 Чтение конфигурации 
+2012-08-13 11-59-25 Refrence fias.Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 11-59-25 Создание ед. работы 
+2012-08-13 11-59-25 Присоединение сессии 
+2012-08-13 11-59-25 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B41' [Type: String (4000)] 
+2012-08-13 11-59-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-59-25 Чтение конфигурации 
+2012-08-13 11-59-25 Чтение конфигурации 
+2012-08-13 11-59-25 Refrence fias.Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B40) 
+2012-08-13 11-59-25 Создание ед. работы 
+2012-08-13 11-59-25 Присоединение сессии 
+2012-08-13 11-59-25 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias].[dbo].[fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B40' [Type: String (4000)] 
+2012-08-13 11-59-25 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 11-59-57 Чтение конфигурации 
+2012-08-13 11-59-59 Refrence fias.Region: GetItems(, , 2, True) 
+2012-08-13 11-59-59 Создание ед. работы 
+2012-08-13 11-59-59 Создание фабрики 
+2012-08-13 11-59-59 Создание конфигурации 
+2012-08-13 12-00-01 Присоединение сессии 
+2012-08-13 12-00-01 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 12-00-01 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 12-00-01 Чтение конфигурации 
+2012-08-13 12-00-01 Refrence fias.Region: GetItems(, , 0, True) 
+2012-08-13 12-00-01 Создание ед. работы 
+2012-08-13 12-00-01 Присоединение сессии 
+2012-08-13 12-00-01 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 12-00-01 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 12-00-01 Чтение конфигурации 
+2012-08-13 12-00-01 Refrence fias.Region: GetItems(, С, 0, True) 
+2012-08-13 12-00-01 Создание ед. работы 
+2012-08-13 12-00-01 Присоединение сессии 
+2012-08-13 12-00-01 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 12-00-01 Чтение конфигурации 
+2012-08-13 12-00-01 Refrence fias.Region: GetItems(, С, 0, True) 
+2012-08-13 12-00-01 Создание ед. работы 
+2012-08-13 12-00-01 Присоединение сессии 
+2012-08-13 12-00-01 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 12-00-01 Чтение конфигурации 
+2012-08-13 12-00-01 Refrence fias.Region: GetItems(, С, 0, True) 
+2012-08-13 12-00-01 Создание ед. работы 
+2012-08-13 12-00-01 Присоединение сессии 
+2012-08-13 12-00-01 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 12-00-01 Чтение конфигурации 
+2012-08-13 12-00-01 Чтение конфигурации 
+2012-08-13 12-00-01 Refrence fias.Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 12-00-01 Создание ед. работы 
+2012-08-13 12-00-01 Присоединение сессии 
+2012-08-13 12-00-01 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B41' [Type: String (4000)] 
+2012-08-13 12-00-01 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 12-00-01 Чтение конфигурации 
+2012-08-13 12-00-01 Чтение конфигурации 
+2012-08-13 12-00-01 Refrence fias.Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B40) 
+2012-08-13 12-00-01 Создание ед. работы 
+2012-08-13 12-00-01 Присоединение сессии 
+2012-08-13 12-00-01 SELECT [AOID] as Id
+				,[AOGUID] as AdditionalValue01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME]
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B40' [Type: String (4000)] 
+2012-08-13 12-00-01 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 12-36-45 Чтение конфигурации 
+2012-08-13 12-36-47 Refrence fias.Region: GetItems(, , 2, True) 
+2012-08-13 12-36-48 Создание ед. работы 
+2012-08-13 12-36-48 Создание фабрики 
+2012-08-13 12-36-48 Создание конфигурации 
+2012-08-13 12-36-50 GetValues NHibernate.MappingException: C:\Users\Daimond\Documents\visual studio 2010\Projects\SharedRef\SharedRef\Configs\_Technical\SimpleItem.hbm.xml(10,4): XML validation error: Элемент "class" в пространстве имен "urn:nhibernate-mapping-2.2" имеет недопустимый дочерний элемент "id" в пространстве имен "urn:nhibernate-mapping-2.2". Список ожидаемых элементов: "discriminator, natural-id, version, timestamp, property, many-to-one, one-to-one, component, dynamic-component, properties, any, map, set, list, bag, idbag, array, primitive-array, join, subclass, joined-subclass, union-subclass, loader, sql-insert, sql-update, sql-delete, filter, resultset, query, sql-query" в пространстве имен "urn:nhibernate-mapping-2.2". ---> System.Xml.Schema.XmlSchemaValidationException: Элемент "class" в пространстве имен "urn:nhibernate-mapping-2.2" имеет недопустимый дочерний элемент "id" в пространстве имен "urn:nhibernate-mapping-2.2". Список ожидаемых элементов: "discriminator, natural-id, version, timestamp, property, many-to-one, one-to-one, component, dynamic-component, properties, any, map, set, list, bag, idbag, array, primitive-array, join, subclass, joined-subclass, union-subclass, loader, sql-insert, sql-update, sql-delete, filter, resultset, query, sql-query" в пространстве имен "urn:nhibernate-mapping-2.2".
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   в NHibernate.Cfg.Configuration.ValidationHandler(Object o, ValidationEventArgs args)
+   в System.Xml.Schema.XmlSchemaValidator.SendValidationEvent(ValidationEventHandler eventHandler, Object sender, XmlSchemaValidationException e, XmlSeverityType severity)
+   в System.Xml.Schema.XmlSchemaValidator.ElementValidationError(XmlQualifiedName name, ValidationState context, ValidationEventHandler eventHandler, Object sender, String sourceUri, Int32 lineNo, Int32 linePos, XmlSchemaSet schemaSet)
+   в System.Xml.Schema.XmlSchemaValidator.ValidateElementContext(XmlQualifiedName elementName, Boolean& invalidElementInContext)
+   в System.Xml.Schema.XmlSchemaValidator.ValidateElement(String localName, String namespaceUri, XmlSchemaInfo schemaInfo, String xsiType, String xsiNil, String xsiSchemaLocation, String xsiNoNamespaceSchemaLocation)
+   в System.Xml.XsdValidatingReader.ProcessElementEvent()
+   в System.Xml.XsdValidatingReader.ProcessReaderEvent()
+   в System.Xml.XsdValidatingReader.Read()
+   в System.Xml.XmlLoader.LoadNode(Boolean skipOverWhitespace)
+   в System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   в System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   в System.Xml.XmlDocument.Load(XmlReader reader)
+   в NHibernate.Cfg.Configuration.LoadMappingDocument(XmlReader hbmReader, String name)
+   в NHibernate.Cfg.Configuration.AddXmlReader(XmlReader hbmReader, String name)
+   в NHibernate.Cfg.Configuration.AddXmlFile(String xmlFile)
+   в NHibernate.Cfg.Configuration.AddFile(String xmlFile)
+   в SharedRef.Data.DataHelper.get_Configuration() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\DataHelper.cs:строка 55
+   в SharedRef.Data.DataHelper.get_SessionFactory() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\DataHelper.cs:строка 33
+   в SharedRef.Data.UnitOfWorkFactory.Data(IsolationLevel isolationLevel) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 16
+   в SharedRef.Data.UnitOfWorkFactory.Data() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 21
+   в SharedRef.Domain.IoC.Reference.GetItems(String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 80
+   в SharedRef.Manager.<>c__DisplayClass4.<GetValues>b__2(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 55
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetValues(String name, String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 55|System.Xml.Schema.XmlSchemaValidationException: Элемент "class" в пространстве имен "urn:nhibernate-mapping-2.2" имеет недопустимый дочерний элемент "id" в пространстве имен "urn:nhibernate-mapping-2.2". Список ожидаемых элементов: "discriminator, natural-id, version, timestamp, property, many-to-one, one-to-one, component, dynamic-component, properties, any, map, set, list, bag, idbag, array, primitive-array, join, subclass, joined-subclass, union-subclass, loader, sql-insert, sql-update, sql-delete, filter, resultset, query, sql-query" в пространстве имен "urn:nhibernate-mapping-2.2".
+2012-08-13 12-37-26 Чтение конфигурации 
+2012-08-13 12-37-28 Refrence fias.Region: GetItems(, , 2, True) 
+2012-08-13 12-37-28 Создание ед. работы 
+2012-08-13 12-37-28 Создание фабрики 
+2012-08-13 12-37-28 Создание конфигурации 
+2012-08-13 12-37-29 GetValues NHibernate.DuplicateMappingException: Duplicate query / sql-query mapping fias.StreetType.list
+   в NHibernate.Cfg.Mappings.CheckQueryExists(String name)
+   в NHibernate.Cfg.Mappings.AddSQLQuery(String name, NamedSQLQueryDefinition query)
+   в NHibernate.Cfg.XmlHbmBinding.NamedSQLQueryBinder.<>c__DisplayClass1.<AddSqlQuery>b__0(IDictionary`2 param0)
+   в NHibernate.Cfg.Configuration.SecondPassCompile()
+   в NHibernate.Cfg.Configuration.BuildSessionFactory()
+   в SharedRef.Data.DataHelper.get_SessionFactory() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\DataHelper.cs:строка 33
+   в SharedRef.Data.UnitOfWorkFactory.Data(IsolationLevel isolationLevel) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 16
+   в SharedRef.Data.UnitOfWorkFactory.Data() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 21
+   в SharedRef.Domain.IoC.Reference.GetItems(String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 80
+   в SharedRef.Manager.<>c__DisplayClass4.<GetValues>b__2(Reference r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 55
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetValues(String name, String parentId, String startWith, Int32 count, Boolean sort) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 55
+2012-08-13 12-38-42 Чтение конфигурации 
+2012-08-13 12-38-44 Refrence fias.Region: GetItems(, , 2, True) 
+2012-08-13 12-38-44 Создание ед. работы 
+2012-08-13 12-38-44 Создание фабрики 
+2012-08-13 12-38-44 Создание конфигурации 
+2012-08-13 12-38-48 Присоединение сессии 
+2012-08-13 12-38-48 SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as Id01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME] as Value01
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p1;@p0 = 2 [Type: Int32 (0)], @p1 = '%' [Type: String (4000)] 
+2012-08-13 12-38-49 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 12-38-49 Чтение конфигурации 
+2012-08-13 12-38-49 Refrence fias.Region: GetItems(, , 0, True) 
+2012-08-13 12-38-49 Создание ед. работы 
+2012-08-13 12-38-49 Присоединение сессии 
+2012-08-13 12-38-49 SELECT [AOID] as Id
+				,[AOGUID] as Id01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME] as Value01
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-13 12-38-49 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 12-38-49 Чтение конфигурации 
+2012-08-13 12-38-49 Refrence fias.Region: GetItems(, С, 0, True) 
+2012-08-13 12-38-49 Создание ед. работы 
+2012-08-13 12-38-49 Присоединение сессии 
+2012-08-13 12-38-49 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 12-38-49 Чтение конфигурации 
+2012-08-13 12-38-49 Refrence fias.Region: GetItems(, С, 0, True) 
+2012-08-13 12-38-49 Создание ед. работы 
+2012-08-13 12-38-49 Присоединение сессии 
+2012-08-13 12-38-49 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 12-38-49 Чтение конфигурации 
+2012-08-13 12-38-49 Refrence fias.Region: GetItems(, С, 0, True) 
+2012-08-13 12-38-49 Создание ед. работы 
+2012-08-13 12-38-49 Присоединение сессии 
+2012-08-13 12-38-49 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 12-38-49 Чтение конфигурации 
+2012-08-13 12-38-49 Чтение конфигурации 
+2012-08-13 12-38-49 Refrence fias.Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B41) 
+2012-08-13 12-38-49 Создание ед. работы 
+2012-08-13 12-38-49 Присоединение сессии 
+2012-08-13 12-38-49 SELECT [AOID] as Id
+				,[AOGUID] as Id01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME] as Value01
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B41' [Type: String (4000)] 
+2012-08-13 12-38-49 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-13 12-38-49 Чтение конфигурации 
+2012-08-13 12-38-49 Чтение конфигурации 
+2012-08-13 12-38-49 Refrence fias.Region: GetById(252AD96B-F238-429D-B9C3-0060C8079B40) 
+2012-08-13 12-38-49 Создание ед. работы 
+2012-08-13 12-38-49 Присоединение сессии 
+2012-08-13 12-38-49 SELECT [AOID] as Id
+				,[AOGUID] as Id01
+				,[FORMALNAME] as Value
+				,[REGIONCODE]
+				,[OFFNAME]
+				,[POSTALCODE]
+				,[OKATO]
+				,[SHORTNAME] as Value01
+				,[AOLEVEL]
+				,[PARENTGUID] as ParentId
+				,[PREVID]
+				,[NEXTID]
+				,[ACTSTATUS]
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [AOID] = @p0;@p0 = '252AD96B-F238-429D-B9C3-0060C8079B40' [Type: String (4000)] 
+2012-08-13 12-38-49 Завершение единицы работы. Время выполнения: 0.00:00:00 

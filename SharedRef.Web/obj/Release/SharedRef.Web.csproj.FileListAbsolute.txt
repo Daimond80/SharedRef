@@ -1,0 +1,84 @@
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\NLog.config
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\web.nlog
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\SharedRef.Web.dll
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\SharedRef.Web.pdb
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\Common.Logging.dll
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\Newtonsoft.Json.dll
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\NHibernate.Caches.SysCache.dll
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\NLog.dll
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\SharedRef.dll
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\Spring.Core.dll
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\Spring.Web.dll
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\Spring.Aop.dll
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\NHibernate.dll
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\Iesi.Collections.dll
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\SharedRef.pdb
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\Newtonsoft.Json.xml
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\NLog.xml
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\Spring.Core.pdb
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\Spring.Core.xml
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\Spring.Web.pdb
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\Spring.Web.xml
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\Spring.Aop.pdb
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\Spring.Aop.xml
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\NHibernate.xml
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\bin\Iesi.Collections.xml
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\obj\Release\SharedRef.Web.dll
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\SharedRef.Web\obj\Release\SharedRef.Web.pdb
+C:\Sobin\SharedRef\SharedRef.Web\bin\NLog.config
+C:\Sobin\SharedRef\SharedRef.Web\bin\web.nlog
+C:\Sobin\SharedRef\SharedRef.Web\bin\SharedRef.Web.dll
+C:\Sobin\SharedRef\SharedRef.Web\bin\SharedRef.Web.pdb
+C:\Sobin\SharedRef\SharedRef.Web\bin\Common.Logging.dll
+C:\Sobin\SharedRef\SharedRef.Web\bin\Newtonsoft.Json.dll
+C:\Sobin\SharedRef\SharedRef.Web\bin\NHibernate.Caches.SysCache.dll
+C:\Sobin\SharedRef\SharedRef.Web\bin\NLog.dll
+C:\Sobin\SharedRef\SharedRef.Web\bin\SharedRef.dll
+C:\Sobin\SharedRef\SharedRef.Web\bin\Spring.Core.dll
+C:\Sobin\SharedRef\SharedRef.Web\bin\Spring.Web.dll
+C:\Sobin\SharedRef\SharedRef.Web\bin\Spring.Aop.dll
+C:\Sobin\SharedRef\SharedRef.Web\bin\NHibernate.dll
+C:\Sobin\SharedRef\SharedRef.Web\bin\Iesi.Collections.dll
+C:\Sobin\SharedRef\SharedRef.Web\bin\SharedRef.pdb
+C:\Sobin\SharedRef\SharedRef.Web\bin\Newtonsoft.Json.xml
+C:\Sobin\SharedRef\SharedRef.Web\bin\NLog.xml
+C:\Sobin\SharedRef\SharedRef.Web\bin\Spring.Core.pdb
+C:\Sobin\SharedRef\SharedRef.Web\bin\Spring.Core.xml
+C:\Sobin\SharedRef\SharedRef.Web\bin\Spring.Web.pdb
+C:\Sobin\SharedRef\SharedRef.Web\bin\Spring.Web.xml
+C:\Sobin\SharedRef\SharedRef.Web\bin\Spring.Aop.pdb
+C:\Sobin\SharedRef\SharedRef.Web\bin\Spring.Aop.xml
+C:\Sobin\SharedRef\SharedRef.Web\bin\NHibernate.xml
+C:\Sobin\SharedRef\SharedRef.Web\bin\Iesi.Collections.xml
+C:\Sobin\SharedRef\SharedRef.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Sobin\SharedRef\SharedRef.Web\obj\Release\SharedRef.Web.dll
+C:\Sobin\SharedRef\SharedRef.Web\obj\Release\SharedRef.Web.pdb
+C:\Sources\SharedRef\SharedRef.Web\obj\Release\SharedRef.Web.csprojResolveAssemblyReference.cache
+C:\Sources\SharedRef\SharedRef.Web\obj\Release\SharedRef.Web.dll
+C:\Sources\SharedRef\SharedRef.Web\obj\Release\SharedRef.Web.pdb
+C:\Sources\SharedRef\SharedRef.Web\bin\NLog.config
+C:\Sources\SharedRef\SharedRef.Web\bin\web.nlog
+C:\Sources\SharedRef\SharedRef.Web\bin\SharedRef.Web.dll
+C:\Sources\SharedRef\SharedRef.Web\bin\SharedRef.Web.pdb
+C:\Sources\SharedRef\SharedRef.Web\bin\Common.Logging.dll
+C:\Sources\SharedRef\SharedRef.Web\bin\Newtonsoft.Json.dll
+C:\Sources\SharedRef\SharedRef.Web\bin\NHibernate.Caches.SysCache.dll
+C:\Sources\SharedRef\SharedRef.Web\bin\NLog.dll
+C:\Sources\SharedRef\SharedRef.Web\bin\SharedRef.dll
+C:\Sources\SharedRef\SharedRef.Web\bin\Spring.Core.dll
+C:\Sources\SharedRef\SharedRef.Web\bin\Spring.Web.dll
+C:\Sources\SharedRef\SharedRef.Web\bin\Spring.Aop.dll
+C:\Sources\SharedRef\SharedRef.Web\bin\NHibernate.dll
+C:\Sources\SharedRef\SharedRef.Web\bin\Iesi.Collections.dll
+C:\Sources\SharedRef\SharedRef.Web\bin\SharedRef.pdb
+C:\Sources\SharedRef\SharedRef.Web\bin\Newtonsoft.Json.xml
+C:\Sources\SharedRef\SharedRef.Web\bin\NLog.xml
+C:\Sources\SharedRef\SharedRef.Web\bin\Spring.Core.pdb
+C:\Sources\SharedRef\SharedRef.Web\bin\Spring.Core.xml
+C:\Sources\SharedRef\SharedRef.Web\bin\Spring.Web.pdb
+C:\Sources\SharedRef\SharedRef.Web\bin\Spring.Web.xml
+C:\Sources\SharedRef\SharedRef.Web\bin\Spring.Aop.pdb
+C:\Sources\SharedRef\SharedRef.Web\bin\Spring.Aop.xml
+C:\Sources\SharedRef\SharedRef.Web\bin\NHibernate.xml
+C:\Sources\SharedRef\SharedRef.Web\bin\Iesi.Collections.xml

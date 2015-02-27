@@ -1,0 +1,217 @@
+2012-08-24 21-41-05 Чтение контекста 
+2012-08-24 21-41-12 Чтение контекста 
+2012-08-24 21-41-12 Чтение контекста 
+2012-08-24 21-41-54 Чтение контекста 
+2012-08-24 21-41-57 Чтение контекста 
+2012-08-24 21-41-57 Matrix tariffs: Load() 
+2012-08-24 21-41-57 Создание ед. работы 
+2012-08-24 21-41-57 Создание фабрики 
+2012-08-24 21-41-57 Создание конфигурации 
+2012-08-24 21-42-03 Присоединение сессии 
+2012-08-24 21-42-03 select 
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-24 21-42-03 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-24 21-42-03 GetMatrixJson System.IndexOutOfRangeException: Индекс находился вне границ массива.
+   в SharedRef.Data.DictionaryResultTransformer.TransformTuple(Object[] tuple, String[] aliases) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Data\DictionaryResultTransformer.cs:строка 30
+   в NHibernate.Hql.HolderInstantiator.Instantiate(Object[] row)
+   в NHibernate.Loader.Custom.CustomLoader.GetResultList(IList results, IResultTransformer resultTransformer)
+   в NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Custom.CustomLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Impl.SessionImpl.ListCustomQuery(ICustomQuery customQuery, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List[T](NativeSQLQuerySpecification spec, QueryParameters queryParameters)
+   в NHibernate.Impl.SqlQueryImpl.List[T]()
+   в SharedRef.Domain.IoC.Matrix.Load() в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 50
+   в SharedRef.Domain.IoC.Matrix.Get(String conditions, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 28
+   в SharedRef.Manager.<>c__DisplayClassd.<GetMatrix>b__c(Matrix r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetMatrix(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Manager.GetMatrixJson(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 119
+   в _dynamic_SharedRef.Manager.GetMatrixJson(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 259
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+2012-08-24 21-44-11 Чтение контекста 
+2012-08-24 21-44-14 Чтение контекста 
+2012-08-24 21-44-25 Matrix tariffs: Load() 
+2012-08-24 21-44-29 Создание ед. работы 
+2012-08-24 21-44-29 Создание фабрики 
+2012-08-24 21-44-29 Создание конфигурации 
+2012-08-24 21-44-32 Присоединение сессии 
+2012-08-24 21-44-57 select 
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-24 21-44-57 Завершение единицы работы. Время выполнения: 0.00:00:24 
+2012-08-24 21-46-41 Чтение контекста 
+2012-08-24 21-46-44 Чтение контекста 
+2012-08-24 21-46-48 Matrix tariffs: Load() 
+2012-08-24 21-46-48 Создание ед. работы 
+2012-08-24 21-46-48 Создание фабрики 
+2012-08-24 21-46-48 Создание конфигурации 
+2012-08-24 21-46-50 Присоединение сессии 
+2012-08-24 21-46-50 select 
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-24 21-47-10 Завершение единицы работы. Время выполнения: 0.00:00:20 
+2012-08-24 21-50-18 Чтение контекста 
+2012-08-24 21-50-20 Чтение контекста 
+2012-08-24 21-50-27 Matrix tariffs: Load() 
+2012-08-24 21-50-27 Создание ед. работы 
+2012-08-24 21-50-28 Создание фабрики 
+2012-08-24 21-50-28 Создание конфигурации 
+2012-08-24 21-50-29 Присоединение сессии 
+2012-08-24 21-50-29 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-24 21-50-37 Завершение единицы работы. Время выполнения: 0.00:00:07 
+2012-08-24 21-50-37 GetMatrixJson System.ArgumentException: выполняется разбор "((?:\.|[^=,]+)*)=("(?:\.|[^"\]+)*"|(?:\.|[^,"\]+)*)" - Набор [] без признака завершения.
+   в System.Text.RegularExpressions.RegexParser.ScanCharClass(Boolean caseInsensitive, Boolean scanOnly)
+   в System.Text.RegularExpressions.RegexParser.CountCaptures()
+   в System.Text.RegularExpressions.RegexParser.Parse(String re, RegexOptions op)
+   в System.Text.RegularExpressions.Regex..ctor(String pattern, RegexOptions options, Boolean useCache)
+   в System.Text.RegularExpressions.Regex.Matches(String input, String pattern)
+   в SharedRef.Domain.IoC.Matrix.Get(String conditions, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 30
+   в SharedRef.Manager.<>c__DisplayClassd.<GetMatrix>b__c(Matrix r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetMatrix(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Manager.GetMatrixJson(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 119
+   в _dynamic_SharedRef.Manager.GetMatrixJson(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 259
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+2012-08-24 22-02-07 Чтение контекста 
+2012-08-24 22-02-09 Чтение контекста 
+2012-08-24 22-02-25 Matrix tariffs: Load() 
+2012-08-24 22-02-25 Создание ед. работы 
+2012-08-24 22-02-25 Создание фабрики 
+2012-08-24 22-02-25 Создание конфигурации 
+2012-08-24 22-02-28 Присоединение сессии 
+2012-08-24 22-02-28 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-24 22-02-29 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-24 22-02-29 GetMatrixJson System.ArgumentException: выполняется разбор "((?:\.|[^=,]+)*)=('(?:\.|[^'\]+)*'|(?:\.|[^,'\]+)*)" - Набор [] без признака завершения.
+   в System.Text.RegularExpressions.RegexParser.ScanCharClass(Boolean caseInsensitive, Boolean scanOnly)
+   в System.Text.RegularExpressions.RegexParser.CountCaptures()
+   в System.Text.RegularExpressions.RegexParser.Parse(String re, RegexOptions op)
+   в System.Text.RegularExpressions.Regex..ctor(String pattern, RegexOptions options, Boolean useCache)
+   в System.Text.RegularExpressions.Regex.Matches(String input, String pattern)
+   в SharedRef.Domain.IoC.Matrix.Get(String conditions, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 30
+   в SharedRef.Manager.<>c__DisplayClassd.<GetMatrix>b__c(Matrix r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetMatrix(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Manager.GetMatrixJson(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 119
+   в _dynamic_SharedRef.Manager.GetMatrixJson(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 259
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+2012-08-24 22-03-36 Чтение контекста 
+2012-08-24 22-03-39 Чтение контекста 
+2012-08-24 22-03-39 Matrix tariffs: Load() 
+2012-08-24 22-03-39 Создание ед. работы 
+2012-08-24 22-03-39 Создание фабрики 
+2012-08-24 22-03-39 Создание конфигурации 
+2012-08-24 22-03-41 Присоединение сессии 
+2012-08-24 22-03-41 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-24 22-03-41 Завершение единицы работы. Время выполнения: 0.00:00:00 
+2012-08-24 22-03-41 GetMatrixJson System.ArgumentException: выполняется разбор "((?:\.|[^=,]+)*)=('(?:\.|[^'\]+)*'|(?:\.|[^,'\]+)*)" - Набор [] без признака завершения.
+   в System.Text.RegularExpressions.RegexParser.ScanCharClass(Boolean caseInsensitive, Boolean scanOnly)
+   в System.Text.RegularExpressions.RegexParser.CountCaptures()
+   в System.Text.RegularExpressions.RegexParser.Parse(String re, RegexOptions op)
+   в System.Text.RegularExpressions.Regex..ctor(String pattern, RegexOptions options, Boolean useCache)
+   в System.Text.RegularExpressions.Regex.Matches(String input, String pattern)
+   в SharedRef.Domain.IoC.Matrix.Get(String conditions, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 30
+   в SharedRef.Manager.<>c__DisplayClassd.<GetMatrix>b__c(Matrix r) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Extensions.ObjectHelper.ObjectHelperExtension.Return[TInput,TResult](TInput o, Func`2 evaluator, TResult failureValue) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Extensions\ObjectHelperExtension.cs:строка 25
+   в SharedRef.Manager.GetMatrix(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 105
+   в SharedRef.Manager.GetMatrixJson(String name, String conditionals, String returns) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\Manager.cs:строка 119
+   в _dynamic_SharedRef.Manager.GetMatrixJson(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 259
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Users\Daimond\Documents\Visual Studio 2010\Projects\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+2012-08-24 22-05-35 Чтение контекста 
+2012-08-24 22-05-39 Чтение контекста 
+2012-08-24 22-05-39 Matrix tariffs: Load() 
+2012-08-24 22-05-39 Создание ед. работы 
+2012-08-24 22-05-39 Создание фабрики 
+2012-08-24 22-05-39 Создание конфигурации 
+2012-08-24 22-05-43 Присоединение сессии 
+2012-08-24 22-05-43 select 
+				r.Id as Id,
+				t.Id as tId, 
+				t.Name as tName, 
+				c.Id as cId, 
+				c.Name as cName, 
+				o.Id as oId, 
+				o.Name as oName, 
+				r.Rate as Rate 
+			from dbo.TariffRates r
+			inner join dbo.Cards c on c.Id = r.CardId
+			inner join dbo.Tariffs t on t.Id = r.TariffId
+			inner join dbo.CardOperations o on o.Id = r.CardOperationId 
+2012-08-24 22-05-43 Завершение единицы работы. Время выполнения: 0.00:00:00 

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="SharedRef.Domain" assembly="SharedRef">
+	
+	<sql-query name='fias.House.list'>
+		<return class='SimpleItem' alias='SimpleItem'/>
+		<![CDATA[
+			SELECT [HOUSEID] as Id
+				  ,[HOUSEGUID] as IdGuid
+				  ,[HOUSENUM] as Num
+				  ,[BUILDNUM] as Build
+				  ,[STRUCNUM] as Str
+				  ,[AOGUID] as ParentId
+			  FROM [fias_HOUSE]
+			  WHERE [AOGUID] = :ParentId
+		]]>
+	</sql-query>
+
+	<sql-query name='fias.House.id'>
+		<return class='SimpleItem' alias='SimpleItem'/>
+		<![CDATA[
+			SELECT [HOUSEID] as Id
+				  ,[HOUSEGUID] as IdGuid
+				  ,[HOUSENUM] as Num
+				  ,[BUILDNUM] as Build
+				  ,[STRUCNUM] as Str
+				  ,[AOGUID] as ParentId
+			  FROM [fias_HOUSE]
+			  WHERE
+				[HOUSEID] = :Id
+		]]>
+	</sql-query>
+
+</hibernate-mapping>
+

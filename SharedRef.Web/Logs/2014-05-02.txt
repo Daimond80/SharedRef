@@ -1,0 +1,76 @@
+11-09-36 Чтение контекста 
+11-09-58 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+11-10-02 Загрузка данных: fias.Street 
+11-10-03 Ошибка NHibernate.TransactionException: Transaction not connected, or was disconnected
+   в NHibernate.Transaction.AdoTransaction.CheckNotZombied()
+   в NHibernate.Transaction.AdoTransaction.Rollback()
+   в SharedRef.Data.UnitOfWork.Dispose() в C:\Sources\SharedRef\SharedRef\Data\UnitOfWork.cs:строка 105
+11-10-03 GetValuesXml NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as parId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [PARENTGUID] = @p1
+				AND [FORMALNAME] like @p2 ]
+  Name:StartWith - Value:В%  Name:ParentId - Value:
+[SQL: SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as parId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [PARENTGUID] = @p1
+				AND [FORMALNAME] like @p2] ---> System.Data.SqlClient.SqlException: Ошибка при преобразовании строки символов в тип uniqueidentifier.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   в System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   в System.Data.SqlClient.SqlDataReader.Read()
+   в NHibernate.Driver.NHybridDataReader.Read()
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Custom.CustomLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Impl.SessionImpl.ListCustomQuery(ICustomQuery customQuery, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List[T](NativeSQLQuerySpecification spec, QueryParameters queryParameters)
+   в NHibernate.Impl.SqlQueryImpl.List[T]()
+   в SharedRef.Domain.IoC.Reference.GetItems(String parentId, String startWith, Int32 count, String sort) в C:\Sources\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 79
+   в SharedRef.Manager.GetValues(String name, String parentId, String startWith, Int32 count, String sort) в C:\Sources\SharedRef\SharedRef\Manager.cs:строка 57
+   в SharedRef.Manager.GetValuesXml(String name, String parentId, String startWith, Int32 count, String sort) в C:\Sources\SharedRef\SharedRef\Manager.cs:строка 63
+   в _dynamic_SharedRef.Manager.GetValuesXml(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 259
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Sources\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21|System.Data.SqlClient.SqlException (0x80131904): Ошибка при преобразовании строки символов в тип uniqueidentifier.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   в System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   в System.Data.SqlClient.SqlDataReader.Read()
+   в NHibernate.Driver.NHybridDataReader.Read()
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+ClientConnectionId:7bf712bc-996e-4562-abed-819b2f883e63
+11-11-09 GetValuesXml(fias.Street |  | В | 1000 | ) Длит.: 0.00:01:11 
+11-11-33 Загрузка данных: fias.Street 
+11-11-33 GetValuesXml(fias.Street | 12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d | В | 1000 | ) Длит.: 0.00:00:00 
+11-11-41 Загрузка данных: fias.Street 
+11-11-41 GetValuesXml(fias.Street | 12f0ff9a-5e78-48ee-b02f-f5167e1aeb4d |  | 1000 | ) Длит.: 0.00:00:00 
+11-12-33 Загрузка данных: fias.Street 
+11-12-33 GetValuesXml(fias.Street | 87EE7423-CD52-4B81-A16B-CB0D029A59BB |  | 1000 | ) Длит.: 0.00:00:00 
+11-12-48 Загрузка данных: fias.Street 
+11-12-48 GetValuesXml(fias.Street | 87EE7423-CD52-4B81-A16B-CB0D029A59BB | Л | 1000 | ) Длит.: 0.00:00:00 
+11-13-22 GetValuesXml(fias.Street | 87EE7423-CD52-4B81-A16B-CB0D029A59BB | Л | 1000 | ) Длит.: 0.00:00:00 
+11-13-36 GetValuesXml(fias.Street | 87EE7423-CD52-4B81-A16B-CB0D029A59BB | Л | 1000 | ) Длит.: 0.00:00:00 

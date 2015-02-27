@@ -1,0 +1,9 @@
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\InvokeWebService\bin\Release\InvokeWebService.dll
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\InvokeWebService\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Daimond\documents\visual studio 2010\Projects\SharedRef\InvokeWebService\obj\Release\InvokeWebService.dll
+C:\Sobin\SharedRef\InvokeWebService\bin\Release\InvokeWebService.dll
+C:\Sobin\SharedRef\InvokeWebService\obj\Release\ResolveAssemblyReference.cache
+C:\Sobin\SharedRef\InvokeWebService\obj\Release\InvokeWebService.dll
+C:\Sources\SharedRef\InvokeWebService\bin\Release\InvokeWebService.dll
+C:\Sources\SharedRef\InvokeWebService\obj\Release\InvokeWebService.csprojResolveAssemblyReference.cache
+C:\Sources\SharedRef\InvokeWebService\obj\Release\InvokeWebService.dll

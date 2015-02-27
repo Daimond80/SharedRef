@@ -1,0 +1,9 @@
+11-46-36 Чтение контекста 
+11-46-39 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+11-46-39 Загрузка данных: tariffs 
+11-46-46 GetMatrixXml(tariffs | cId=IN(3, 4); tId=2 | cName, tName) Длит.: 0.00:00:07 
+11-47-44 GetMatrixXml(tariffs | cId=IN(3, 4); tId=2 | cName, tName) Длит.: 0.00:00:00 
+11-47-47 GetMatrixXml(tariffs | tId=1;cId=4;oId=2 | tName,cName,oName,Rate) Длит.: 0.00:00:00 
+11-47-52 GetMatrixXml(tariffs | tId=2 | cName) Длит.: 0.00:00:00 
+11-47-56 GetMatrixXml(tariffs | tId=2 | cName) Длит.: 0.00:00:00 
+11-47-59 GetMatrixXml(tariffs | tId=1;cId=4;oId=2 | tName,cName,oName,Rate) Длит.: 0.00:00:00 

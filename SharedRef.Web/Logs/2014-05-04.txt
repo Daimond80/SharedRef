@@ -1,0 +1,3 @@
+10-35-30 Чтение контекста 
+10-35-43 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+10-35-43 GetReferences() Длит.: 0.00:00:00 

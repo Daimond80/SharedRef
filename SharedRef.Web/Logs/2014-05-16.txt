@@ -1,0 +1,60 @@
+13-43-00 Чтение контекста 
+13-43-02 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+13-43-06 Загрузка данных: fias.District 
+13-43-06 GetValuesJson(fias.District | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 |  | 100 | ) Длит.: 0.00:00:04 
+13-43-07 Загрузка данных: fias.Area 
+13-43-07 GetValuesJson(fias.Area | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 |  | 100 | ) Длит.: 0.00:00:00 
+13-43-11 Загрузка данных: fias.City 
+13-43-20 GetValuesJson(fias.City | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 |  | 100 | ) Длит.: 0.00:00:09 
+13-43-26 Загрузка данных: fias.City 
+13-43-26 GetValuesJson(fias.City | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 | Троицк г | 100 | ) Длит.: 0.00:00:00 
+13-43-27 GetValuesJson(fias.City | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 |  | 100 | ) Длит.: 0.00:00:00 
+13-43-30 Загрузка данных: fias.City 
+13-43-30 GetValuesJson(fias.City | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 | Щербинка г | 100 | ) Длит.: 0.00:00:00 
+13-43-31 GetValuesJson(fias.City | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 |  | 100 | ) Длит.: 0.00:00:00 
+13-43-37 Загрузка данных: fias.Street 
+13-43-38 GetValuesJson(fias.Street | 73e03d76-6e4e-4867-aa11-be6fbd4c1952 |  | 100 | ) Длит.: 0.00:00:00 
+13-43-39 GetValuesJson(fias.Street | 73e03d76-6e4e-4867-aa11-be6fbd4c1952 |  | 100 | ) Длит.: 0.00:00:00 
+13-43-43 GetValuesJson(fias.City | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 |  | 100 | ) Длит.: 0.00:00:00 
+13-43-45 Загрузка данных: fias.Street 
+13-43-45 GetValuesJson(fias.Street | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 |  | 100 | ) Длит.: 0.00:00:00 
+13-43-53 Загрузка данных: fias.Street 
+13-43-53 GetValuesJson(fias.Street | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 | Ивовая ул. | 100 | ) Длит.: 0.00:00:00 
+13-43-53 Загрузка данных: fias.Street 
+13-43-53 GetValuesJson(fias.Street | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 | 4 | 100 | ) Длит.: 0.00:00:00 
+13-43-54 Загрузка данных: fias.Street 
+13-43-54 GetValuesJson(fias.Street | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 | 4-q | 100 | ) Длит.: 0.00:00:00 
+13-43-55 Загрузка данных: fias.Street 
+13-43-55 GetValuesJson(fias.Street | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 | 4- | 100 | ) Длит.: 0.00:00:00 
+13-43-56 Загрузка данных: fias.Street 
+13-43-56 GetValuesJson(fias.Street | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 | 4-й | 100 | ) Длит.: 0.00:00:00 
+13-43-58 GetValuesJson(fias.Street | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 | 4- | 100 | ) Длит.: 0.00:00:00 
+13-43-59 GetValuesJson(fias.Street | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 | 4 | 100 | ) Длит.: 0.00:00:00 
+13-44-02 GetValuesJson(fias.Street | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 |  | 100 | ) Длит.: 0.00:00:00 
+13-44-02 Загрузка данных: fias.Street 
+13-44-02 GetValuesJson(fias.Street | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 | В | 100 | ) Длит.: 0.00:00:00 
+13-44-03 Загрузка данных: fias.Street 
+13-44-03 GetValuesJson(fias.Street | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 | Вятч | 100 | ) Длит.: 0.00:00:00 
+13-44-04 Загрузка данных: fias.Street 
+13-44-04 GetValuesJson(fias.Street | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 | Вят | 100 | ) Длит.: 0.00:00:00 
+13-44-05 Загрузка данных: fias.Street 
+13-44-05 GetValuesJson(fias.Street | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 | Вятс | 100 | ) Длит.: 0.00:00:00 
+13-46-49 GetValuesJson(fias.District | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 |  | 100 | ) Длит.: 0.00:00:00 
+13-46-50 GetValuesJson(fias.Area | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 |  | 100 | ) Длит.: 0.00:00:00 
+13-46-51 GetValuesJson(fias.District | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 |  | 100 | ) Длит.: 0.00:00:00 
+13-46-51 GetValuesJson(fias.Area | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 |  | 100 | ) Длит.: 0.00:00:00 
+13-46-53 GetValuesJson(fias.City | 0c5b2444-70a0-4932-980c-b4dc0d3f02b5 |  | 100 | ) Длит.: 0.00:00:00 
+13-46-59 Загрузка данных: fias.District 
+13-46-59 GetValuesJson(fias.District | 53ec9705-ec3e-4cbf-921f-229968e10aeb |  | 100 | ) Длит.: 0.00:00:00 
+13-46-59 Загрузка данных: fias.Area 
+13-47-01 GetValuesJson(fias.Area | 53ec9705-ec3e-4cbf-921f-229968e10aeb |  | 100 | ) Длит.: 0.00:00:01 
+13-47-07 Загрузка данных: fias.District 
+13-47-07 GetValuesJson(fias.District | 8276c6a1-1a86-4f0d-8920-aba34d4cc34a |  | 100 | ) Длит.: 0.00:00:00 
+13-47-08 Загрузка данных: fias.Area 
+13-47-08 GetValuesJson(fias.Area | 8276c6a1-1a86-4f0d-8920-aba34d4cc34a |  | 100 | ) Длит.: 0.00:00:00 
+13-47-13 Загрузка данных: fias.City 
+13-47-13 GetValuesJson(fias.City | f44af653-9182-47ef-ac56-5814d4ff3c6f |  | 100 | ) Длит.: 0.00:00:00 
+13-47-16 Загрузка данных: fias.Settelment 
+13-47-16 GetValuesJson(fias.Settelment | f44af653-9182-47ef-ac56-5814d4ff3c6f |  | 100 | ) Длит.: 0.00:00:00 
+13-47-21 Загрузка данных: fias.Street 
+13-47-21 GetValuesJson(fias.Street | dac4af57-2334-4bf6-ba09-26d6ed0b391f |  | 100 | ) Длит.: 0.00:00:00 

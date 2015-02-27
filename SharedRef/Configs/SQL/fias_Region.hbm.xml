@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="SharedRef.Domain" assembly="SharedRef">
+	
+	<sql-query name='fias.Region.list'>
+		<return class='SimpleItem' alias='SimpleItem'/>
+		<![CDATA[
+		SELECT [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as parId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [FORMALNAME] like :StartWith
+		]]>
+	</sql-query>
+
+	<sql-query name='fias.Region.id'>
+		<return class='SimpleItem' alias='SimpleItem'/>
+		<![CDATA[
+		SELECT [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as parId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] = 1 AND [ACTSTATUS] = 1
+				AND [AOID] = :Id
+		]]>
+	</sql-query>
+
+</hibernate-mapping>
+

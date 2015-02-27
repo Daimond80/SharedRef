@@ -1,0 +1,161 @@
+09-49-16 Чтение контекста 
+09-49-22 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+09-49-22 Загрузка данных: tariffs 
+09-49-26 GetMatrixXml NHibernate.DuplicateMappingException: Duplicate query / sql-query mapping fias.District.list
+   в NHibernate.Cfg.Mappings.CheckQueryExists(String name)
+   в NHibernate.Cfg.Mappings.AddSQLQuery(String name, NamedSQLQueryDefinition query)
+   в NHibernate.Cfg.XmlHbmBinding.NamedSQLQueryBinder.<>c__DisplayClass1.<AddSqlQuery>b__0(IDictionary`2 param0)
+   в NHibernate.Cfg.Configuration.SecondPassCompile()
+   в NHibernate.Cfg.Configuration.BuildSessionFactory()
+   в SharedRef.Data.DataHelper.get_SessionFactory() в C:\Sobin\SharedRef\SharedRef\Data\DataHelper.cs:строка 33
+   в SharedRef.Data.UnitOfWorkFactory.Data(IsolationLevel isolationLevel) в C:\Sobin\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 16
+   в SharedRef.Data.UnitOfWorkFactory.Data() в C:\Sobin\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 21
+   в SharedRef.Domain.IoC.Matrix.Load() в C:\Sobin\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 60
+   в SharedRef.Domain.IoC.Matrix.Get(String conditions, String returns) в C:\Sobin\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 29
+   в SharedRef.Manager.GetMatrix(String name, String conditionals, String returns) в C:\Sobin\SharedRef\SharedRef\Manager.cs:строка 114
+   в SharedRef.Manager.GetMatrixXml(String name, String conditionals, String returns) в C:\Sobin\SharedRef\SharedRef\Manager.cs:строка 120
+   в _dynamic_SharedRef.Manager.GetMatrixXml(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 259
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Sobin\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+09-53-07 Чтение контекста 
+09-53-10 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+09-53-10 Загрузка данных: tariffs 
+09-53-11 GetMatrixXml NHibernate.DuplicateMappingException: Duplicate query / sql-query mapping fias.CityArea.list
+   в NHibernate.Cfg.Mappings.CheckQueryExists(String name)
+   в NHibernate.Cfg.Mappings.AddSQLQuery(String name, NamedSQLQueryDefinition query)
+   в NHibernate.Cfg.XmlHbmBinding.NamedSQLQueryBinder.<>c__DisplayClass1.<AddSqlQuery>b__0(IDictionary`2 param0)
+   в NHibernate.Cfg.Configuration.SecondPassCompile()
+   в NHibernate.Cfg.Configuration.BuildSessionFactory()
+   в SharedRef.Data.DataHelper.get_SessionFactory() в C:\Sobin\SharedRef\SharedRef\Data\DataHelper.cs:строка 33
+   в SharedRef.Data.UnitOfWorkFactory.Data(IsolationLevel isolationLevel) в C:\Sobin\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 16
+   в SharedRef.Data.UnitOfWorkFactory.Data() в C:\Sobin\SharedRef\SharedRef\Data\UnitOfWorkFactory.cs:строка 21
+   в SharedRef.Domain.IoC.Matrix.Load() в C:\Sobin\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 60
+   в SharedRef.Domain.IoC.Matrix.Get(String conditions, String returns) в C:\Sobin\SharedRef\SharedRef\Domain\IoC\Matrix.cs:строка 29
+   в SharedRef.Manager.GetMatrix(String name, String conditionals, String returns) в C:\Sobin\SharedRef\SharedRef\Manager.cs:строка 114
+   в SharedRef.Manager.GetMatrixXml(String name, String conditionals, String returns) в C:\Sobin\SharedRef\SharedRef\Manager.cs:строка 120
+   в _dynamic_SharedRef.Manager.GetMatrixXml(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 259
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Sobin\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21
+09-53-41 Чтение контекста 
+09-53-44 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+09-53-45 Загрузка данных: tariffs 
+09-53-48 GetMatrixXml(tariffs | tId=2 | cName,tName) Длит.: 0.00:00:03 
+09-53-54 GetMatrixJson(tariffs | cId=IN(1, 2);tId=1 | cName,tName) Длит.: 0.00:00:00 
+09-53-54 GetMatrixJson(tariffs | cId=IN(1, 2, 3);tId=1 | cName,tName) Длит.: 0.00:00:00 
+09-53-54 GetMatrixJson(tariffs | cId=1;tId=1 | tName) Длит.: 0.00:00:00 
+09-54-16 Загрузка данных: fias.Street 
+09-54-17 Ошибка NHibernate.TransactionException: Transaction not connected, or was disconnected
+   в NHibernate.Transaction.AdoTransaction.CheckNotZombied()
+   в NHibernate.Transaction.AdoTransaction.Rollback()
+   в SharedRef.Data.UnitOfWork.Dispose() в C:\Sobin\SharedRef\SharedRef\Data\UnitOfWork.cs:строка 105
+09-54-17 GetValuesXml NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as parId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [PARENTGUID] = @p1
+				AND [FORMALNAME] like @p2 ]
+  Name:StartWith - Value:В%  Name:ParentId - Value:
+[SQL: SELECT TOP (@p0)  [AOID] as Id
+				,[AOGUID] as IdGiud
+				,[FORMALNAME] as fName
+				,[SHORTNAME] as sName
+				,[PARENTGUID] as parId
+			FROM [fias_ADDROBJ]
+			WHERE [AOLEVEL] IN (7)  AND [ACTSTATUS] = 1
+				AND [PARENTGUID] = @p1
+				AND [FORMALNAME] like @p2] ---> System.Data.SqlClient.SqlException: Ошибка при преобразовании строки символов в тип uniqueidentifier.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   в System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   в System.Data.SqlClient.SqlDataReader.HasMoreRows()
+   в System.Data.SqlClient.SqlDataReader.ReadInternal(Boolean setTimeout)
+   в System.Data.SqlClient.SqlDataReader.Read()
+   в NHibernate.Driver.NHybridDataReader.Read()
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- Конец трассировки внутреннего стека исключений ---
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   в NHibernate.Loader.Custom.CustomLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   в NHibernate.Impl.SessionImpl.ListCustomQuery(ICustomQuery customQuery, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List(NativeSQLQuerySpecification spec, QueryParameters queryParameters, IList results)
+   в NHibernate.Impl.SessionImpl.List[T](NativeSQLQuerySpecification spec, QueryParameters queryParameters)
+   в NHibernate.Impl.SqlQueryImpl.List[T]()
+   в SharedRef.Domain.IoC.Reference.GetItems(String parentId, String startWith, Int32 count, String sort) в C:\Sobin\SharedRef\SharedRef\Domain\IoC\Reference.cs:строка 79
+   в SharedRef.Manager.GetValues(String name, String parentId, String startWith, Int32 count, String sort) в C:\Sobin\SharedRef\SharedRef\Manager.cs:строка 57
+   в SharedRef.Manager.GetValuesXml(String name, String parentId, String startWith, Int32 count, String sort) в C:\Sobin\SharedRef\SharedRef\Manager.cs:строка 63
+   в _dynamic_SharedRef.Manager.GetValuesXml(Object , Object[] )
+   в Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) в c:\_prj\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:строка 156
+   в Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:строка 100
+   в Spring.Aop.Framework.AbstractMethodInvocation.Proceed() в c:\_prj\spring-net\trunk\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:строка 259
+   в SharedRef.AOP.ExceptionInterceptor.Invoke(IMethodInvocation invocation) в C:\Sobin\SharedRef\SharedRef\AOP\ExceptionInterceptor.cs:строка 21|System.Data.SqlClient.SqlException (0x80131904): Ошибка при преобразовании строки символов в тип uniqueidentifier.
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   в System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   в System.Data.SqlClient.SqlDataReader.HasMoreRows()
+   в System.Data.SqlClient.SqlDataReader.ReadInternal(Boolean setTimeout)
+   в System.Data.SqlClient.SqlDataReader.Read()
+   в NHibernate.Driver.NHybridDataReader.Read()
+   в NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   в NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+09-55-53 Чтение контекста 
+09-55-56 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+09-55-57 Загрузка данных: tariffs 
+09-55-59 GetMatrixXml(tariffs | tId=2 | cName,tName) Длит.: 0.00:00:02 
+09-55-59 GetMatrixJson(tariffs | cId=IN(1, 2);tId=1 | cName,tName) Длит.: 0.00:00:00 
+09-55-59 GetMatrixJson(tariffs | cId=IN(1, 2, 3);tId=1 | cName,tName) Длит.: 0.00:00:00 
+09-55-59 GetMatrixJson(tariffs | cId=1;tId=1 | tName) Длит.: 0.00:00:00 
+09-56-01 Загрузка данных: fias.Street 
+09-56-21 GetValuesXml(fias.Street | 00000000-0000-0000-0000-000000000000 | В | 2 | fName desc, sName asc) Длит.: 0.00:00:19 
+09-58-26 Чтение контекста 
+09-58-29 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+09-58-30 Загрузка данных: tariffs 
+09-58-31 GetMatrixXml(tariffs | tId=2 | cName,tName) Длит.: 0.00:00:02 
+09-58-32 GetMatrixJson(tariffs | cId=IN(1, 2);tId=1 | cName,tName) Длит.: 0.00:00:00 
+09-58-32 GetMatrixJson(tariffs | cId=IN(1, 2, 3);tId=1 | cName,tName) Длит.: 0.00:00:00 
+09-58-32 GetMatrixJson(tariffs | cId=1;tId=1 | tName) Длит.: 0.00:00:00 
+09-59-00 Чтение контекста 
+09-59-03 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+09-59-03 Загрузка данных: tariffs 
+09-59-05 GetMatrixXml(tariffs | tId=2 | cName,tName) Длит.: 0.00:00:01 
+09-59-05 GetMatrixJson(tariffs | cId=IN(1, 2);tId=1 | cName,tName) Длит.: 0.00:00:00 
+09-59-05 GetMatrixJson(tariffs | cId=IN(1, 2, 3);tId=1 | cName,tName) Длит.: 0.00:00:00 
+09-59-05 GetMatrixJson(tariffs | cId=1;tId=1 | tName) Длит.: 0.00:00:00 
+09-59-08 Загрузка данных: fias.Street 
+10-00-26 Чтение контекста 
+10-00-29 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+10-00-29 Загрузка данных: tariffs 
+10-00-32 GetMatrixXml(tariffs | tId=2 | cName,tName) Длит.: 0.00:00:02 
+10-00-32 GetMatrixJson(tariffs | cId=IN(1, 2);tId=1 | cName,tName) Длит.: 0.00:00:00 
+10-00-32 GetMatrixJson(tariffs | cId=IN(1, 2, 3);tId=1 | cName,tName) Длит.: 0.00:00:00 
+10-00-32 GetMatrixJson(tariffs | cId=1;tId=1 | tName) Длит.: 0.00:00:00 
+10-00-36 Загрузка данных: fias.Street 
+10-04-05 Чтение контекста 
+10-04-08 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+10-04-09 Загрузка данных: tariffs 
+10-04-11 GetMatrixXml(tariffs | tId=2 | cName,tName) Длит.: 0.00:00:02 
+10-04-11 GetMatrixJson(tariffs | cId=IN(1, 2);tId=1 | cName,tName) Длит.: 0.00:00:00 
+10-04-11 GetMatrixJson(tariffs | cId=IN(1, 2, 3);tId=1 | cName,tName) Длит.: 0.00:00:00 
+10-04-11 GetMatrixJson(tariffs | cId=1;tId=1 | tName) Длит.: 0.00:00:00 
+10-04-13 Загрузка данных: fias.Street 
+10-11-04 Чтение контекста 
+10-11-09 set_Conteiner(SharedRef.DependencyConteiner) Длит.: 0.00:00:00 
+10-11-10 Загрузка данных: tariffs 
+10-11-16 GetMatrixXml(tariffs | tId=2 | cName,tName) Длит.: 0.00:00:06 
+10-11-16 GetMatrixJson(tariffs | cId=IN(1, 2);tId=1 | cName,tName) Длит.: 0.00:00:00 
+10-11-16 GetMatrixJson(tariffs | cId=IN(1, 2, 3);tId=1 | cName,tName) Длит.: 0.00:00:00 
+10-11-16 GetMatrixJson(tariffs | cId=1;tId=1 | tName) Длит.: 0.00:00:00 
+10-11-18 Загрузка данных: fias.Street 

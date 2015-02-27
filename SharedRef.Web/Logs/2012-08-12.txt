@@ -1,0 +1,53 @@
+2012-08-12 12-30-19 Чтение конфигурации 
+2012-08-12 12-31-21 Чтение конфигурации 
+2012-08-12 12-31-21 Чтение конфигурации 
+2012-08-12 12-31-23 Bind session with factory 
+2012-08-12 12-31-23 SELECT
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentId 
+			FROM [oplan3_b].[dbo].[genre]
+			WHERE 
+				[genre_id] = @p0;@p0 = '5' [Type: String (4000)] 
+2012-08-12 12-31-23 Rollback transaction 
+2012-08-12 12-31-23 Unbind session and dispose 
+2012-08-12 12-31-36 Чтение конфигурации 
+2012-08-12 12-31-36 Чтение конфигурации 
+2012-08-12 12-31-36 Bind session with factory 
+2012-08-12 12-31-36 SELECT
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentId 
+			FROM [oplan3_b].[dbo].[genre]
+			WHERE 
+				[genre_id] = @p0;@p0 = '500' [Type: String (4000)] 
+2012-08-12 12-31-36 Rollback transaction 
+2012-08-12 12-31-36 Unbind session and dispose 
+2012-08-12 12-31-46 Чтение конфигурации 
+2012-08-12 12-32-24 Чтение конфигурации 
+2012-08-12 12-32-24 Bind session with factory 
+2012-08-12 12-32-24 SELECT 
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentId 
+			FROM [oplan3_b].[dbo].[genre]
+			WHERE 
+				[genre_name] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-12 12-32-24 Rollback transaction 
+2012-08-12 12-32-24 Unbind session and dispose 
+2012-08-12 12-33-18 Чтение конфигурации 
+2012-08-12 12-33-27 Чтение конфигурации 
+2012-08-12 12-33-27 Bind session with factory 
+2012-08-12 12-33-27 SELECT 
+				[genre_id] as Id,
+				[genre_name] as value,
+				12 as ParentId 
+			FROM [oplan3_b].[dbo].[genre]
+			WHERE 
+				[genre_name] like @p0;@p0 = '%' [Type: String (4000)] 
+2012-08-12 12-33-27 Rollback transaction 
+2012-08-12 12-33-27 Unbind session and dispose 
+2012-08-12 12-33-38 Чтение конфигурации 
+2012-08-12 12-33-38 Bind session with factory 
+2012-08-12 12-33-38 Rollback transaction 
+2012-08-12 12-33-38 Unbind session and dispose 
